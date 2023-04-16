@@ -5,5 +5,5 @@ pubDate: "2023/04/16"
 heroImage: "/placeholder-hero.webp"
 ---
 
-AstroとCloudflare Pagesを利用して、ブログを作成してみました。
+Astro と Cloudflare Pages を利用して、ブログを作成してみました。
 デザインはデフォルトがほどほどにシンプルで気に入ったので、しばらくはこのままで運用してみます。
