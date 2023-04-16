@@ -88,7 +88,7 @@ Preferences > Keys > Key Bindings の左下の + ボタンからキーボード�
 これで `Commandキー + '` を pane 分割のショートカットとして登録できました。  
 この調子でよく使う tmux の操作をショートカットとして登録すると便利です。私の設定は現在下記画像の様になっていました。
 
-![上記設定が全て完了した時の画像](/Command-as-tmux-prefix-key/iterm2-setting.webp)
+![上記設定が全て完了した時の画像](/Command-as-tmux-prefix-key/iterm2-settings.webp)
 
 Command キーをプレフィックスキーとして利用すると小指に優しいのでおすすめです。  
 良かったらぜひ試してみて下さいませ。
