@@ -146,11 +146,11 @@ jpeg 画像が重く PageSpeed Insights のパフォーマンスが 93 点にな
 https://github.com/lotkan3/lotkan.com/commit/3bb386ecca96bad3c2fd1ef0a8a18a7a601f9b4e
 
 変換前の PageSpeed Insights の点数
-![PageSpeed Insightsで93点の画像](/public/astro-and-cloudflare-pages-blog-creation/PageSpeed-Insights%E3%81%A793%E7%82%B9%E3%81%AE%E7%94%BB%E5%83%8F.webp)
+![PageSpeed Insightsで93点の画像](/astro-and-cloudflare-pages-blog-creation/PageSpeed-Insights%E3%81%A793%E7%82%B9%E3%81%AE%E7%94%BB%E5%83%8F.webp)
 
 変換後の PageSpeed Insights の点数
 
-![PageSpeed Insightsで93点の画像](/public/astro-and-cloudflare-pages-blog-creation/PageSpeed-Insights%E3%81%A7100%E7%82%B9%E3%81%AE%E7%94%BB%E5%83%8F.webp)
+![PageSpeed Insightsで93点の画像](/astro-and-cloudflare-pages-blog-creation/PageSpeed-Insights%E3%81%A7100%E7%82%B9%E3%81%AE%E7%94%BB%E5%83%8F.webp)
 
 変換後は無事 100 点になりました。
 
