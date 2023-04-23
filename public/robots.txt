@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /post
-Allow: /post/
-Disallow: /about
 Sitemap: https://lotkan.com/sitemap-index.xml
