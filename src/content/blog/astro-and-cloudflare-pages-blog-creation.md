@@ -42,11 +42,11 @@ GitHub Pages、Cloudflare Pages、Netlify、Vercel などがよく選ばれて�
 
 ## 導入から公開までやったこと
 
-サイトは [GitHub へ公開](https://github.com/lotkan3/lotkan.com)しているのでそのコミットを貼りつつ、どんなことをしたか書いていきます。
+サイトは [GitHub へ公開](https://github.com/tkancf/lotkan.com)しているのでそのコミットを貼りつつ、どんなことをしたか書いていきます。
 
 ### ブログテンプレートを生成
 
-- コミット: https://github.com/lotkan3/lotkan.com/commit/dbe77beafc338d572998a571c78b776d1f736c63
+- コミット: https://github.com/tkancf/lotkan.com/commit/26013ad20e8d417468ddc53cbc49f690ea4ebd4f
   - 実行コマンド例
 
 ```bash
@@ -95,31 +95,31 @@ GitHub Pages、Cloudflare Pages、Netlify、Vercel などがよく選ばれて�
 
 #### URL、サイトタイトルの変更
 
-https://github.com/lotkan3/lotkan.com/commit/cd3a93f48237b2549ee7312815e4dc40c2e58913
+https://github.com/tkancf/lotkan.com/commit/eb4c2fa535b591b2d50ae0400952b3fa55cacb46
 
 #### コピーライト部分の変更 Twitter、GitHub アカウントの URL を自分のものに変更
 
 Prettier のフォーマットが働いてしまって diff がでかくなってます...
-https://github.com/lotkan3/lotkan.com/commit/bdef656331ff05aefab87895ce430727686fa090
+https://github.com/tkancf/lotkan.com/commit/763fff1bc69d1a828b8c646a5da398ce7ce02df5
 
 #### アバウトページの更新
 
-https://github.com/lotkan3/lotkan.com/commit/752e37368bd85536ced494f3bc682c90d06628d1
+https://github.com/tkancf/lotkan.com/commit/4ba74d011265211f14ff17201a1ddae7a9f6bc09
 
 #### トップページの更新
 
-https://github.com/lotkan3/lotkan.com/commit/2c82c6bb9b2fc213d1f4c48403f9903eae8c8739
+https://github.com/tkancf/lotkan.com/commit/80ff54a1eda4d53e9db2f2c90d398042c26a2178
 
 #### 画像ファイルの更新
 
-https://github.com/lotkan3/lotkan.com/commit/8ab7442ced4b0adaf5128839498bbe57e7e0e132
+https://github.com/tkancf/lotkan.com/commit/46673876dd7d41b8d08a49576155300cff64b702
 
 ### .node-version ファイルを追加
 
 この指定がない場合、デフォルトでは `12.18.0` が利用されるのですが、これだとビルドが失敗してしまうので
 `.node-version` ファイルに Node.js のバージョンを指定しておきます。
 
-https://github.com/lotkan3/lotkan.com/commit/5dd0af9d26fa76ee28d2fa72520434dad250da3e
+https://github.com/tkancf/lotkan.com/commit/80c890626dbd4742ecb83d9694343451069107b0
 
 ### Cloudflare Pages で公開
 
@@ -130,7 +130,7 @@ Create a project => Connect to Git => repository の選択
 ### robots.txt の追加
 
 テンプレートには robots.txt が存在していなかったので、本当に最低限のものを用意しました。
-https://github.com/lotkan3/lotkan.com/commit/4554f520d66ceb9078d130e65810dd4309d5b1be
+https://github.com/tkancf/lotkan.com/commit/9db9e7c09c78a7e0c00c81f92fcfb1795ff9295f
 
 ```
 User-agent: *
@@ -143,7 +143,7 @@ Sitemap: https://example.com/sitemap-index.xml
 ### jpeg 画像を webp へ変換
 
 jpeg 画像が重く PageSpeed Insights のパフォーマンスが 93 点になっていたため、webp へ変換しました。
-https://github.com/lotkan3/lotkan.com/commit/3bb386ecca96bad3c2fd1ef0a8a18a7a601f9b4e
+https://github.com/tkancf/lotkan.com/commit/591fdc4d0df85b532434ce396ec123a726ee46dc
 
 変換前の PageSpeed Insights の点数
 ![PageSpeed Insightsで93点の画像](/astro-and-cloudflare-pages-blog-creation/PageSpeed-Insights-93.webp)
