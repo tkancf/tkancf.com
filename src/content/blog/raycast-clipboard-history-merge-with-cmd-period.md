@@ -1,6 +1,6 @@
 ---
-title: "Raycast のクリップボードヒストリーは ⌘+.で結合できる"
-description: "Raycastのクリップボードヒストリーは⌘+.で結合できるのが便利なので解説します。"
+title: "Raycast のクリップボードヒストリーは Command+.で結合できる"
+description: "RaycastのクリップボードヒストリーはCommand+.で結合できるのが便利なので解説します。"
 pubDate: "2023/04/24"
 heroImage: "/raycast-clipboard-history-merge-with-cmd-period/Raycast-clipboard-history.webp"
 ---
@@ -21,7 +21,7 @@ heroImage: "/raycast-clipboard-history-merge-with-cmd-period/Raycast-clipboard-h
 
 - tkan をコピーした状態の画像
   ![tkanをコピーした状態の画像](/raycast-clipboard-history-merge-with-cmd-period/Raycast-clipboard-tkan.webp)
-  上の状態で一つ下の `٩( ᐛ )و ﾜｰ` を選択して、⌘ と`.` 同時押しをすると、コピー中の文字列が更新(結合)されて `tkan ٩( ᐛ )و ﾜｰ` になります。
+  上の状態で一つ下の `٩( ᐛ )و ﾜｰ` を選択して、⌘ と`.` キーを同時押しすると、コピー中の文字列が更新(結合)されて `tkan ٩( ᐛ )و ﾜｰ` になります。
 
 - 更新されて tkan ٩( ᐛ )و ﾜｰになった画像
   ![更新されてtkan ٩( ᐛ )و ﾜｰになった画像](/raycast-clipboard-history-merge-with-cmd-period/Raycast-clipboard-tkan-wa-.webp)
