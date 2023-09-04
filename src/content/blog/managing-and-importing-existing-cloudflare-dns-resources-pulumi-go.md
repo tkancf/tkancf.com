@@ -19,7 +19,7 @@ heroImage: "/placeholder-hero.webp"
 ### Pulumiのインストール
 
 [Download & Install Pulumi | Pulumi Docs](https://www.pulumi.com/docs/install/)を参考にHomebrewを利用してインストールする。
-いくつか選択肢があったが、素直にCommunity Homebrewを利用してインストールする。
+インストール方法はいくつか選択肢があったが、素直にCommunity Homebrewを利用してインストールする。
 
 ```sh
 brew install pulumi
@@ -108,9 +108,11 @@ go get github.com/pulumi/pulumi-cloudflare/sdk/v5
 CloudflareのAPIトークンを取得する。
 Cloudflareにログインし、`Get your API token`からTokenを作成する。今回は、`Zone:Read, DNS:Read, DNS:Edit`権限があればOK。
 
+![Cloudflare API TOKEN取得 参考画像](/managing-and-importing-existing-cloudflare-dns-resources-pulumi-go/Cloudflare-API-get-token.webp)
+
 ## 取得したAPIトークンを保存する
 
-[PulumiのCloudflareのドキュメント Cloudflare: Installation & Configuration https://www.pulumi.com/registry/packages/cloudflare/installation-configuration/]を参考に実施する。
+[PulumiのCloudflareのドキュメント Cloudflare: Installation & Configuration](https://www.pulumi.com/registry/packages/cloudflare/installation-configuration/)を参考に実施する。
 
 環境変数として定義することも可能だが、下記コマンドでPulumiスタックと一緒に保存することができる。
 複数ユーザーが簡単にアクセスできるようになり、公式でも推されていたのでこちらの方法で実施した。
@@ -121,15 +123,101 @@ pulumi config set cloudflare:apiToken --secret
 
 `Pulumi.prod.yaml`が生成され、APIトークンは暗号化されて保存されている。
 Pulumi Cloud によって管理されるスタックごとの暗号化キーと値ごとのソルトを使用して値を暗号化されるらしい。
-<https://www.pulumi.com/docs/concepts/secrets/>
+https://www.pulumi.com/docs/concepts/secrets/
 
 ## コードを書く
 
-コードは長いのでGistにサンプルを置いた。
-
-- <https://gist.github.com/tkancf/9945a1f319d5e3ce2162d7b2b0462e11#file-main-go>
 `ExistingId` 関連の箇所は既存のDNSレコードをインポートするために、既存のDNSレコードのIDが必要なので入れておく。
 インポート完了後は不要になるので、消してOK。
+コードはgistにもサンプルを上げておく。 (https://gist.github.com/tkancf/bbcfc04e14c05529d2ec8e022ff1c85a#file-pulumi-go-cloudflare-dns-go)
+
+```go
+package main
+
+import (
+ "fmt"
+
+ "github.com/pulumi/pulumi-cloudflare/sdk/v5/go/cloudflare"
+ "github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+)
+
+type DnsRecord struct {
+ Name       string
+ Value      string
+ Kind       string
+ Ttl        int
+ Zone       string
+ Note       string
+ Proxied    bool
+ ExistingId string
+}
+
+func addRecord(ctx *pulumi.Context, r *DnsRecord) error {
+ _, err := cloudflare.NewRecord(ctx, fmt.Sprintf("%s-%s-%s", r.Kind, r.Name, r.Value), &cloudflare.RecordArgs{
+  Name:    pulumi.String(r.Name),
+  Value:   pulumi.String(r.Value),
+  Type:    pulumi.String(r.Kind),
+  ZoneId:  pulumi.String(r.Zone),
+  Ttl:     pulumi.Int(r.Ttl),
+  Comment: pulumi.StringPtr(r.Note),
+  Proxied: pulumi.Bool(r.Proxied),
+ }, pulumi.Import(pulumi.ID(r.ExistingId)))
+ return err
+}
+
+func main() {
+ pulumi.Run(
+  func(ctx *pulumi.Context) error {
+   const zoneId = "XXXXXXXXXXXXXXXXXXXXXXXXX"
+   dnsRecords := []DnsRecord{
+    {
+     Name:       "localhost",
+     Value:      "127.0.0.1",
+     Kind:       "A",
+     Ttl:        1,
+     Zone:       zoneId,
+     Note:       "localhost test",
+     Proxied:    false,
+    },
+    {
+     Name:       "lotkan.com",
+     Value:      "lotkan-site.pages.dev.",
+     Kind:       "CNAME",
+     Ttl:        1,
+     Zone:       zoneId,
+     Proxied:    true,
+     ExistingId: zoneId + "/" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    },
+    {
+     Name:       "lotkan.com",
+     Value:      "my memo",
+     Kind:       "TXT",
+     Ttl:        1,
+     Zone:       zoneId,
+     Note:       "my memo",
+     Proxied:    false,
+     ExistingId: zoneId + "/" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    },
+    {
+     Name:       "test",
+     Value:      "test",
+     Kind:       "TXT",
+     Ttl:        1,
+     Zone:       zoneId,
+     Proxied:    false,
+     ExistingId: zoneId + "/" + "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    },
+   }
+
+   for _, d := range dnsRecords {
+    if err := addRecord(ctx, &d); err != nil {
+     return err
+    }
+   }
+   return nil
+  })
+}
+```
 
 ## デプロイ
 
@@ -146,3 +234,18 @@ pulumi up
 ```
 
 `ExistingId` 関連の箇所をコードから消して終わり。
+
+## 終わりに
+
+以上、思った以上に簡単に既存リソースをインポート出来た。
+Pulumiを触ったのは初めてだったが、公式がサンプルコードを多数置いてくれており悩む部分は少なかった。
+個人的にはTerraformより既存リソースのインポートならPulumiの方が楽だと感じたが、まだ大きな違いを感じるほどしっかり触れてはいないので、今後もっと触ってみたい。
+
+## 参考資料
+
+- https://www.pulumi.com/docs/clouds/aws/get-started/create-project/
+- https://www.pulumi.com/docs/concepts/secrets/
+- https://www.pulumi.com/docs/get-started/
+- https://www.pulumi.com/docs/install/
+- https://www.pulumi.com/docs/intro/concepts/resources/#autonaming.
+- https://www.pulumi.com/registry/packages/cloudflare/installation-configuration/
