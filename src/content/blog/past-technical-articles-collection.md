@@ -13,7 +13,6 @@ heroImage: "/placeholder-hero.webp"
 ## [はてなブログ](https://tkancf.hateblo.jp)
 
 - [2022-08-21 この1冊ですべてわかる 新版 コーチングの基本を読みました](https://tkancf.hateblo.jp/blog/%E3%81%93%E3%81%AE1%E5%86%8A%E3%81%A7%E3%81%99%E3%81%B9%E3%81%A6%E3%82%8F%E3%81%8B%E3%82%8B_%E6%96%B0%E7%89%88_%E3%82%B3%E3%83%BC%E3%83%81%E3%83%B3%E3%82%B0%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%82%92%E8%AA%AD%E3%81%BF%E3%81%BE)
-- [2022-08-21 Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい](https://tkancf.hateblo.jp/blog/svelte-document-interface)
 - [2022-08-21 Hugoのテーマを自作したので、知見メモ](https://tkancf.hateblo.jp/blog/hugo-theme-memo)
 - [2022-08-21 Hugo で生HTMLを書く方法](https://tkancf.hateblo.jp/blog/hugo-raw-html)
 - [2022-08-21 Gitでマルチバイト文字列がエスケープされる対策](https://tkancf.hateblo.jp/blog/git-multi-byte-escape)
