@@ -2,7 +2,7 @@
 title: "VimのCTRL-K <Space>を理解する"
 description: "先日、Vim上で何かの拍子に `CTRL-K <Space> <Space>` と入力してしまいました。これにより、見た目上は半角スペースが入力されました。ここで入力された半角スペースはどうも本物の半角スペースとは別物のようなので、調べてみました。"
 pubDate: "2023/12/02"
-heroImage: "/placeholder-hero.webp"
+heroImage: "/understanding-vim-ctrl-k-space/ctrk-k-space-w.webp"
 ---
 
 ## イントロダクション
