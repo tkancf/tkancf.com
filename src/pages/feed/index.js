@@ -16,7 +16,7 @@ export async function get({ url }) {
 
     return new Response(rssFeed.body, {
         headers: {
-            'Content-Type': 'application/xml',
+            'Content-Type': 'application/rss+xml',
         }
     });
 }
