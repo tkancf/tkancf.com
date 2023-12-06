@@ -2,7 +2,7 @@ import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 
-export async function get({ url }) {
+export async function GET({ url }) {
     const posts = await getCollection('blog');
     const rssFeed = await rss({
         title: SITE_TITLE,
@@ -16,7 +16,7 @@ export async function get({ url }) {
 
     return new Response(rssFeed.body, {
         headers: {
-            'Content-Type': 'application/rss+xml',
+            'Content-Type': 'application/xml',
         }
     });
 }
