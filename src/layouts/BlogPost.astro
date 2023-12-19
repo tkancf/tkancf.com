@@ -12,7 +12,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="ja">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={heroImage || "/placeholder-social.jpeg"}
+    />
     <style>
       .title {
         font-size: 2em;

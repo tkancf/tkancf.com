@@ -132,7 +132,7 @@ Create a project => Connect to Git => repository の選択
 テンプレートには robots.txt が存在していなかったので、本当に最低限のものを用意しました。
 https://github.com/tkancf/tkancf.com/commit/9db9e7c09c78a7e0c00c81f92fcfb1795ff9295f
 
-```
+```txt
 User-agent: *
 
 Allow: /
