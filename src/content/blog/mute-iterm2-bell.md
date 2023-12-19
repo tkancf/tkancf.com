@@ -11,7 +11,7 @@ iTerm2でターミナル操作をしている時に、タブキーを連打す�
 ## 設定方法
 
 - iTerm2の設定画面を開く
-    - `⌘ + ,` で開ける
+  - `⌘ + ,` で開ける
 - Profiles > Terminal タブを開く
 - 設定画面の真ん中辺りにある`Notifications`から、`Silence bell`にチェックを入れる
 

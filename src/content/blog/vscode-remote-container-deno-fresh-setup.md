@@ -5,6 +5,8 @@ pubDate: "2022/09/20"
 heroImage: "/placeholder-hero.webp"
 ---
 
+## 概要
+
 Visual Studio Codeのリモートコンテナ機能を使ってDenoのFreshフレームワークを開発する環境を用意する方法です。  
 Visual Studio CodeもDenoも何もわからない状態で、準備してたら詰まったので備忘録として残しておきます。
 
