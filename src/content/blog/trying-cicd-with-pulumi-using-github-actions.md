@@ -5,6 +5,8 @@ pubDate: "2023/09/15"
 heroImage: "/trying-cicd-with-pulumi-using-github-actions/Pulumi-access-token.webp"
 ---
 
+## はじめに
+
 個人趣味のインフラをPulumiで管理しています。  
 Pulumiの公式からGitHub Actionsが公開されていたので、こちらを利用してGitHubのmainブランチへpushしたら自動でデプロイされるように設定してみました。  
 

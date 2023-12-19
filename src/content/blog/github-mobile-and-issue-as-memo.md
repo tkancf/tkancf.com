@@ -5,6 +5,8 @@ pubDate: "2023/10/05"
 heroImage: "/placeholder-hero.webp"
 ---
 
+## はじめに
+
 色んなところでメモを書いている。基本はPCで書くことが多いが、出先の電車の中や長風呂してる時になんとなくメモをとることも割とある。  
 ちょっと前まではiPhoneのメモアプリを使ってみたり、Obsidianを使ってみたりScrapboxを使ってみたりしていた。GitHubのリポジトリ内にMarkdownファイルを置いてメモも試したことがあったが、iPhoneのブラウザからファイルを編集してMarkdownを更新が微妙にやりづらくてやめてしまった。  
 最近は出先でのメモ・雑なメモ書きはGitHub issue、整理されたメモはリポジトリ内のMarkdownファイルという使い分けをしてみている。これがなかなか良い感じなので、紹介したい。
@@ -90,3 +92,9 @@ GitHub Mobile + GitHub issueでメモ良い感じなので、オススメ。
 プライベートリポジトリとパブリックリポジトリ両方用意して、最近はなるべくパブリックのほうに書くようにしている。  
 だんだんTwitterみたいになっているが、Twitterも最近あまり見ていないので雑なアウトプットの場としても良いかもしれない。
 よかったら試してみてください。
+
+## 2023/12/19 追記
+
+Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期できるようになったので、今は結局Obsidianを使っています。
+
+[Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](https://tkancf.com/blog/sync-obsidian-notes-free-self-hosted-livesync-flyio/)
