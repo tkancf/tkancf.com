@@ -7,6 +7,8 @@ heroImage: "/tofu65-keyboard-review/tofu65.jpg"
 
 買いました！！！わいわい
 
+![Title Image](/tofu65-keyboard-review/tofu65.jpg)
+
 ## はじめに
 
 最近、HHKB Studioが発表されたので遊舎工房へ触りに行きました。
