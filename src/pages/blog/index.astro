@@ -51,9 +51,7 @@ const combinedPosts = [...posts, ...externalPosts].sort(
                 <FormattedDate date={post.data.pubDate} />
                 <a
                   href={
-                    post.collection === "external"
-                      ? post.data.url
-                      : `/blog/${post.slug}/`
+                    post.slug === "" ? post.data.url : `/blog/${post.slug}/`
                   }
                 >
                   {post.collection === "はてなブログ"
@@ -62,7 +60,7 @@ const combinedPosts = [...posts, ...externalPosts].sort(
                       ? "🔗(Qiita):"
                       : post.collection === "zenn"
                         ? "🔗(Zenn):"
-                        : null}
+                        : ""}
                   {post.data.title}{" "}
                 </a>
               </li>
