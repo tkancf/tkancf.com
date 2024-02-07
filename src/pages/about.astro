@@ -3,13 +3,22 @@ import Layout from "../layouts/BlogPost.astro";
 ---
 
 <Layout
-  title="About me"
+  title="tkancf"
   description="私(tkan)についての説明"
   pubDate={new Date("2023/04/15")}
   updatedDate={new Date("2023/04/22")}
   heroImage="/placeholder-about.webp"
 >
-  <h2>Links</h2>
+  <p>
+    tkancfというユーザ名で登録していることが多いです。<br
+    />よく使ってるアイコン↓
+  </p>
+
+  <img src="/icon.jpg" alt="tkancf" width="150" height="150" loading="lazy" />
+  <h2>アカウント・リンク集</h2>
+  ブログ等の記事は外部サイト含めて、記事一覧ページ(<a
+    href="https://tkancf.com/blog">tkancf.com/blog</a
+  >) にあるので、まとめて見たい場合はそちらを参照してください。
   <ul>
     <li>
       GitHub: <a href="https://github.com/tkancf">@tkancf</a>
@@ -23,16 +32,40 @@ import Layout from "../layouts/BlogPost.astro";
       >
     </li>
     <li>
-      <a href="https://tkancf.hateblo.jp/">はてなブログ</a>:
-      このサイト以前に使っていたブログです。
+      Zenn: <a href="https://zenn.dev/tkancf">@tkancf</a>
+      <ul>
+        <li>ちょっとだけ記事を書きました</li>
+      </ul>
     </li>
     <li>
-      <a href="https://qiita.com/tkancf">Qiita</a>:
-      昔ちょっとだけ記事を書きました。
+      はてなブログ: <a href="https://tkancf.hateblo.jp/">@tkancf</a>
+      <ul>
+        <li>このサイト以前に使っていたブログです</li>
+      </ul>
     </li>
+    <li>
+      Qiita: <a href="https://qiita.com/tkancf">@tkancf</a>
+      <ul>
+        <li>昔ちょっとだけ記事を書きました</li>
+      </ul>
+    </li>
+  </ul>
+  <h2>趣味</h2>
+  <ul>
+    <li>プログラミング</li>
+    <li>コーヒー</li>
+    <li>美味しいものを食べに行く</li>
+    <li>漫画</li>
   </ul>
   <h2>仕事</h2>
   <ul>
-    <li>都内のIT系企業でインフラエンジニアとマネージャーをしています。</li>
+    <li>2018/07 - 2022/07</li>
+    <ul>
+      <li>MSPの会社でクラウドインフラのエンジニア(運用・保守)</li>
+    </ul>
+    <li>2022/08 - 現在</li>
+    <ul>
+      <li>上記エンジニアチームのプレイングマネージャー</li>
+    </ul>
   </ul>
 </Layout>
