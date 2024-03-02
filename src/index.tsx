@@ -121,7 +121,7 @@ app.get(
     metadata = {
       description: post.description,
       ogImage: post.heroImage ? post.heroImage : "/placeholder-social.jpeg",
-      title: siteName + " - ブログ記事一覧",
+      title: post.title,
       url: baseURL + "/blog/" + post.slug,
     };
     return c.render(
