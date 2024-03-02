@@ -19,7 +19,7 @@ git config --global core.quotepath false
 
 またはgitconfigに下記記載する
 
-```gitconfig
+```
 [core]
  quotepath = false
 ```

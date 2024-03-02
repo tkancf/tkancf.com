@@ -84,7 +84,7 @@ primary_region = "nrt"
 
 Dockerfileを用意します。
 
-```Dockerfile
+```docker
 FROM couchdb:latest
 RUN sed -i '2itouch /opt/couchdb/data/persistence.ini && chmod +w /opt/couchdb/data/persistence.ini' /docker-entrypoint.sh
 ```
