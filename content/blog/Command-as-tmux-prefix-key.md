@@ -51,7 +51,7 @@ Wikipedia制御文字: https://ja.wikipedia.org/wiki/%E5%88%B6%E5%BE%A1%E6%96%87
 
 `.tmux.conf` の設定として書くなら下記のようになります。(エスケープするためにバッククォートが2つついてます。)
 
-```tmux
+```
 # prefix key
 set -g prefix C-\\
 ```

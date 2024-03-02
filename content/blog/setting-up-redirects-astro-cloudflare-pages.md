@@ -15,7 +15,7 @@ CloudFlare Pagesのリダイレクト設定は、公開するディレクトリ�
 Astroプロジェクトの場合は、`public`ディレクトリに`_redirects`ファイルを作成すれば良かったです。  
 今回の`/feed`へのアクセスを`/rss.xml`へリダイレクトする場合は、`_redirects`ファイルに以下のように記述すれば行けました。
 
-```_redirects
+```
 /feed /rss.xml 301
 ```
 

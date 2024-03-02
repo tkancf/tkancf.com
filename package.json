@@ -3,22 +3,30 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint": "textlint '**/*.mdx' --fix"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^2.0.1",
-    "@astrojs/rss": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.3",
-    "astro": "^4.0.6"
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "wrangler pages dev ./dist",
+    "deploy": "$npm_execpath run build && wrangler pages deploy ./dist --commit-dirty=true"
   },
   "devDependencies": {
-    "textlint": "^13.3.2",
-    "textlint-rule-preset-ja-spacing": "^2.3.0",
-    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
+    "@hono/vite-dev-server": "^0.3.4",
+    "@hono/vite-ssg": "^0.1.0",
+    "@types/rss": "^0.0.32",
+    "rehype-stringify": "^10.0.0",
+    "remark": "^15.0.1",
+    "remark-expressive-code": "^0.33.4",
+    "remark-extract-frontmatter": "^3.2.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "rss": "^1.2.2",
+    "vite": "^5.0.11",
+    "vite-plugin-sitemap": "^0.5.3",
+    "wrangler": "^3.22.3",
+    "yaml": "^2.3.4"
+  },
+  "dependencies": {
+    "hono": "^4.0.3"
   }
 }
