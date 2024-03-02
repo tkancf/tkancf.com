@@ -1,3 +1,3 @@
 # tkancf.com
 
-This is my homepage created with Astro.
+This is my homepage created with Hono.
