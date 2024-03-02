@@ -1,5 +1,5 @@
 ---
-title: "Pulumi+GoでCloudflareのDNS既存リソースをインポートして管理してみた"
+title: "Pulumi+GoでCloudflareのDNS既存リソースを管理してみる"
 description: "CloudflareのDNS設定をPulumiを利用して、Goのコードで管理してみたのでメモ。既存リソースのインポートも試した。"
 pubDate: "2023/09/04"
 heroImage: "/placeholder-hero.webp"
