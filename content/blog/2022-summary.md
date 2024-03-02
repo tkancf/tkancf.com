@@ -2,7 +2,7 @@
 title: "2022年の振り返り"
 description: "2022年の振り返りと2023年の目標"
 pubDate: "2023/01/11"
-heroImage: "/placeholder-hero.webp"
+heroImage: "/placeholder-social.jpeg"
 ---
 
 年始すぐに書こうと思っていたのに大分経ってしまいましたが、今書かないと時期を逃しそうなので慌てて書きます。
