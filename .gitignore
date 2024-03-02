@@ -1,7 +1,15 @@
 # build output
 dist/
-# generated types
-.astro/
+
+# Change them to your taste:
+.wrangler
+.dev.vars
+.hono
+wrangler.toml
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
 
 # dependencies
 node_modules/
