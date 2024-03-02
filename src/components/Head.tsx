@@ -19,14 +19,7 @@ export const Head: FC = (props) => {
       <meta property="og:description" content={props.metadata.description} />
       <meta property="og:image" content={props.metadata.ogImage} />
       {/* Twitter Card */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={props.metadata.url} />
-      <meta property="twitter:title" content={props.metadata.title} />
-      <meta
-        property="twitter:description"
-        content={props.metadata.description}
-      />
-      <meta property="twitter:image" content={props.metadata.ogImage} />
+      <meta name="twitter:card" content="summary_large_image" />
     </head>
   );
 };

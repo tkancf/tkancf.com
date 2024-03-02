@@ -23,7 +23,7 @@ let metadata: Metadata = {
   title: siteName,
   url: baseURL,
   description: "",
-  ogImage: "/icon.jpg",
+  ogImage: "/placeholder-social.jpeg",
 };
 
 app.use("*", serveStatic({ root: "public" }));
@@ -50,7 +50,7 @@ const postListCSS = css`
 app.get("/", (c) => {
   metadata = {
     description: "tkancfのブログです。主にIT技術関連のメモなどを書いています。",
-    ogImage: "/icon.jpg",
+    ogImage: "/placeholder-social.jpeg",
     title: siteName,
     url: baseURL,
   };
@@ -82,7 +82,7 @@ app.get("/", (c) => {
 app.get("/blog", async (c) => {
   metadata = {
     description: "tkancfのブログの記事一覧ページです。",
-    ogImage: "/icon.jpg",
+    ogImage: "/placeholder-social.jpeg",
     title: siteName + " - ブログ記事一覧",
     url: baseURL + "/blog",
   };
@@ -120,8 +120,8 @@ app.get(
     }
     metadata = {
       description: post.description,
-      ogImage: post.heroImage,
-      title: siteName + " - ブログ記事一覧",
+      ogImage: post.heroImage ? post.heroImage : "/placeholder-social.jpeg",
+      title: post.title,
       url: baseURL + "/blog/" + post.slug,
     };
     return c.render(
@@ -138,7 +138,7 @@ app.get(
 app.get("/about", (c) => {
   metadata = {
     description: "tkancfのブログのAboutページです。About meを含みます。",
-    ogImage: "/icon.jpg",
+    ogImage: "/placeholder-social.jpeg",
     title: siteName + " - About",
     url: baseURL + "/about",
   };
