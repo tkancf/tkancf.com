@@ -6,7 +6,7 @@ import { Footer } from "./Footer";
 
 export const Layout: FC = (props) => {
   return (
-    <html class={globalCSS}>
+    <html lang="ja" class={globalCSS}>
       <Head metadata={props.metadata} />
       <Header {...props} />
       <main>{props.children}</main>
