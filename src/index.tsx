@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { jsxRenderer } from "hono/jsx-renderer";
 import { ssgParams } from "hono/ssg";
 import { css } from "hono/css";
-import { getPosts } from "./lib/post";
+import { getPosts, getExternalPosts } from "./lib/post";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Layout } from "./components/Layout";
 import { About } from "./components/About";
@@ -12,6 +12,7 @@ import RSS from "rss";
 const app = new Hono();
 
 const posts = await getPosts();
+const externalPosts = await getExternalPosts();
 
 type Metadata = {
   title: string;
@@ -45,6 +46,9 @@ const postListCSS = css`
   }
   ul li a:visited {
     color: #8e32dc;
+  }
+  span {
+    margin-right: 5px;
   }
 `;
 
@@ -117,6 +121,9 @@ app.get("/", (c) => {
 });
 
 app.get("/blog", async (c) => {
+  const allPosts = [...posts, ...externalPosts].sort(
+    (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
+  );
   metadata = {
     description: "tkancfのブログの記事一覧ページです。",
     ogImage: "/placeholder-social.jpeg",
@@ -127,11 +134,15 @@ app.get("/blog", async (c) => {
     <Layout metadata={metadata}>
       <div class={postListCSS}>
         <h2>記事一覧</h2>
+        <p>🔗 がついているリンクは外部サイトの記事です。</p>
         <ul>
-          {posts.map((post) => (
+          {allPosts.map((post) => (
             <li>
               <time>{post.pubDate}</time>
-              <a href={`/blog/${post.slug}`}>{post.title}</a>
+              <a href={post.platform ? post.url : `/blog/${post.slug}`}>
+                {post.platform && <>🔗[{post.platform}]: </>}
+                {post.title}
+              </a>
             </li>
           ))}
         </ul>

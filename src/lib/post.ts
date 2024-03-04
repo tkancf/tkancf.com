@@ -17,6 +17,8 @@ type Post = {
   description: string;
   body: string;
   heroImage?: string;
+  url?: string;
+  platform?: string;
 };
 
 const postsDir = "content/blog";
@@ -54,6 +56,17 @@ export const getPosts = async (): Promise<Post[]> => {
   posts.sort(
     (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
   );
+
+  return posts;
+};
+
+const externalContentPath = "content/external.json";
+
+// Function to read the external.json and convert it into Post objects
+export const getExternalPosts = async (): Promise<Post[]> => {
+  const filePath = path.join(externalContentPath);
+  const content = await promises.readFile(filePath, { encoding: "utf-8" });
+  const posts: Post[] = JSON.parse(content);
 
   return posts;
 };
