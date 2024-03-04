@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { jsxRenderer } from "hono/jsx-renderer";
 import { ssgParams } from "hono/ssg";
 import { css } from "hono/css";
 import { getPosts } from "./lib/post";
@@ -46,6 +47,16 @@ const postListCSS = css`
     color: #8e32dc;
   }
 `;
+
+app.all(
+  "*",
+  jsxRenderer(
+    ({ children }) => {
+      return <>{children}</>;
+    },
+    { docType: "<!DOCTYPE html>" }
+  )
+);
 
 app.get("/", (c) => {
   metadata = {
