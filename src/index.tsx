@@ -6,7 +6,7 @@ import { getPosts, getExternalPosts } from "./lib/post";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Layout } from "./components/Layout";
 import { About } from "./components/About";
-import { baseURL, siteName } from "./lib/constants";
+import { baseURL, siteName, iconURL } from "./lib/constants";
 import RSS from "rss";
 
 const app = new Hono();
@@ -204,6 +204,7 @@ const generateFeed = async () => {
     description: siteName,
     feed_url: baseURL + "/feed",
     generator: siteName,
+    image_url: iconURL,
   });
   posts.forEach(async (post: any) => {
     const url = baseURL + "/blog/" + post.slug;
@@ -212,6 +213,8 @@ const generateFeed = async () => {
       url: url,
       date: new Date(post.pubDate),
       description: post.description,
+      enclosure: { url: iconURL },
+      custom_elements: [{ "content:encoded": post.body }],
     });
   });
 

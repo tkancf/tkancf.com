@@ -8,10 +8,10 @@ export const About = () => {
       </p>
       <img
         lazy="true"
-        src="/icon.jpg"
+        src="/icon.webp"
         alt="tkancf"
-        width="150"
-        height="150"
+        width="180"
+        height="180"
         loading="lazy"
       />
       <h2>アカウント・リンク集</h2>
