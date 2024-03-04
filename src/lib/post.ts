@@ -3,7 +3,7 @@ import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
-import fs from "fs";
+import { promises } from "fs";
 import path from "path";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkExtractFrontmatter from "remark-extract-frontmatter";
@@ -17,50 +17,56 @@ type Post = {
   description: string;
   body: string;
   heroImage?: string;
+  url?: string;
+  platform?: string;
 };
 
 const postsDir = "content/blog";
-const postFiles = fs.readdirSync(postsDir);
 
-export const getPosts = async () => {
-  const posts: Post[] = await Promise.all(
-    postFiles.map(async (file) => {
-      const filePath = path.join(postsDir, file);
-      const content = fs.readFileSync(filePath, { encoding: "utf-8" });
-      const result = await remark()
-        .use(remarkParse)
-        .use(remarkFrontmatter, [
-          { type: "yaml", marker: "-", anywhere: false },
-        ])
-        .use(remarkExtractFrontmatter, {
-          yaml: yaml.parse,
-          name: "frontMatter", // result.data 配下のキー名を決める
-        })
-        .use(remarkExpressiveCode, {
-          theme: "github-light",
-        })
-        .use(remarkGfm)
-        .use(remarkRehype, { allowDangerousHtml: true })
-        .use(rehypeStringify, { allowDangerousHtml: true })
-        .use(remarkGfm)
-        .process(content);
+const readPostFile = async (file: string): Promise<Post> => {
+  const filePath = path.join(postsDir, file);
+  const content = await promises.readFile(filePath, { encoding: "utf-8" });
+  const result = await remark()
+    .use(remarkParse)
+    .use(remarkFrontmatter, [{ type: "yaml", marker: "-", anywhere: false }])
+    .use(remarkExtractFrontmatter, { yaml: yaml.parse, name: "frontMatter" })
+    .use(remarkExpressiveCode, { theme: "github-light" })
+    .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeStringify, { allowDangerousHtml: true })
+    .process(content);
 
-      const post: Post = {
-        slug: path.parse(path.basename(filePath)).name,
-        title: (result.data.frontMatter as Post).title,
-        pubDate: (result.data.frontMatter as Post)?.pubDate,
-        description: (result.data.frontMatter as Post)?.description,
-        heroImage: (result.data.frontMatter as Post)?.heroImage,
-        body: result.toString(),
-      };
-      return post;
-    })
-  );
+  const frontMatter = result.data.frontMatter as Partial<Post>;
+
+  return {
+    slug: path.parse(file).name,
+    title: frontMatter.title || "",
+    pubDate: frontMatter.pubDate || "",
+    description: frontMatter.description || "",
+    body: result.toString(),
+    heroImage: frontMatter.heroImage,
+  };
+};
+
+export const getPosts = async (): Promise<Post[]> => {
+  const postFiles = await promises.readdir(postsDir);
+  const posts: Post[] = await Promise.all(postFiles.map(readPostFile));
 
   // posts sort by pubDate
-  posts.sort((a, b) => {
-    return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
-  });
+  posts.sort(
+    (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
+  );
+
+  return posts;
+};
+
+const externalContentPath = "content/external.json";
+
+// Function to read the external.json and convert it into Post objects
+export const getExternalPosts = async (): Promise<Post[]> => {
+  const filePath = path.join(externalContentPath);
+  const content = await promises.readFile(filePath, { encoding: "utf-8" });
+  const posts: Post[] = JSON.parse(content);
 
   return posts;
 };
