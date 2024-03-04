@@ -5,10 +5,13 @@ pubDate: "2024/03/04"
 ---
 
 このブログは元々Astroを使って生成していました。
-Astroはサクッとコンテンツメインのサイトが作れて便利なんですが、[Blogを作り、育み、慈しむ ~ Blog Hacks 2024](https://junkyard.song.mu/slides/yapc-hiroshima-2024/#0)というスライドを見て、もうちょっと「好きなもの」を使って作り変えるのも良いかなと思っていました。  
+
+Astroはサクッとコンテンツメインのサイトが作れて便利なんですが、[Blogを作り、育み、慈しむ ~ Blog Hacks 2024](https://junkyard.song.mu/slides/yapc-hiroshima-2024/#0)というスライドを見て、もうちょっと「好きなもの」を使って作り変えるのも良いかなと思っていました。
+
 同じくらいの時期に[Honoのv4でSSGが可能になり](https://zenn.dev/yusukebe/articles/b20025ebda310a)、触ってみたい気持ちが高まっていたので移行してみました。
 
-Honoは以前[CloudFlare WorkersでLINE botを作ったとき](https://tkancf.com/blog/creating-line-bot-with-cloudflare-workers-d1-and-hono)に使ったんですが、かなり感触が良かったので定期的に状況をウォッチしていました。Hono自体も良いですし、[作者さん @yusukebe](https://github.com/yusukebe)のブログがワクワクする内容で好きなんですよね。  
+Honoは以前、CloudFlare Workersで[LINE botを作ったとき](https://tkancf.com/blog/creating-line-bot-with-cloudflare-workers-d1-and-hono)に使ったんですが、かなり感触が良かったので定期的に状況をウォッチしていました。  
+Hono自体も良いですし、[作者さん(@yusukebe)](https://github.com/yusukebe)のブログがワクワクする内容で好きなんですよね。  
 [Honoのv4が2月9日にリリースされます](https://zenn.dev/yusukebe/articles/b20025ebda310a)とか、[OSSで世界と戦うために - ゆーすけべー日記](https://yusukebe.com/posts/2023/oss-against-the-world/)とか。
 
 ## 移行作業について
@@ -25,12 +28,12 @@ Honoは以前[CloudFlare WorkersでLINE botを作ったとき](https://tkancf.co
 
 ## やったこと
 
-私が雑にお試しして試行錯誤しているリポジトリは[sandbox/hono-ssg at main · tkancf/sandbox](https://github.com/tkancf/sandbox/tree/main/hono-ssg)です。
+私が雑にお試しして試行錯誤しているリポジトリは[GitHub - tkancf/sandbox](https://github.com/tkancf/sandbox/tree/main/hono-ssg)です。
 
 ### 最小構成で動かしてみる
 
 まずは、Hono作者さんの[yusukebe/hono-ssg-example](https://github.com/yusukebe/hono-ssg-example/)を参考に別のリポジトリでとりあえず生成できることを確認するだけのコードを用意してみました。  
-[yusukebe/hono-ssg-example](https://github.com/yusukebe/hono-ssg-example/)はHono v4公開前にpatchを適用して作成しているexampleだったので、少し改変しつつ動かしてみました。
+[yusukebe/hono-ssg-example](https://github.com/yusukebe/hono-ssg-example/)はHono v4公開前にpatchを適用して作成しているexampleだったので、改変しつつ動かしてみました。  
 [この辺りのcommit](https://github.com/tkancf/sandbox/tree/22af695683965d210df1c0d50d87c14ad1b5a1fd/hono-ssg)が最小構成で動くことを確認できた所だと思います。  
 
 [Hono v4紹介記事](https://zenn.dev/yusukebe/articles/b20025ebda310a)では、静的ページを生成するために`build.ts`というファイルを作っていましたが、`@hono/vite-ssg`というViteのプラグインを使えば`build.ts`は不要でした。  
@@ -53,11 +56,11 @@ export default defineConfig(() => {
 });
 ```
 
-`src/index.tsx`についてはほぼ見た通りです。  
+`src/index.tsx`についてはほぼ見た通りで、該当コードは[こちら](https://github.com/tkancf/sandbox/blob/22af695683965d210df1c0d50d87c14ad1b5a1fd/hono-ssg/src/index.tsx)です。  
 `ssgParams(() => posts),`の部分は、Path Parameterがついた各パスに静的に生成されるパスを割り当てるためのミドルウェアです。  
 これがないと、`/posts/hoge`みたいなページが生成されません。  
 
-私はNext.js触ったことないので知りませんでしたが、Next.jsの[generateStaticPaths](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths)と似た機能らしいです。  
+私はNext.jsを触ったことがないので知りませんでしたが、Next.jsの[generateStaticPaths](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths)と似た機能らしいです。  
 
 ```typescript
 app.get(
@@ -101,7 +104,9 @@ app.get(
 ### sitemapの生成
 
 こちらもAstroのブログテンプレートだとデフォルトで用意されていましたが、自前で生成してあげる必要があります。  
-とは言ってもコード書くまでもなかったです。`vite-plugin-sitemap`を入れて、`vite.config.ts`に設定を書いてあげるだけで完了しました。
+とは言ってもコード書くまでもなかったです。
+
+`vite-plugin-sitemap`を入れて、`vite.config.ts`に設定を書いてあげるだけで完了しました。
 
 追加後の`vite.config.ts`
 
@@ -167,6 +172,7 @@ app.get("/feed", async (c) => {
 ### CSSの適用
 
 Honoには`hono/css`というCSS in JSのヘルパーがあるので、それを利用しました。  
+
 グローバルなCSSをどう適用すれば良いのかちょっと試行錯誤しましたが、以下のようにhtmlタグに全体適用したいCSSを付与してあげて、headタグ内に `<Style />`を書いておけば良い感じになりました。
 
 ```typescript
@@ -200,6 +206,7 @@ export const Head: FC = (props) => {
 ### DOCTYPEの設定
 
 `jsxRenderer`ミドルウェアを利用して以下のように付与できます。最初`jsxRenderer`ミドルウェア要らないかなと思って消していたんですが、PageSpeed InsightsでDOCTYPEが無いと警告されました。  
+
 `jsxRenderer`ミドルウェアを利用していれば、デフォルトで付与されます。`{ docType: false }`とすることで明示的に消すことも可能なようです。
 
 ```typescript
@@ -220,6 +227,7 @@ app.all(
 
 Astroを利用していたときからCloudflare Pagesでホストしていたので、そこは変えませんでした。  
 GitHubリポジトリと接続してあるので、Cloudflare Pagesの設定画面からBuild configurationsだけ今回構築したものと合わせてあげるだけでOKです。  
+
 ※ただ、今回はoutput directoryも何も変わらなかったので全部そのままです。
 
 [yusukebe/hono-ssg-example](https://github.com/yusukebe/hono-ssg-example/blob/main/package.json)を参考にしたんですが、`package.json`に以下のようなスクリプトがあると、`./dist`配下をCloudflare Pagesへすぐにデプロイできます。  
@@ -234,9 +242,10 @@ GitHubリポジトリと接続してあるので、Cloudflare Pagesの設定画�
 
 ## まとめ
 
-以上、AstroからHonoのSSGへの移行記録でした。
+以上、AstroからHonoのSSGへの移行記録でした。  
+最終的な成果物は[GitHub - tkancf/tkancf.com](https://github.com/tkancf/tkancf.com)にあるので、興味があれば見てみてください。
 
-Astroが大体よしなにやってくれてたんだな〜というありがたみを感じつつ、思った以上にシュッとHonoへ移行できたので良かったです。
+Astroがよしなにやってくれてたんだな〜というありがたみを感じつつ、思った以上にシュッとHonoへ移行できたので良かったです。
 
 よく分からずにAstroデフォルトのテンプレートを使ってる状態から脱したので「自分で作った感」が得られたのが一番良いですね。  
 今後もブログ弄りが捗りそうです。
