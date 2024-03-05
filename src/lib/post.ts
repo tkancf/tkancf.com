@@ -10,7 +10,7 @@ import remarkExtractFrontmatter from "remark-extract-frontmatter";
 import remarkExpressiveCode from "remark-expressive-code";
 import yaml from "yaml";
 
-type Post = {
+export type Post = {
   slug: string;
   title: string;
   pubDate: string;
