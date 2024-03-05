@@ -141,17 +141,19 @@ const generateFeed = async () => {
     generator: siteName,
     image_url: iconURL,
   });
-  posts.forEach(async (post: any) => {
-    const url = baseURL + "/blog/" + post.slug;
-    rss.item({
-      title: post.title,
-      url: url,
-      date: new Date(post.pubDate),
-      description: post.description,
-      enclosure: { url: iconURL },
-      custom_elements: [{ "content:encoded": post.body }],
-    });
-  });
+  await Promise.all(
+    posts.map((post: any) => {
+      const url = baseURL + "/blog/" + post.slug;
+      rss.item({
+        title: post.title,
+        url: url,
+        date: new Date(post.pubDate),
+        description: post.description,
+        enclosure: { url: iconURL },
+        custom_elements: [{ "content:encoded": post.body }],
+      });
+    })
+  );
 
   return rss.xml();
 };
