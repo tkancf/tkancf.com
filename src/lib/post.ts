@@ -3,70 +3,64 @@ import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
-import { promises } from "fs";
+import { promises as fs } from "fs";
 import path from "path";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkExtractFrontmatter from "remark-extract-frontmatter";
 import remarkExpressiveCode from "remark-expressive-code";
 import yaml from "yaml";
-
-export type Post = {
-  slug: string;
-  title: string;
-  pubDate: string;
-  description: string;
-  body: string;
-  heroImage?: string;
-  url?: string;
-  platform?: string;
-};
+import { Post } from "../types";
+import { VFile } from "vfile";
 
 const postsDir = "content/blog";
+const externalContentPath = "content/external.json";
 
-const readPostFile = async (file: string): Promise<Post> => {
-  const filePath = path.join(postsDir, file);
-  const content = await promises.readFile(filePath, { encoding: "utf-8" });
-  const result = await remark()
+async function processMarkdown(content: string): Promise<VFile> {
+  const processor = remark()
     .use(remarkParse)
     .use(remarkFrontmatter, [{ type: "yaml", marker: "-", anywhere: false }])
     .use(remarkExtractFrontmatter, { yaml: yaml.parse, name: "frontMatter" })
     .use(remarkExpressiveCode, { theme: "github-light" })
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
-    .use(rehypeStringify, { allowDangerousHtml: true })
-    .process(content);
+    .use(rehypeStringify, { allowDangerousHtml: true });
 
+  return processor.process(content);
+}
+
+async function readMarkdownFile(filePath: string): Promise<Post> {
+  const content = await fs.readFile(filePath, { encoding: "utf-8" });
+  const result = await processMarkdown(content);
+  const body = result.toString();
   const frontMatter = result.data.frontMatter as Partial<Post>;
 
   return {
-    slug: path.parse(file).name,
+    slug: path.parse(filePath).name,
     title: frontMatter.title || "",
     pubDate: frontMatter.pubDate || "",
     description: frontMatter.description || "",
-    body: result.toString(),
+    body,
     heroImage: frontMatter.heroImage,
   };
-};
+}
+export async function getPost(slug: string): Promise<Post> {
+  const file = path.join(postsDir, `${slug}.md`);
+  return readMarkdownFile(file);
+}
 
-export const getPosts = async (): Promise<Post[]> => {
-  const postFiles = await promises.readdir(postsDir);
-  const posts: Post[] = await Promise.all(postFiles.map(readPostFile));
-
-  // posts sort by pubDate
+export async function getPosts(): Promise<Post[]> {
+  const postFiles = await fs.readdir(postsDir);
+  const posts = await Promise.all(
+    postFiles.map((file) => readMarkdownFile(path.join(postsDir, file)))
+  );
   posts.sort(
     (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
   );
-
   return posts;
-};
+}
 
-const externalContentPath = "content/external.json";
-
-// Function to read the external.json and convert it into Post objects
-export const getExternalPosts = async (): Promise<Post[]> => {
+export async function getExternalPosts(): Promise<Post[]> {
   const filePath = path.join(externalContentPath);
-  const content = await promises.readFile(filePath, { encoding: "utf-8" });
-  const posts: Post[] = JSON.parse(content);
-
-  return posts;
-};
+  const content = await fs.readFile(filePath, { encoding: "utf-8" });
+  return JSON.parse(content);
+}

@@ -1,6 +1,6 @@
 import { siteName } from "../lib/constants";
 import { postListCSS } from "../lib/style";
-import { Post } from "../lib/post";
+import { Post } from "../types";
 
 export const Home = (props: any) => {
   return (
