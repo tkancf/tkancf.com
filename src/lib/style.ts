@@ -69,3 +69,25 @@ export const globalCSS = css`
     font-style: italic;
   }
 `;
+
+export const postListCSS = css`
+  ul {
+    list-style-type: none;
+    padding: unset;
+  }
+  ul li {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  time {
+    flex: 0 0 130px;
+    font-style: italic;
+    color: #595959;
+  }
+  ul li a:visited {
+    color: #8e32dc;
+  }
+  span {
+    margin-right: 5px;
+  }
+`;

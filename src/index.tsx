@@ -1,13 +1,14 @@
 import { Hono } from "hono";
 import { jsxRenderer } from "hono/jsx-renderer";
 import { ssgParams } from "hono/ssg";
-import { css } from "hono/css";
-import { getPosts, getExternalPosts } from "./lib/post";
+import { getPost, getPosts, getExternalPosts } from "./lib/post";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Layout } from "./components/Layout";
 import { About } from "./components/About";
 import { baseURL, siteName, iconURL } from "./lib/constants";
 import RSS from "rss";
+import { postListCSS } from "./lib/style";
+import { Home } from "./components/Home";
 
 const app = new Hono();
 
@@ -30,28 +31,6 @@ let metadata: Metadata = {
 
 app.use("*", serveStatic({ root: "public" }));
 
-const postListCSS = css`
-  ul {
-    list-style-type: none;
-    padding: unset;
-  }
-  ul li {
-    display: flex;
-    margin-bottom: 8px;
-  }
-  time {
-    flex: 0 0 130px;
-    font-style: italic;
-    color: #595959;
-  }
-  ul li a:visited {
-    color: #8e32dc;
-  }
-  span {
-    margin-right: 5px;
-  }
-`;
-
 app.all(
   "*",
   jsxRenderer(
@@ -71,51 +50,7 @@ app.get("/", (c) => {
   };
   return c.render(
     <Layout metadata={metadata}>
-      <div class={postListCSS}>
-        <h2>{siteName}へようこそ ٩( ᐛ )و </h2>
-        <p>tkancfのブログです。主にIT技術関連のメモなどを書いています。</p>
-        <h2>最新の記事</h2>
-        全記事一覧は <a href="/blog">こちら</a>
-        <ul>
-          {posts
-            .map((post) => (
-              <li>
-                <time>{post.pubDate}</time>
-                <a href={`/blog/${post.slug}`}>{post.title}</a>
-              </li>
-            ))
-            .slice(0, 7)}
-        </ul>
-      </div>
-      <h2>最近作ったもの</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/tkancf/tkancf.com">tkancf/tkancf.com</a>
-          <div>このブログ (HonoのSSG機能で作成)</div>
-        </li>
-        <li>
-          <a href="https://github.com/tkancf/hatebu-to-omnivore">
-            tkancf/hatebu-to-omnivore
-          </a>
-          <div>はてブのデータをOmnivoreにインポートするツール</div>
-        </li>
-        <li>
-          <a href="https://github.com/tkancf/cf-d1-line-sample">
-            tkancf/cf-d1-line-sample{" "}
-          </a>
-          <div>Cloudflare D1とCloudflare Workersを使ったLINEボット</div>
-        </li>
-        <li>
-          <a href="https://github.com/tkancf/proxy-maker">tkancf/proxy-maker</a>
-          <div>プロキシカード作成ツール</div>
-        </li>
-        <li>
-          <a href="https://github.com/tkancf/rofi-snippet">
-            tkancf/rofi-snippet
-          </a>
-          <div>rofi用のスニペット展開ツール</div>
-        </li>
-      </ul>
+      <Home posts={posts} />
     </Layout>
   );
 });
@@ -162,7 +97,7 @@ app.get(
   }),
   async (c) => {
     const slug = c.req.param("slug");
-    const post = posts.find((p) => p.slug === slug);
+    const post = await getPost(slug);
     if (!post) {
       return c.redirect("/404");
     }
@@ -206,17 +141,19 @@ const generateFeed = async () => {
     generator: siteName,
     image_url: iconURL,
   });
-  posts.forEach(async (post: any) => {
-    const url = baseURL + "/blog/" + post.slug;
-    rss.item({
-      title: post.title,
-      url: url,
-      date: new Date(post.pubDate),
-      description: post.description,
-      enclosure: { url: iconURL },
-      custom_elements: [{ "content:encoded": post.body }],
-    });
-  });
+  await Promise.all(
+    posts.map((post: any) => {
+      const url = baseURL + "/blog/" + post.slug;
+      rss.item({
+        title: post.title,
+        url: url,
+        date: new Date(post.pubDate),
+        description: post.description,
+        enclosure: { url: iconURL },
+        custom_elements: [{ "content:encoded": post.body }],
+      });
+    })
+  );
 
   return rss.xml();
 };
