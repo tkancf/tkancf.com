@@ -43,10 +43,18 @@ async function readMarkdownFile(filePath: string): Promise<Post> {
     heroImage: frontMatter.heroImage,
   };
 }
-export async function getPost(slug: string): Promise<Post> {
-  const file = path.join(postsDir, `${slug}.md`);
-  return readMarkdownFile(file);
-}
+
+export const getPost = async (slug: string): Promise<Post | undefined> => {
+  try {
+    const file = path.join(postsDir, `${slug}.md`);
+    return await readMarkdownFile(file);
+  } catch (error: any) {
+    if (error.code === "ENOENT") {
+      return undefined;
+    }
+    throw error;
+  }
+};
 
 export async function getPosts(): Promise<Post[]> {
   const postFiles = await fs.readdir(postsDir);
