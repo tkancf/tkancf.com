@@ -117,9 +117,15 @@ app.get(
     return c.render(
       <Layout metadata={metadata}>
         <h1>{scrap.title}</h1>
+        <p>
+          この記事はスクラップメモです。
+          <br />
+          ブログ記事と比較して雑なメモ、感想、意見をあまりちゃんと精査せずに書いているので、ご注意ください。チラシの裏みたいなものです。
+        </p>
         <div>投稿日: {scrap.pubDate}</div>
         <hr />
         <div dangerouslySetInnerHTML={{ __html: scrap.body }}></div>
+        <hr />
       </Layout>
     );
   }
