@@ -54,7 +54,7 @@ app.get("/", (c) => {
   };
   return c.render(
     <Layout metadata={metadata}>
-      <Home posts={blogs} />
+      <Home posts={blogs} scraps={scraps} />
     </Layout>
   );
 });
