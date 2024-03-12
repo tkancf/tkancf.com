@@ -36,6 +36,9 @@ export const Header: FC = (props) => {
         <a className={path === "/blog" ? "active" : ""} href="/blog">
           Blog
         </a>
+        <a className={path === "/scrap" ? "active" : ""} href="/scrap">
+          Scrap
+        </a>
         <a className={path === "/about" ? "active" : ""} href="/about">
           About
         </a>

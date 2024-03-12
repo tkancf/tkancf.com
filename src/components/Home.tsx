@@ -20,6 +20,18 @@ export const Home = (props: any) => {
             ))
             .slice(0, 7)}
         </ul>
+        <h2>最新のスクラップ</h2>
+        全スクラップ一覧は <a href="/scrap">こちら</a>
+        <ul>
+          {props.scraps
+            .map((scrap: Post) => (
+              <li>
+                <time>{scrap.pubDate}</time>
+                <a href={`/scrap/${scrap.slug}`}>{scrap.title}</a>
+              </li>
+            ))
+            .slice(0, 7)}
+        </ul>
       </div>
       <h2>最近作ったもの</h2>
       <ul>

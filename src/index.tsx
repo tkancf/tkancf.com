@@ -12,7 +12,11 @@ import { Home } from "./components/Home";
 
 const app = new Hono();
 
-const posts = await getPosts();
+const blogDir = "content/blog";
+const scrapDir = "content/scrap";
+const blogs = await getPosts(blogDir);
+const scraps = await getPosts(scrapDir);
+console.log("scraps", scraps);
 const externalPosts = await getExternalPosts();
 
 type Metadata = {
@@ -50,13 +54,79 @@ app.get("/", (c) => {
   };
   return c.render(
     <Layout metadata={metadata}>
-      <Home posts={posts} />
+      <Home posts={blogs} scraps={scraps} />
     </Layout>
   );
 });
 
+app.get("/scrap", async (c) => {
+  metadata = {
+    description: "tkancfのブログのスクラップ一覧ページです。",
+    ogImage: "/placeholder-social.jpeg",
+    title: siteName + " - スクラップ一覧",
+    url: baseURL + "/scrap",
+  };
+  const allScraps = scraps.sort(
+    (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
+  );
+  return c.render(
+    <Layout metadata={metadata}>
+      <div class={postListCSS}>
+        <h2>スクラップ一覧</h2>
+        <p>
+          雑な情報収集メモ、作業ログ、ブログ記事にするまでもないような細かいメモなどを残す場所です。
+        </p>
+
+        <ul>
+          {allScraps.map((scrap) => (
+            <li>
+              <time>{scrap.pubDate}</time>
+              <a href={scrap.platform ? scrap.url : `/scrap/${scrap.slug}`}>
+                {scrap.platform && <>🔗[{scrap.platform}]: </>}
+                {scrap.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Layout>
+  );
+});
+
+app.get(
+  "/scrap/:slug",
+  ssgParams(async () => {
+    return scraps.map((scrap) => {
+      return {
+        slug: scrap.slug,
+      };
+    });
+  }),
+  async (c) => {
+    const slug = c.req.param("slug");
+    const scrap = await getPost(slug, scrapDir);
+    if (!scrap) {
+      return c.redirect("/404");
+    }
+    metadata = {
+      description: scrap.description,
+      ogImage: scrap.heroImage ? scrap.heroImage : "/placeholder-social.jpeg",
+      title: scrap.title,
+      url: baseURL + "/scrap/" + scrap.slug,
+    };
+    return c.render(
+      <Layout metadata={metadata}>
+        <h1>{scrap.title}</h1>
+        <div>投稿日: {scrap.pubDate}</div>
+        <hr />
+        <div dangerouslySetInnerHTML={{ __html: scrap.body }}></div>
+      </Layout>
+    );
+  }
+);
+
 app.get("/blog", async (c) => {
-  const allPosts = [...posts, ...externalPosts].sort(
+  const allPosts = [...blogs, ...externalPosts].sort(
     (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
   );
   metadata = {
@@ -89,7 +159,7 @@ app.get("/blog", async (c) => {
 app.get(
   "/blog/:slug",
   ssgParams(async () => {
-    return posts.map((post) => {
+    return blogs.map((post) => {
       return {
         slug: post.slug,
       };
@@ -97,7 +167,7 @@ app.get(
   }),
   async (c) => {
     const slug = c.req.param("slug");
-    const post = await getPost(slug);
+    const post = await getPost(slug, blogDir);
     if (!post) {
       return c.redirect("/404");
     }
@@ -142,7 +212,7 @@ const generateFeed = async () => {
     image_url: iconURL,
   });
   await Promise.all(
-    posts.map((post: any) => {
+    blogs.map((post: any) => {
       const url = baseURL + "/blog/" + post.slug;
       rss.item({
         title: post.title,

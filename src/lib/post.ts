@@ -12,7 +12,6 @@ import yaml from "yaml";
 import { Post } from "../types";
 import { VFile } from "vfile";
 
-const postsDir = "content/blog";
 const externalContentPath = "content/external.json";
 
 async function processMarkdown(content: string): Promise<VFile> {
@@ -44,9 +43,12 @@ async function readMarkdownFile(filePath: string): Promise<Post> {
   };
 }
 
-export const getPost = async (slug: string): Promise<Post | undefined> => {
+export const getPost = async (
+  slug: string,
+  dir: string
+): Promise<Post | undefined> => {
   try {
-    const file = path.join(postsDir, `${slug}.md`);
+    const file = path.join(dir, `${slug}.md`);
     return await readMarkdownFile(file);
   } catch (error: any) {
     if (error.code === "ENOENT") {
@@ -56,8 +58,9 @@ export const getPost = async (slug: string): Promise<Post | undefined> => {
   }
 };
 
-export async function getPosts(): Promise<Post[]> {
+export async function getPosts(postsDir: string): Promise<Post[]> {
   const postFiles = await fs.readdir(postsDir);
+  console.log("postFiles", postFiles);
   const posts = await Promise.all(
     postFiles.map((file) => readMarkdownFile(path.join(postsDir, file)))
   );
