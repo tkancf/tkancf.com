@@ -29,4 +29,42 @@ Neovimのプラグインはポップアップウィンドウに出すのが多�
 
 ---
 
-2024/03/12の試行錯誤一旦ここまで
+2024/03/13追記
+
+### which-key
+
+ヘルプを出してくれる感じのプラグインで、Vimのコマンドなんて手が覚えるんだから不要と思っていたが、人気だったので試しに入れてみた。  
+ごめんなさい。めちゃくちゃ便利です。  
+特にキーバインドの定義と名前の表示設定が同時にできるのが実質ドキュメントみたいになっていて最高。  
+そういえば、Spacemacsもデフォルトこんな感じで表示してくれるよね。
+
+```lua
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        },
+        config = function()
+            local wk = require("which-key")
+            wk.register({
+                ["<leader>"] = {
+                    ["<leader>"] = {
+                        name = "telescope",
+                        f = { "<cmd>lua require('telescope.builtin').find_files()<cr>", "Find Files" },
+                        g = { "<cmd>lua require('telescope.builtin').live_grep()<cr>", "Live Grep" },
+                        b = { "<cmd>lua require('telescope.builtin').buffers()<cr>", "Buffers" },
+                        h = { "<cmd>lua require('telescope.builtin').help_tags()<cr>", "Help Tags" },
+                        u = { "<cmd>lua require('telescope.builtin').oldfiles()<cr>", "Recent Files" },
+                    },
+                }
+            })
+        end
+    },
+```
