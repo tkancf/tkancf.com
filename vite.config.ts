@@ -10,7 +10,6 @@ const entry = "src/index.tsx";
 export default defineConfig(({ mode }) => {
   const isDevelopment = mode === "development";
 
-  console.log("isDevelopment", isDevelopment);
   if (isDevelopment) {
     return {
       plugins: [devServer({ entry }), FullReload("./content/(*|*/*.md)")],
