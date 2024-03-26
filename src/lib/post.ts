@@ -60,7 +60,6 @@ export const getPost = async (
 
 export async function getPosts(postsDir: string): Promise<Post[]> {
   const postFiles = await fs.readdir(postsDir);
-  console.log("postFiles", postFiles);
   const posts = await Promise.all(
     postFiles.map((file) => readMarkdownFile(path.join(postsDir, file)))
   );

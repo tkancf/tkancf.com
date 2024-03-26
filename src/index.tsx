@@ -16,7 +16,6 @@ const blogDir = "content/blog";
 const scrapDir = "content/scrap";
 const blogs = await getPosts(blogDir);
 const scraps = await getPosts(scrapDir);
-console.log("scraps", scraps);
 const externalPosts = await getExternalPosts();
 
 type Metadata = {
