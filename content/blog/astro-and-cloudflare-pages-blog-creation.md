@@ -1,7 +1,7 @@
 ---
 title: "AstroとCloudflare Pagesでブログを作成しました"
 description: "AstroとCloudflare Pagesでブログを作成しました。選定理由と公開までに実施したことを解説します。"
-pubDate: "2023/04/17"
+pubDate: "2023-04-17"
 heroImage: "/placeholder-hero.webp"
 ---
 

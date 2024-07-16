@@ -1,7 +1,7 @@
 ---
 title: "CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました"
 description: "CloudFlare Workers、CloudFlare D1、Hono.jsを利用して、シンプルなLINE botを作成しました。作成時の流れ、ハマった事、気づいた事などをまとめておきます。"
-pubDate: "2023/05/10"
+pubDate: "2023-05-10"
 heroImage: "/placeholder-hero.webp"
 ---
 

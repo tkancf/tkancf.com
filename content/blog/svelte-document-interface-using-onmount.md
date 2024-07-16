@@ -1,7 +1,7 @@
 ---
 title: "Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい"
 description: "Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい"
-pubDate: "2022/08/21"
+pubDate: "2022-08-21"
 heroImage: "/placeholder-hero.webp"
 ---
 

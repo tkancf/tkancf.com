@@ -1,7 +1,7 @@
 ---
 title: "Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する"
 description: "Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法についてハマりどころがあったのでメモ"
-pubDate: "2022/08/21"
+pubDate: "2022-08-21"
 heroImage: "/placeholder-hero.webp"
 ---
 

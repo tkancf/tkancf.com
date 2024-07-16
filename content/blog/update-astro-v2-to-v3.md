@@ -1,7 +1,7 @@
 ---
 title: "Astroのバージョンをv2からv3に上げました"
 description: "Astroのバージョンをv2からv3に上げたのでメモ"
-pubDate: "2023/09/17"
+pubDate: "2023-09-17"
 heroImage: "/placeholder-hero.webp"
 ---
 

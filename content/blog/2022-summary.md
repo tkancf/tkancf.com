@@ -1,7 +1,7 @@
 ---
 title: "2022年の振り返り"
 description: "2022年の振り返りと2023年の目標"
-pubDate: "2023/01/11"
+pubDate: "2023-01-11"
 heroImage: "/placeholder-social.jpeg"
 ---
 

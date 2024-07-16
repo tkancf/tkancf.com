@@ -1,7 +1,7 @@
 ---
 title: "Raycast のクリップボードヒストリーは Command+.で結合できる"
 description: "RaycastのクリップボードヒストリーはCommand+.で結合できるのが便利なので解説します。"
-pubDate: "2023/04/24"
+pubDate: "2023-04-24"
 heroImage: "/raycast-clipboard-history-merge-with-cmd-period/Raycast-clipboard-history.webp"
 ---
 

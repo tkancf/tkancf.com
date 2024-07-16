@@ -1,7 +1,7 @@
 ---
 title: "ブログをAstroへ以降しました"
 description: "最初のブログ投稿"
-pubDate: "2023/04/16"
+pubDate: "2023-04-16"
 heroImage: "/placeholder-hero.webp"
 ---
 

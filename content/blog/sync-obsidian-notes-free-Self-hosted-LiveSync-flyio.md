@@ -1,7 +1,7 @@
 ---
 title: "Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する"
 description: "Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する方法のメモです。"
-pubDate: "2023/12/17"
+pubDate: "2023-12-17"
 heroImage: "/placeholder-hero.webp"
 ---
 

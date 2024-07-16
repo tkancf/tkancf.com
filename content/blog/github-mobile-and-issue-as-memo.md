@@ -1,7 +1,7 @@
 ---
 title: "GitHub Mobile + GitHub issueでメモが良い感じ"
 description: "GitHub Mobile + GitHub issueでメモが良い感じにできているのでご紹介"
-pubDate: "2023/10/05"
+pubDate: "2023-10-05"
 heroImage: "/placeholder-hero.webp"
 ---
 

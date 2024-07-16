@@ -1,7 +1,7 @@
 ---
 title: "過去に別のブログで書いた技術記事まとめ"
 description: "過去に別のブログで書いた技術記事のまとめです。"
-pubDate: "2023/04/15"
+pubDate: "2023-04-15"
 heroImage: "/placeholder-hero.webp"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: '$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) を理解する'
 description: 'bashスクリプトを読んでいると頻出する $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) について完全に理解したのでメモ'
-pubDate: "2023/09/20"
+pubDate: "2023-09-20"
 heroImage: "/placeholder-hero.webp"
 ---
 

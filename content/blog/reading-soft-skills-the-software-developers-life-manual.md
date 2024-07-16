@@ -1,7 +1,7 @@
 ---
 title: "『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました"
 description: "『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を改めて読み返したので書評を書きます。"
-pubDate: "2023/04/30"
+pubDate: "2023-04-30"
 heroImage: "/placeholder-hero.webp"
 ---
 

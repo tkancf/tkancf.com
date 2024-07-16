@@ -1,7 +1,7 @@
 ---
 title: "Commandキーをtmuxのプレフィックスキーとして使う方法 on Iterm2"
 description: "tmuxのプレフィックスキーとして、MacのCommandキーを割り当てる方法を解説します。"
-pubDate: "2023/04/18"
+pubDate: "2023-04-18"
 heroImage: "/placeholder-hero.webp"
 ---
 

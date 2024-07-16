@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio Codeのリモートコンテナ機能を使ったDenoのFreshフレームワーク開発環境構築"
 description: "Visual Studio Codeのリモートコンテナ機能を使ったDenoのFreshフレームワーク開発環境構築"
-pubDate: "2022/09/20"
+pubDate: "2022-09-20"
 heroImage: "/placeholder-hero.webp"
 ---
 

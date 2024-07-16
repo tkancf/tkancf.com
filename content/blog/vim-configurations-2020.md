@@ -1,7 +1,7 @@
 ---
 title: "Vimの設定整理した - 2020年版"
 description: "Vimの設定整理したのでメモ"
-pubDate: "2020/10/15"
+pubDate: "2020-10-15"
 heroImage: "/placeholder-hero.webp"
 ---
 

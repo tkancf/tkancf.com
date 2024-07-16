@@ -1,7 +1,7 @@
 ---
 title: "2023年の振り返り"
 description: "2023年の振り返りブログです。"
-pubDate: "2023/12/31"
+pubDate: "2023-12-31"
 heroImage: "/2023-summary/2023-summary.webp"
 ---
 

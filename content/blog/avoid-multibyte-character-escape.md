@@ -1,7 +1,7 @@
 ---
 title: "Gitでマルチバイト文字列がエスケープされる対策"
 description: "Gitでマルチバイト文字列がエスケープされる対策についてメモ"
-pubDate: "2022/08/21"
+pubDate: "2022-08-21"
 heroImage: "/placeholder-hero.webp"
 ---
 

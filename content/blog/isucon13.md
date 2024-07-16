@@ -1,7 +1,7 @@
 ---
 title: "ISUCON13に参加しました。最終スコアは8654でした"
 description: "ISUCON13に参加しました。最終スコアは8654でした"
-pubDate: "2023/11/30"
+pubDate: "2023-11-30"
 heroImage: "/placeholder-hero.webp"
 ---
 

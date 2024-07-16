@@ -1,7 +1,7 @@
 ---
 title: "SvelteKitでカードゲームのプロキシメーカーを作りました"
 description: "Magic: The Gatheringのプロキシカード作成にいい感じのWebアプリがなかったので、SvelteKitで作りました。"
-pubDate: "2023/11/04"
+pubDate: "2023-11-04"
 heroImage: "https://proxy-maker.tkancf.com/input-example.jpg"
 ---
 

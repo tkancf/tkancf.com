@@ -1,7 +1,7 @@
 ---
 title: "iTerm2でベルの音を止める"
 description: "iTerm2でターミナル操作をしている時に、タブキーを連打するとポンポン鳴ってたので止めた"
-pubDate: "2023/09/17"
+pubDate: "2023-09-17"
 heroImage: "/mute-iterm2-bell/silent-bell.webp"
 ---
 
