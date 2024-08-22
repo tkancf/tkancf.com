@@ -1,7 +1,7 @@
 ---
 title: "Scrapについて"
 description: "Scrapについての説明"
-pubDate: "2024/03/12"
+pubDate: "2024-03-12"
 ---
 
 ## Scrap is 何？

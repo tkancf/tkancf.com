@@ -1,7 +1,7 @@
 ---
 title: "Neovimの設定を試してみる試行錯誤 2024"
 description: "Neovimの設定を試してみる試行錯誤 2024"
-pubDate: "2024/03/12"
+pubDate: "2024-03-12"
 ---
 
 Neovimを使ってみるのは、v0.1.x 以来なのでかなり浦島太郎  

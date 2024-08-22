@@ -1,7 +1,7 @@
 ---
 title: "org-modeを試してみた"
 description: "org-modeを試してみた"
-pubDate: "2024/03/26"
+pubDate: "2024-03-26"
 ---
 
 3つほど別のやり方をそれぞれ試してみた
