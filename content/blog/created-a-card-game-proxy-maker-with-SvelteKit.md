@@ -1,9 +1,16 @@
 ---
-title: "SvelteKitでカードゲームのプロキシメーカーを作りました"
+id: created-a-card-game-proxy-maker-with-SvelteKit
+aliases:
+  - SvelteKitでカードゲームのプロキシメーカーを作りました
+tags:
+  - Svelte
+created: 2023-11-04 17:00
 description: "Magic: The Gatheringのプロキシカード作成にいい感じのWebアプリがなかったので、SvelteKitで作りました。"
-pubDate: "2023-11-04"
-heroImage: "https://proxy-maker.tkancf.com/input-example.jpg"
+title: SvelteKitでカードゲームのプロキシメーカーを作りました
+updated: 2025-02-06 17:00
 ---
+
+# SvelteKitでカードゲームのプロキシメーカーを作りました
 
 ## 概要
 

@@ -1,9 +1,16 @@
 ---
-title: "『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました"
-description: "『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を改めて読み返したので書評を書きます。"
-pubDate: "2023-04-30"
-heroImage: "/placeholder-hero.webp"
+id: reading-soft-skills-the-software-developers-life-manual
+aliases:
+  - 『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました
+tags:
+  - 読書
+created: 2023-04-30 17:01
+description: 『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を改めて読み返しました
+title: 『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました
+updated: 2025-02-06 17:01
 ---
+
+# 『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました
 
 ## はじめに
 

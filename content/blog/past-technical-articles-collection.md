@@ -1,9 +1,16 @@
 ---
-title: "過去に別のブログで書いた技術記事まとめ"
-description: "過去に別のブログで書いた技術記事のまとめです。"
-pubDate: "2023-04-15"
-heroImage: "/placeholder-hero.webp"
+id: past-technical-articles-collection
+aliases:
+  - 過去に別のブログで書いた技術記事まとめ
+tags:
+  - ブログ
+created: 2023-04-15 17:01
+description: 過去に別のブログで書いた技術記事のまとめです。
+title: 過去に別のブログで書いた技術記事まとめ
+updated: 2025-02-06 17:01
 ---
+
+# 過去に別のブログで書いた技術記事まとめ
 
 ## 概要
 

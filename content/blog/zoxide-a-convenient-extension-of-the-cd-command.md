@@ -1,9 +1,16 @@
 ---
-title: "cdコマンドを拡張したzoxideコマンドが便利"
-description: "cdコマンドを賢くしたようなコマンドであるzoxideコマンドを試しに使ってみたところ、よく使うディレクトリへの移動が楽になって便利を感じているので、紹介します。"
-pubDate: "2023-06-01"
-heroImage: "/placeholder-hero.webp"
+id: zoxide-a-convenient-extension-of-the-cd-command
+aliases:
+  - cdコマンドを拡張したzoxideコマンドが便利
+tags:
+  - CLI
+created: 2023-06-01 17:02
+description: cdコマンドを賢くしたようなコマンドであるzoxideコマンドを試しに使ってみたところ、よく使うディレクトリへの移動が楽になって便利を感じているので、紹介します。
+title: cdコマンドを拡張したzoxideコマンドが便利
+updated: 2025-02-06 17:02
 ---
+
+# cdコマンドを拡張したzoxideコマンドが便利
 
 ## 概要
 

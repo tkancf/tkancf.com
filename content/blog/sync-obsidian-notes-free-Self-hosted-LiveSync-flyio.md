@@ -1,9 +1,17 @@
 ---
-title: "Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する"
-description: "Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する方法のメモです。"
-pubDate: "2023-12-17"
-heroImage: "/placeholder-hero.webp"
+id: sync-obsidian-notes-free-Self-hosted-LiveSync-flyio
+aliases:
+  - Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する
+tags:
+  - Obsidian
+  - メモ
+created: 2023-12-17 17:01
+description: Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する方法のメモです。
+title: Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する
+updated: 2025-02-06 17:01
 ---
+
+# Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する
 
 ## はじめに
 

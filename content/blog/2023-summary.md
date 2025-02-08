@@ -1,11 +1,18 @@
 ---
-title: "2023年の振り返り"
-description: "2023年の振り返りブログです。"
-pubDate: "2023-12-31"
-heroImage: "/2023-summary/2023-summary.webp"
+id: 2023-summary
+aliases:
+  - 2023年の振り返り
+tags:
+  - 振り返り
+created: 2023-12-31 16:59
+description: 2023年の振り返りブログです。
+title: 2023年の振り返り
+updated: 2025-02-06 16:59
 ---
 
-![Title Image](/2023-summary/2023-summary.webp)
+# 2023年の振り返り
+
+![Title Image](https://i.gyazo.com/c1486102d84730f1d1a744ac70455841.png)
 
 年末なので、今年1年を振り返ってみます。٩( ᐛ )و
 
@@ -42,10 +49,10 @@ heroImage: "/2023-summary/2023-summary.webp"
 GitHubは例年特に何もしていないのでまっさらなんですが、今年は以前のブログで触れた通り、ブログの記事管理をAstroに変更したり、Cloudflare WorkersでLINE botの作成などを行いそれなりに草が生えました。
 
 下記が2022年の草
-![GitHub Contribution 2022](/2023-summary/2022-github-activity.webp)
+![GitHub Contribution 2022](https://i.gyazo.com/7da2fbabdbcf2d5857bb12f1d8d7cd47.png)
 
 そして、これが今年(2023年)の草です。
-![GitHub Contribution 2023](/2023-summary/2023-github-activity.webp)
+![GitHub Contribution 2023](https://i.gyazo.com/17f0aeabdd6fc5068352a875e307647e.png)
 
 4月にブログを移行してからしばらくは、ブログの記事を書くためにコミットできていましたが、5〜10月にほぼ何もできませんでした。  
 10月中頃に結婚式が終わって一段落して以降の10月末頃から、またコミットできるようになりました。来年は年間通してコミットし続けられると良いですね。

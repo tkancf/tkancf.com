@@ -1,13 +1,20 @@
 ---
-title: "tofu65キーボードを買いました"
-description: "tofu65という、いい感じのキーボードを買ったのでレビューします。ホットスワップ対応でガスケットマウントで65%かつVIAに対応しているかわいいキーボードなので高かったですが買ってよかったです。"
-pubDate: "2023-11-22"
-heroImage: "/tofu65-keyboard-review/tofu65.jpg"
+id: tofu65-keyboard-review
+aliases:
+  - tofu65キーボードを買いました
+tags:
+  - キーボード
+created: 2023-11-22 17:01
+description: tofu65という、いい感じのキーボードを買ったのでレビューします。ホットスワップ対応でガスケットマウントで65%かつVIAに対応しているかわいいキーボードなので高かったですが買ってよかったです。
+title: tofu65キーボードを買いました
+updated: 2025-02-06 17:01
 ---
+
+# tofu65キーボードを買いました
 
 買いました！！！わいわい
 
-![Title Image](/tofu65-keyboard-review/tofu65.jpg)
+![Title Image](https://gyazo.com/a2237b46c9e554b86c95dd296372cbac.png)
 
 ## はじめに
 

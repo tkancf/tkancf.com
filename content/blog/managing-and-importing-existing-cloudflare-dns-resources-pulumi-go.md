@@ -1,9 +1,17 @@
 ---
-title: "Pulumi+GoでCloudflareのDNS既存リソースを管理してみる"
-description: "CloudflareのDNS設定をPulumiを利用して、Goのコードで管理してみたのでメモ。既存リソースのインポートも試した。"
-pubDate: "2023-09-04"
-heroImage: "/placeholder-hero.webp"
+id: managing-and-importing-existing-cloudflare-dns-resources-pulumi-go
+aliases:
+  - Pulumi+GoでCloudflareのDNS既存リソースを管理してみる
+tags:
+  - Go
+  - Pulumi
+created: 2023-09-04 17:01
+description: CloudflareのDNS設定をPulumiを利用して、Goのコードで管理してみたのでメモ。既存リソースのインポートも試した。
+title: Pulumi+GoでCloudflareのDNS既存リソースを管理してみる
+updated: 2025-02-06 17:01
 ---
+
+# Pulumi+GoでCloudflareのDNS既存リソースを管理してみる
 
 最近Pulumiについてちょくちょく言及されているのを見て、気になったので試してみる。
 まずは簡単な所から、Cloudflareで管理しているドメインのDNS設定を整理したかったので、そこをPulumiでコード管理にしてみた。
@@ -108,7 +116,7 @@ go get github.com/pulumi/pulumi-cloudflare/sdk/v5
 CloudflareのAPIトークンを取得する。
 Cloudflareにログインし、`Get your API token`からTokenを作成する。今回は、`Zone:Read, DNS:Read, DNS:Edit`権限があればOK。
 
-![Cloudflare API TOKEN取得 参考画像](/managing-and-importing-existing-cloudflare-dns-resources-pulumi-go/Cloudflare-API-get-token.webp)
+![Cloudflare API TOKEN取得 参考画像](https://gyazo.com/d88ff805b35e61d709e1ab29d6fbf19a.png)
 
 ## 取得したAPIトークンを保存する
 

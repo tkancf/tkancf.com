@@ -1,9 +1,17 @@
 ---
-title: "Gitでマルチバイト文字列がエスケープされる対策"
-description: "Gitでマルチバイト文字列がエスケープされる対策についてメモ"
-pubDate: "2022-08-21"
-heroImage: "/placeholder-hero.webp"
+id: avoid-multibyte-character-escape
+aliases:
+  - Gitでマルチバイト文字列がエスケープされる対策
+tags:
+  - Git
+  - CLI
+created: 2022-08-21 17:00
+description: Gitでマルチバイト文字列がエスケープされる対策についてメモ
+title: Gitでマルチバイト文字列がエスケープされる対策
+updated: 2025-02-06 17:00
 ---
+
+# Gitでマルチバイト文字列がエスケープされる対策
 
 デフォルトだとGitでマルチバイト文字列がエスケープされるのでその対策方法のメモです。
 

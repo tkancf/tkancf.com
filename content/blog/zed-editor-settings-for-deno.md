@@ -2,12 +2,10 @@
 id: "20240908094229"
 aliases:
   - Zedエディタでdenoのスクリプトを書くときの設定
-tags: []
+tags:
+  - Zed
 created: 2024-09-08 09:42
 description: Zedエディタでdenoのスクリプトを書くときの設定
-heroImage: /placeholder-hero.webp
-pubDate: "2024-09-08"
-publishTo: tkancf.com/blog/zed-editor-settings-for-deno
 title: Zedエディタでdenoのスクリプトを書くときの設定
 updated: 2024-09-08 09:42
 ---

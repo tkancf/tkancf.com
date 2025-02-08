@@ -1,9 +1,16 @@
 ---
-title: "Astroのバージョンをv2からv3に上げました"
-description: "Astroのバージョンをv2からv3に上げたのでメモ"
-pubDate: "2023-09-17"
-heroImage: "/placeholder-hero.webp"
+id: update-astro-v2-to-v3
+aliases:
+  - Astroのバージョンをv2からv3に上げました
+tags:
+  - Astro
+created: 2023-09-17 17:02
+description: Astroのバージョンをv2からv3に上げたのでメモ
+title: Astroのバージョンをv2からv3に上げました
+updated: 2025-02-06 17:02
 ---
+
+# Astroのバージョンをv2からv3に上げました
 
 本ブログのビルドツールである[Astro](https://astro.build/)のバージョンをv2からv3に上げました。
 

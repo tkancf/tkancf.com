@@ -1,9 +1,17 @@
 ---
-title: "CloudFlare PagesでホストしているAstroブログでリダイレクト"
-description: "CloudFlare PagesでホストしているAstro.jsのブログで、/feedへのアクセスに/rss.xmlの内容を返す必要があり、CloudFlare Pagesのリダイレクト設定を利用してやってみたのでそのメモです。"
-pubDate: "2023-12-07"
-heroImage: "/placeholder-hero.webp"
+id: setting-up-redirects-astro-cloudflare-pages
+aliases:
+  - CloudFlare PagesでホストしているAstroブログでリダイレクト
+tags:
+  - Astro
+  - CloudFlare
+created: 2023-12-07 17:01
+description: CloudFlare PagesでホストしているAstro.jsのブログで、/feedへのアクセスに/rss.xmlの内容を返す必要があり、CloudFlare Pagesのリダイレクト設定を利用してやってみたのでそのメモです。
+title: CloudFlare PagesでホストしているAstroブログでリダイレクト
+updated: 2025-02-06 17:01
 ---
+
+# CloudFlare PagesでホストしているAstroブログでリダイレクト
 
 ## 解決したかった課題
 

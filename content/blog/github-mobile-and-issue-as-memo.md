@@ -1,9 +1,16 @@
 ---
-title: "GitHub Mobile + GitHub issueでメモが良い感じ"
-description: "GitHub Mobile + GitHub issueでメモが良い感じにできているのでご紹介"
-pubDate: "2023-10-05"
-heroImage: "/placeholder-hero.webp"
+id: github-mobile-and-issue-as-memo
+aliases:
+  - GitHub Mobile + GitHub issueでメモが良い感じ
+tags:
+  - メモ
+created: 2023-10-05 17:01
+description: GitHub Mobile + GitHub issueでメモが良い感じにできているのでご紹介
+title: GitHub Mobile + GitHub issueでメモが良い感じ
+updated: 2025-02-06 17:01
 ---
+
+# GitHub Mobile + GitHub issueでメモが良い感じ
 
 ## はじめに
 
@@ -15,7 +22,7 @@ heroImage: "/placeholder-hero.webp"
 
 こんな感じの画面でissueを更新できる
 
-![GitHub MobileのUIキャプチャ画像](/2023-10-05/github-mobile-ui.webp)
+![GitHub MobileのUIキャプチャ画像](https://i.gyazo.com/9469839a0c1ed41fb5a5e8047e022c47.png)
 
 画像アップロード、リスト、ヘッダなどMarkdown記法のショートカットなどもあってかなり使いやすい。  
 スマホアプリのMarkdownエディタとしてもよく出来ていると思う。

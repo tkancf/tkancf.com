@@ -1,16 +1,23 @@
 ---
-title: "VimのCTRL-K <Space>を理解する"
-description: "先日、Vim上で何かの拍子に `CTRL-K <Space> <Space>` と入力してしまいました。これにより、見た目上は半角スペースが入力されました。ここで入力された半角スペースはどうも本物の半角スペースとは別物のようなので、調べてみました。"
-pubDate: "2023-12-02"
-heroImage: "/understanding-vim-ctrl-k-space/ctrk-k-space-w.webp"
+id: understanding-vim-ctrl-k-space
+aliases:
+  - VimのCTRL-K <Space>を理解する
+tags:
+  - Vim
+created: 2023-12-02 17:01
+description: 先日、Vim上で何かの拍子に `CTRL-K <Space> <Space>` と入力してしまいました。これにより、見た目上は半角スペースが入力されました。ここで入力された半角スペースはどうも本物の半角スペースとは別物のようなので、調べてみました。
+title: VimのCTRL-K <Space>を理解する
+updated: 2025-02-06 17:01
 ---
+
+# VimのCTRL-K <Space>を理解する
 
 ## はじめに
 
 先日、Vim上で何かの拍子に `CTRL-K <Space> <Space>` と入力してしまいました。これにより、見た目上は半角スペースが入力されました。  
 その時はあまり気にしていなかったのですが、ここで入力された半角スペースはどうも本物の半角スペースとは別物であることに気づきました。半角スペースで検索をしてもその半角スペースのような何か（以降、「半角スペースもどき」と記載します）はハイライトされません。
 
-![半角スペースで検索をしてハイライトしている画像](/understanding-vim-ctrl-k-space/space-highlight.webp)
+![半角スペースで検索をしてハイライトしている画像](https://gyazo.com/9a40baf1c8633ffab687ca08950643f0.png)
 
 上記画像の中の、 「Hello World!!」の「Hello」と「World!!」の間に半角スペースもどきがいます。見た目場は半角スペースですが、検索してもハイライトされていません。
 なんじゃこれ？？と疑問に思ったので、調べてみました。
@@ -94,7 +101,7 @@ w = 2進数: 01110111
 
 つまり、 `CTRL-K <Space> w`と入力すると「÷」が入力されるはずです。やってみます。
 
-![「÷」が入力された画像](/understanding-vim-ctrl-k-space/ctrk-k-space-w.webp)
+![「÷」が入力された画像](https://gyazo.com/40b4dc3cff3c79d9bd6e43c8aac26e8c.png)
 確かに「÷」が入力されました。認識はあってそうです。
 
 ## おわりに
