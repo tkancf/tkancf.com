@@ -1,9 +1,16 @@
 ---
-title: "ブログをAstroへ以降しました"
-description: "最初のブログ投稿"
-pubDate: "2023-04-16"
-heroImage: "/placeholder-hero.webp"
+id: first-post
+aliases:
+  - ブログをAstroへ以降しました
+tags:
+  - ブログ
+  - Astro
+created: 2023-04-16 17:01
+title: ブログをAstroへ以降しました
+updated: 2025-02-06 17:01
 ---
+
+# ブログをAstroへ以降しました
 
 AstroとCloudflare Pagesを利用して、ブログを作成しました。  
 今までは[はてなブログ](https://tkancf.hateblo.jp)で書いていましたが、最近の興味や技術動向に合わせてブログのプラットフォームを変更することにしました。

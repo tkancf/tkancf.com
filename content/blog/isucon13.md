@@ -1,9 +1,16 @@
 ---
-title: "ISUCON13に参加しました。最終スコアは8654でした"
-description: "ISUCON13に参加しました。最終スコアは8654でした"
-pubDate: "2023-11-30"
-heroImage: "/placeholder-hero.webp"
+id: isucon13
+aliases:
+  - ISUCON13に参加しました。最終スコアは8654でした
+tags:
+  - ISUCON
+created: 2023-11-30 17:01
+description: ISUCON13に参加しました。最終スコアは8654でした
+title: ISUCON13に参加しました。最終スコアは8654でした
+updated: 2025-02-06 17:01
 ---
+
+# ISUCON13に参加しました。最終スコアは8654でした
 
 ISUCON13に参加しました。最終スコアは8,654でした。 (大敗北)
 出来たこと、出来なかったこと、反省点などあるので振り返ります。

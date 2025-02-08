@@ -1,9 +1,16 @@
 ---
-title: "Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい"
-description: "Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい"
-pubDate: "2022-08-21"
-heroImage: "/placeholder-hero.webp"
+id: svelte-document-interface-using-onmount
+aliases:
+  - Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい
+tags:
+  - Svelte
+created: 2022-08-21 17:01
+description: Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい
+title: Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい
+updated: 2025-02-06 17:01
 ---
+
+# Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい
 
 **※注意!! 動作検証はしてますが、勉強不足により、この方法がベストなのか分かってないです。参考程度にお願いいたします。**
 

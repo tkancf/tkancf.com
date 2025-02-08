@@ -1,9 +1,17 @@
 ---
-title: "AstroとCloudflare Pagesでブログを作成しました"
-description: "AstroとCloudflare Pagesでブログを作成しました。選定理由と公開までに実施したことを解説します。"
-pubDate: "2023-04-17"
-heroImage: "/placeholder-hero.webp"
+id: astro-and-cloudflare-pages-blog-creation
+aliases:
+  - AstroとCloudflare Pagesでブログを作成しました
+tags:
+  - Astro
+  - Cloudflare
+created: 2023-04-17 17:00
+description: AstroとCloudflare Pagesでブログを作成しました。選定理由と公開までに実施したことを解説します。
+title: AstroとCloudflare Pagesでブログを作成しました
+updated: 2025-02-06 17:00
 ---
+
+# AstroとCloudflare Pagesでブログを作成しました
 
 [Astro](https://astro.build/) を利用して[ブログ](https://tkancf.com)を作成しました。ホスト先には Cloudflare Pages を利用しています。
 
@@ -146,11 +154,11 @@ jpeg 画像が重く PageSpeed Insights のパフォーマンスが 93 点にな
 https://github.com/tkancf/tkancf.com/commit/591fdc4d0df85b532434ce396ec123a726ee46dc
 
 変換前の PageSpeed Insights の点数
-![PageSpeed Insightsで93点の画像](/astro-and-cloudflare-pages-blog-creation/PageSpeed-Insights-93.webp)
+![PageSpeed Insightsで93点の画像](https://i.gyazo.com/4c8afae8ddc1a5ad2367aab37455d884.png)
 
 変換後の PageSpeed Insights の点数
 
-![PageSpeed Insightsで93点の画像](/astro-and-cloudflare-pages-blog-creation/PageSpeed-Insights-100.webp)
+![PageSpeed Insightsで100点の画像](https://i.gyazo.com/2f33199c706919774595dfb264e32abd.png)
 
 変換後は無事 100 点になりました。
 

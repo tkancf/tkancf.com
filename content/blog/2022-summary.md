@@ -1,9 +1,16 @@
 ---
-title: "2022年の振り返り"
-description: "2022年の振り返りと2023年の目標"
-pubDate: "2023-01-11"
-heroImage: "/placeholder-social.jpeg"
+id: 2022-summary
+aliases:
+  - 2022年の振り返り
+tags:
+  - 振り返り
+created: 2023-01-11 12:41
+description: 2022年の振り返りと2023年の目標
+title: 2022年の振り返り
+updated: 2025-02-06 12:41
 ---
+
+# 2022年の振り返り
 
 年始すぐに書こうと思っていたのに大分経ってしまいましたが、今書かないと時期を逃しそうなので慌てて書きます。
 

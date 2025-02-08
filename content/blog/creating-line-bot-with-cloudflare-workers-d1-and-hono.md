@@ -1,9 +1,17 @@
 ---
-title: "CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました"
-description: "CloudFlare Workers、CloudFlare D1、Hono.jsを利用して、シンプルなLINE botを作成しました。作成時の流れ、ハマった事、気づいた事などをまとめておきます。"
-pubDate: "2023-05-10"
-heroImage: "/placeholder-hero.webp"
+id: creating-line-bot-with-cloudflare-workers-d1-and-hono
+aliases:
+  - CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました
+tags:
+  - Hono
+  - CloudFlare
+created: 2023-05-10 17:00
+description: CloudFlare Workers、CloudFlare D1、Hono.jsを利用して、シンプルなLINE botを作成しました。作成時の流れ、ハマった事、気づいた事などをまとめておきます。
+title: CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました
+updated: 2025-02-06 17:00
 ---
+
+# CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました
 
 ## はじめに
 
@@ -89,7 +97,7 @@ npm run deploy
 デプロイ後、CloudFlare WorkersにデプロイされたWorkerのURLをLINE DevelopersコンソールのWebhook URLに設定します。
 URLの形式は `https://XXXX.workers.dev/api/webhook` になります。
 また、今回作りたいLINE botはグループトークでの利用を想定しているので、LINE DevelopersコンソールのWebhookの利用設定で「グループ・複数人トークへの参加を許可」にチェックを入れておきます。
-![LINE DevelopersコンソールのWebhookグループへの参加を許可する設定画像](/creating-line-bot-with-cloudflare-workers-d1-and-hono/LINE-DeveloperConsole-group-setting.webp)
+![LINE DevelopersコンソールのWebhookグループへの参加を許可する設定画像](https://i.gyazo.com/ae48b32f51514e92778bfe1671b57a61.png)
 
 設定が完了したら、CloudFlare WorkersのLogsタブ内からリアルタイムでログを確認できるので、確認しながらLINEでメッセージを投げてみます。
 メッセージを送った際にリアルタイムログが更新されれば、LINEとCloudFlare Workersの連携は成功しています。

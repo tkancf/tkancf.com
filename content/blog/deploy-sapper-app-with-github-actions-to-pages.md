@@ -1,9 +1,19 @@
 ---
-title: "Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する"
-description: "Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法についてハマりどころがあったのでメモ"
-pubDate: "2022-08-21"
-heroImage: "/placeholder-hero.webp"
+id: deploy-sapper-app-with-github-actions-to-pages
+aliases:
+  - Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する
+tags:
+  - Sapper
+  - svelte
+  - GitHub Actions
+  - GitHub Pages
+created: 2022-08-21 17:00
+description: Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法についてハマりどころがあったのでメモ
+title: Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する
+updated: 2025-02-06 17:00
 ---
+
+# Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する
 
 ## 概要
 

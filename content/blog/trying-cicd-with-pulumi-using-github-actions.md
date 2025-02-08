@@ -1,9 +1,16 @@
 ---
-title: "GitHub ActionsでPulumiをCI/CDしてみた"
-description: "Pulumiの公式からGitHub Actionsが公開されていたので、こちらを利用してGitHubのmainブランチへpushしたら自動でデプロイされるように設定してみました。設定方法のメモです。"
-pubDate: "2023-09-15"
-heroImage: "/trying-cicd-with-pulumi-using-github-actions/Pulumi-access-token.webp"
+id: trying-cicd-with-pulumi-using-github-actions
+aliases:
+  - GitHub ActionsでPulumiをCI/CDしてみた
+tags:
+  - Pulumi
+created: 2023-09-15 17:01
+description: Pulumiの公式からGitHub Actionsが公開されていたので、こちらを利用してGitHubのmainブランチへpushしたら自動でデプロイされるように設定してみました。設定方法のメモです。
+title: GitHub ActionsでPulumiをCI/CDしてみた
+updated: 2025-02-06 17:01
 ---
+
+# GitHub ActionsでPulumiをCI/CDしてみた
 
 ## はじめに
 
@@ -52,13 +59,13 @@ jobs:
 
 [Pulumi Cloud](https://app.pulumi.com/)へアクセスして、アクセストークンを取得します。
 
-![Pulumi Cloudのアクセストークン取得画面](/trying-cicd-with-pulumi-using-github-actions/Pulumi-access-token.webp)
+![Pulumi Cloudのアクセストークン取得画面](https://gyazo.com/55f273ca3bea77c73be1e71d3966cbdd.png)
 
 ### アクセストークンをGitHub ActionsのSecretsに登録
 
 取得したアクセストークンをGitHub ActionsのSecretsに登録します。
 
-![GitHub Actionsの設定画面](/trying-cicd-with-pulumi-using-github-actions/GitHub-Actions-setting.webp)
+![GitHub Actionsの設定画面](https://gyazo.com/3ba7f7e31b5050ce057b6331e32fbf11.png)
 
 ## おわりに
 

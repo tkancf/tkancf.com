@@ -1,8 +1,18 @@
 ---
-title: "ブログをAstroからHonoのSSGに移行しました"
-description: "このブログの生成をAstroからHonoのSSG機能での自作に移行しました。移行にあたり知見がいくつか溜まったので、メモとして公開します。"
-pubDate: "2024-03-04"
+id: blog-migration-astro-to-hono
+aliases:
+  - ブログをAstroからHonoのSSGに移行しました
+tags:
+  - ブログ
+  - Hono
+  - Astro
+created: 2024-03-04 17:00
+description: このブログの生成をAstroからHonoのSSG機能での自作に移行しました。移行にあたり知見がいくつか溜まったので、メモとして公開します。
+title: ブログをAstroからHonoのSSGに移行しました
+updated: 2025-02-06 17:00
 ---
+
+# ブログをAstroからHonoのSSGに移行しました
 
 このブログは元々Astroを使って生成していました。
 
