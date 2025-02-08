@@ -11,7 +11,7 @@ updated: 2025-02-06 12:38
 
 # HOME
 
-- [blog](/blog)
+- [ブログ](20250208234715.md)
 - [About me](about.md)
 
 ## 外部リンク
