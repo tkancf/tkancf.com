@@ -1,5 +1,5 @@
 ---
-id: "20250208234715"
+id: blog-index
 aliases:
   - ブログ
 tags:
