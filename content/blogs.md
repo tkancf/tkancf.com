@@ -4,7 +4,7 @@ aliases:
   - ブログ
 tags:
   - index
-created: 2025-02-08 23:47
+created: 1000-01-01 00:00
 title: ブログ
 updated: 2025-02-08 23:47
 ---
