@@ -1,5 +1,5 @@
 ---
-id: blog-index
+id: blogs
 aliases:
   - ブログ
 tags:
