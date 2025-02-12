@@ -11,13 +11,12 @@ updated: 2025-02-08 23:47
 
 # ブログ
 
-- [全記事一覧](/blog)
-
 ## 技術系
 
 - Vim
     - [Vimの設定整理した - 2020年版](blog/vim-configurations-2020.md)
     - [VimのCTRL-K <Space>を理解する](blog/understanding-vim-ctrl-k-space.md)
+    - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
 - Vim以外のエディタ
     - [Zedエディタでdenoのスクリプトを書くときの設定](blog/zed-editor-settings-for-deno.md)
     - [Emacsに入門した 2024年](blog/getting-started-emacs-2024.md)
@@ -55,11 +54,9 @@ updated: 2025-02-08 23:47
 
 ## メモ管理・PKM
 
-- [Obsidianメモのフォルダ分けをやめて全部1フォルダにまとめてみた](blog/flat-obsidian-is-good.md)
 - [GitHub Mobile + GitHub issueでメモが良い感じ](blog/github-mobile-and-issue-as-memo.md)
 - [Obsidianメモのフォルダ分けをやめて全部1フォルダにまとめてみた](blog/flat-obsidian-is-good.md)
 - [Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](blog/sync-obsidian-notes-free-Self-hosted-LiveSync-flyio.md)
-- [GitHub Mobile + GitHub issueでメモが良い感じ](blog/github-mobile-and-issue-as-memo.md)
 
 ## 読書
 
@@ -75,4 +72,6 @@ updated: 2025-02-08 23:47
 
 - [tofu65キーボードを買いました](blog/tofu65-keyboard-review.md)
 - [過去に別のブログで書いた技術記事まとめ](blog/past-technical-articles-collection.md)
+
+## [全記事一覧](/blog)
 
