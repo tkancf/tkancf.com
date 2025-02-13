@@ -3,13 +3,15 @@ id: index
 aliases:
   - HOME
 tags: []
-created: 2025-02-06 12:27
+created: 2022-02-06 12:27
 description: tkancf.comのトップページ
 title: HOME
 updated: 2025-02-06 12:38
 ---
 
 # HOME
+
+## コンテンツ
 
 - [ブログ](blogs.md)
 - [About me](about.md)

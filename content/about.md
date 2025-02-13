@@ -4,7 +4,7 @@ aliases:
   - About
   - About me
 tags: []
-created: 2025-02-06 15:26
+created: 2022-02-06 15:26
 title: About me
 updated: 2025-02-06 15:26
 ---
