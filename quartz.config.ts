@@ -21,7 +21,6 @@ const config: QuartzConfig = {
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
-      fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
@@ -63,6 +62,7 @@ const config: QuartzConfig = {
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
+          dark: "github-dark"
         },
         keepBackground: false,
       }),
