@@ -13,10 +13,11 @@ updated: 2025-02-08 23:47
 
 ## 技術系
 
-- Vim
+- Vim・Neovim
     - [Vimの設定整理した - 2020年版](blog/vim-configurations-2020.md)
     - [VimのCTRL-K <Space>を理解する](blog/understanding-vim-ctrl-k-space.md)
     - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
+    - [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
 - Vim以外のエディタ
     - [Zedエディタでdenoのスクリプトを書くときの設定](blog/zed-editor-settings-for-deno.md)
     - [Emacsに入門した 2024年](blog/getting-started-emacs-2024.md)
@@ -75,7 +76,4 @@ updated: 2025-02-08 23:47
 
 ## [全記事一覧](/blog)
 
-## WIP
-
-- [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
 
