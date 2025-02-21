@@ -52,6 +52,7 @@ updated: 2025-02-08 23:47
 - [ブログをAstroへ以降しました](blog/first-post.md)
 - [AstroとCloudflare Pagesでブログを作成しました](blog/astro-and-cloudflare-pages-blog-creation.md)
 - [Astroのバージョンをv2からv3に上げました](blog/update-astro-v2-to-v3.md)
+- [このサイトでllms-full.txtを出力するようにした](blog/20250221222552.md)
 
 ## メモ管理・PKM
 
@@ -76,4 +77,5 @@ updated: 2025-02-08 23:47
 
 ## [全記事一覧](/blog)
 
+## WIP
 
