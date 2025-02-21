@@ -88,6 +88,13 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
     return content.replace(yamlPattern, '')
   }
 
+  // ファイル書き込み用のヘルパー関数
+  async function writeContentFile(outputPath: string, content: string) {
+    // 出力ディレクトリが存在することを確認
+    await fs.promises.mkdir(path.dirname(outputPath), { recursive: true })
+    await fs.promises.writeFile(outputPath, content, 'utf-8')
+  }
+
   // Add concatenation of markdown files
   perf.addEvent("concatenate")
   const concatenatedContent = filteredContent.map(([_tree, vfile]) => {
@@ -96,9 +103,13 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   }).join('')
 
   // Write concatenated content to llms-full.txt
-  const outputPath = path.join(output, 'llms-full.txt')
-  await fs.promises.writeFile(outputPath, concatenatedContent, 'utf-8')
-  console.log(`Created consolidated file at \`${outputPath}\` in ${perf.timeSince("concatenate")}`)
+  const outputPath = path.join(argv.output, 'llms-full.txt')
+  try {
+    await writeContentFile(outputPath, concatenatedContent)
+    console.log(`Updated consolidated file at \`${outputPath}\` in ${perf.timeSince("rebuild")}`)
+  } catch (err) {
+    console.error(`Error writing consolidated file: ${err}`)
+  }
 
   const dependencies: Record<string, DepGraph<FilePath> | null> = {}
 
