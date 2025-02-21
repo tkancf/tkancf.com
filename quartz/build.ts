@@ -1,6 +1,7 @@
 import sourceMapSupport from "source-map-support"
 sourceMapSupport.install(options)
 import path from "path"
+import fs from "fs"
 import { PerfTimer } from "./util/perf"
 import { rimraf } from "rimraf"
 import { GlobbyFilterFunction, isGitIgnored } from "globby"
@@ -80,6 +81,24 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   const parsedFiles = await parseMarkdown(ctx, filePaths)
   const filteredContent = filterContent(ctx, parsedFiles)
+ 
+  function removeYAMLHeader(content: string): string {
+    // YAMLヘッダのパターン: 文書の先頭の --- で始まり --- で終わる部分
+    const yamlPattern = /^---\r?\n[\s\S]*?\r?\n---\r?\n/
+    return content.replace(yamlPattern, '')
+  }
+
+  // Add concatenation of markdown files
+  perf.addEvent("concatenate")
+  const concatenatedContent = filteredContent.map(([_tree, vfile]) => {
+    const content = removeYAMLHeader(vfile.toString())
+    return `${content}\n\n`
+  }).join('')
+
+  // Write concatenated content to llms-full.txt
+  const outputPath = path.join(output, 'llms-full.txt')
+  await fs.promises.writeFile(outputPath, concatenatedContent, 'utf-8')
+  console.log(`Created consolidated file at \`${outputPath}\` in ${perf.timeSince("concatenate")}`)
 
   const dependencies: Record<string, DepGraph<FilePath> | null> = {}
 
