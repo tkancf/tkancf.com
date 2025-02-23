@@ -6,7 +6,7 @@ tags:
   - index
 created: 1000-01-01 00:00
 title: ブログ
-updated: 2025-02-08 23:47
+updated: 2025-02-21 23:21
 ---
 
 # ブログ
@@ -38,6 +38,7 @@ updated: 2025-02-08 23:47
     - [Raycast のクリップボードヒストリーは Command+.で結合できる](blog/raycast-clipboard-history-merge-with-cmd-period.md)
     - [cdコマンドを拡張したzoxideコマンドが便利](blog/zoxide-a-convenient-extension-of-the-cd-command.md)
     - [Gitでマルチバイト文字列がエスケープされる対策](blog/avoid-multibyte-character-escape.md)
+    - [homebrew管理のアプリを整理した](blog/20250223101856.md)
 - Pulumi
     - [GitHub ActionsでPulumiをCI・CDしてみた](blog/trying-cicd-with-pulumi-using-github-actions.md)
     - [Pulumi+GoでCloudflareのDNS既存リソースを管理してみる](blog/managing-and-importing-existing-cloudflare-dns-resources-pulumi-go.md)
