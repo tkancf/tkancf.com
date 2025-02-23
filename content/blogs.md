@@ -39,6 +39,7 @@ updated: 2025-02-21 23:21
     - [cdコマンドを拡張したzoxideコマンドが便利](blog/zoxide-a-convenient-extension-of-the-cd-command.md)
     - [Gitでマルチバイト文字列がエスケープされる対策](blog/avoid-multibyte-character-escape.md)
     - [homebrew管理のアプリを整理した](blog/20250223101856.md)
+    - [curlでJSONを簡単に送れるようになったらしいので試した](blog/20250222161644.md)
 - Pulumi
     - [GitHub ActionsでPulumiをCI・CDしてみた](blog/trying-cicd-with-pulumi-using-github-actions.md)
     - [Pulumi+GoでCloudflareのDNS既存リソースを管理してみる](blog/managing-and-importing-existing-cloudflare-dns-resources-pulumi-go.md)
