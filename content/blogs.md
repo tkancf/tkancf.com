@@ -4,12 +4,14 @@ aliases:
   - ブログ
 tags:
   - index
-created: 1000-01-01 00:00
+created: 2020-10-15 00:00
 title: ブログ
 updated: 2025-02-21 23:21
 ---
 
 # ブログ
+
+[全記事一覧](/blog)
 
 ## 技術系
 
@@ -18,6 +20,7 @@ updated: 2025-02-21 23:21
     - [VimのCTRL-K <Space>を理解する](blog/understanding-vim-ctrl-k-space.md)
     - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
     - [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
+    - [epwalsh/obsidian.nvimの更新が止まって、forkされたobsidian-nvim/obsidian.nvimの更新が活発になってた](blog/20250306081644.md)
 - Vim以外のエディタ
     - [Zedエディタでdenoのスクリプトを書くときの設定](blog/zed-editor-settings-for-deno.md)
     - [Emacsに入門した 2024年](blog/getting-started-emacs-2024.md)
@@ -76,8 +79,4 @@ updated: 2025-02-21 23:21
 
 - [tofu65キーボードを買いました](blog/tofu65-keyboard-review.md)
 - [過去に別のブログで書いた技術記事まとめ](blog/past-technical-articles-collection.md)
-
-## [全記事一覧](/blog)
-
-## WIP
 

@@ -14,6 +14,7 @@ updated: 2025-02-06 12:38
 ## コンテンツ
 
 - [ブログ](blogs.md)
+    - [記事一覧ページ](/blog)
 - [About me](about.md)
 
 ## 外部リンク
