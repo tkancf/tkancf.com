@@ -1,4 +1,4 @@
-import { FilePath, FullSlug, joinSegments, resolveRelative, simplifySlug } from "../../util/path"
+import { FilePath, FullSlug, joinSegments, resolveRelative, simplifySlug, slugifyFilePath } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
 import path from "path"
 import { write } from "./helpers"
@@ -18,8 +18,11 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
       const aliases = file.data.frontmatter?.aliases ?? []
       const slugs = aliases.map((alias) => path.posix.join(dir, alias) as FullSlug)
       const permalink = file.data.frontmatter?.permalink
+      // permalinkが設定されている場合は、ファイル名ベースのURLから
+      // permalinkへのリダイレクトを設定する
       if (typeof permalink === "string") {
-        slugs.push(permalink as FullSlug)
+        slugs.push(slugifyFilePath(file.data.filePath!))
+        file.data.slug = permalink as FullSlug
       }
 
       for (let slug of slugs) {
@@ -44,8 +47,11 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
       const aliases = file.data.frontmatter?.aliases ?? []
       const slugs: FullSlug[] = aliases.map((alias) => path.posix.join(dir, alias) as FullSlug)
       const permalink = file.data.frontmatter?.permalink
+      // permalinkが設定されている場合は、ファイル名ベースのURLから
+      // permalinkへのリダイレクトを設定する
       if (typeof permalink === "string") {
-        slugs.push(permalink as FullSlug)
+        slugs.push(slugifyFilePath(file.data.filePath!))
+        file.data.slug = permalink as FullSlug
       }
 
       for (let slug of slugs) {
