@@ -5,6 +5,7 @@ aliases:
 tags:
   - index
 created: 2020-10-15 00:00
+description: ブログ
 title: ブログ
 updated: 2025-02-21 23:21
 ---
@@ -83,4 +84,4 @@ updated: 2025-02-21 23:21
 
 - [tofu65キーボードを買いました](blog/tofu65-keyboard-review.md)
 - [過去に別のブログで書いた技術記事まとめ](blog/past-technical-articles-collection.md)
-
+- [obsidian.nvimとquartzでメモを公開したら良い感じ](blog/20250409232616.md)
