@@ -90,6 +90,12 @@ updated: 2025-02-21 23:21
 - [Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](blog/sync-obsidian-notes-free-Self-hosted-LiveSync-flyio.md)
 - [obsidian.nvimとquartzでメモをブログにしたら良い感じ](blog/20250409232616.md)
 
+## Magic: The Gathering
+
+- [2022-05-15 晴れる屋TCLet's 5 モダン DX](blog/20220515001700.md)
+- [2023-02-11 南越谷のホビステ大会](blog/20230211001900.md)
+- [2023-03-04 プレイヤーズコンベンションオープン横浜 2023](blog/20230304001900.md)
+
 ## 読書
 
 - [『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました](blog/reading-soft-skills-the-software-developers-life-manual.md)
