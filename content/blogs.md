@@ -22,6 +22,8 @@ updated: 2025-02-21 23:21
     - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
     - [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
     - [epwalsh/obsidian.nvimの更新が止まって、forkされたobsidian-nvim/obsidian.nvimの更新が活発になってた](blog/20250306081644.md)
+    - [Vimのmodelineを使ってファイルの折りたたみ設定を変更する](20241201153631.md)
+    - [NeoVim GUIを色々試す](20250103013029.md)
 - Vim以外のエディタ
     - [Zedエディタでdenoのスクリプトを書くときの設定](blog/zed-editor-settings-for-deno.md)
     - [Emacsに入門した 2024年](blog/getting-started-emacs-2024.md)
@@ -78,13 +80,13 @@ updated: 2025-02-21 23:21
 
 ## 日記
 
-- [2024-11](blog/2024-11.md)
-- [2024-12](blog/2024-12.md)
-- [2025-01](blog/2025-01.md)
-- [2025-02](blog/2025-02.md)
-- [2025-03](blog/2025-03.md)
-- [2025-04](blog/2025-04.md)
 - [2025-05](blog/2025-05.md)
+- [2025-04](blog/2025-04.md)
+- [2025-03](blog/2025-03.md)
+- [2025-02](blog/2025-02.md)
+- [2025-01](blog/2025-01.md)
+- [2024-12](blog/2024-12.md)
+- [2024-11](blog/2024-11.md)
 
 ## その他
 
