@@ -60,3 +60,7 @@ HHKB Studioとどちらを買うか悩んだんですが 65%の配列、ガス�
 ## 総評
 
 tofu65は、使い勝手やカスタマイズ性に優れている上に重量があって良い打鍵音を出してくれるキーボードだと思うのでおすすめです。
+
+## 関連メモ
+
+[tofu65のfirmwareのjson](https://gist.github.com/tkancf/32b52281dbd05ba17ffa1177b698f859#file-tofu_jr-json)
