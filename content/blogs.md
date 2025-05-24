@@ -14,58 +14,79 @@ updated: 2025-02-21 23:21
 
 [全記事一覧](/blog)
 
-## 技術系
+## Vim・Neovim
 
-- Vim・Neovim
-    - [Vimの設定整理した - 2020年版](blog/vim-configurations-2020.md)
-    - [VimのCTRL-K <Space>を理解する](blog/understanding-vim-ctrl-k-space.md)
-    - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
-    - [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
-    - [epwalsh／obsidian.nvimの更新が止まって、forkされたobsidian-nvim／obsidian.nvimの更新が活発になってた](blog/20250306081644.md)
-    - [Vimのmodelineを使ってファイルの折りたたみ設定を変更する](blog/20241201153631.md)
-    - [NeoVim GUIを色々試す](blog/20250103013029.md)
-    - [Neovimの起動時間を見直してみる](blog/20250115141139.md)
-    - [nvim-cmpとLSPをちゃんと改めて設定してみる](blog/20250109082836.md)
-    - [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](blog/20250109162302.md)
-    - [Neovimの起動時間を見直してみる](blog/20250115141139.md)
-    - [image.nvimのセットアップ](blog/20250131073217.md)
-- Vim以外のエディタ
-    - [Zedエディタでdenoのスクリプトを書くときの設定](blog/zed-editor-settings-for-deno.md)
-    - [Emacsに入門した 2024年](blog/getting-started-emacs-2024.md)
-    - [Visual Studio Codeのリモートコンテナ機能を使ったDenoのFreshフレームワーク開発環境構築](blog/vscode-remote-container-deno-fresh-setup.md)
-- Svelte
-    - [Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する](blog/deploy-sapper-app-with-github-actions-to-pages.md)
-    - [Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい](blog/svelte-document-interface-using-onmount.md)
-- ISUCON
-    - [ISUCON13に参加しました。最終スコアは8654でした](blog/isucon13.md)
-- CLI
-    - [$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) を理解する](blog/understanding-bash-source.md)
-    - [fish shellの初期設定覚え書き（PATHの設定とか）](https://tkancf.hateblo.jp/blog/2017/03/30)
-    - [bashで特定の文字列を含むファイルを削除するワンライナー](blog/20241128002544.md)
-    - [bashで入力待ち](blog/20241130005328.md)
-    - [別タイムゾーンの日付をJSTに変更する方法](blog/20241201115525.md)
-    - [Kittyのテーマカラー変更方法](blog/20241201153532.md)
-    - [Commandキーをtmuxのプレフィックスキーとして使う方法 on iTerm2](blog/Command-as-tmux-prefix-key.md)
-- CloudFlare
-    - [CloudFlare PagesでホストしているAstroブログでリダイレクト](blog/setting-up-redirects-astro-cloudflare-pages.md)
-- その他ツール
-    - [iTerm2でベルの音を止める方法](blog/mute-iterm2-bell.md)
-    - [Hugo で生HTMLを書く方法](https://tkancf.hateblo.jp/blog/hugo-raw-html)
-    - [LVMの論理ボリューム拡張](blog/20240912213014.md)
-    - [k3sのセットアップ作業ログ](blog/20241201154236.md)
-    - [Raycast のクリップボードヒストリーは Command+.で結合できる](blog/raycast-clipboard-history-merge-with-cmd-period.md)
-    - [cdコマンドを拡張したzoxideコマンドが便利](blog/zoxide-a-convenient-extension-of-the-cd-command.md)
-    - [Gitでマルチバイト文字列がエスケープされる対策](blog/avoid-multibyte-character-escape.md)
-    - [homebrew管理のアプリを整理した](blog/20250223101856.md)
-    - [curlでJSONを簡単に送れるようになったらしいので試した](blog/20250222161644.md)
-    - [Macの初期設定](blog/20241201153605.md)
-- Pulumi
-    - [GitHub ActionsでPulumiをCI・CDしてみた](blog/trying-cicd-with-pulumi-using-github-actions.md)
-    - [Pulumi+GoでCloudflareのDNS既存リソースを管理してみる](blog/managing-and-importing-existing-cloudflare-dns-resources-pulumi-go.md)
-- カンファレンス
-    - [Builderscon 2018 に参加した](https://tkancf.hateblo.jp/blog/builderscon-2018)
-    - [VimConf 2018が最高だった](https://tkancf.hateblo.jp/blog/VimConf_2018)
+### Tips
 
+- [Vimのmodelineを使ってファイルの折りたたみ設定を変更する](blog/20241201153631.md)
+- [VimのCTRL-K <Space>を理解する](blog/understanding-vim-ctrl-k-space.md)
+
+### 設定
+
+- [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](blog/20250109162302.md)
+- [Neovimの起動時間を見直してみる](blog/20250115141139.md)
+- [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
+- [epwalsh／obsidian.nvimの更新が止まって、forkされたobsidian-nvim／obsidian.nvimの更新が活発になってた](blog/20250306081644.md)
+- [image.nvimのセットアップ](blog/20250131073217.md)
+- [nvim-cmpとLSPをちゃんと改めて設定してみる](blog/20250109082836.md)
+- [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
+- [Vimの設定整理した - 2020年版](blog/vim-configurations-2020.md)
+
+### その他
+
+- [NeoVim GUIを色々試す](blog/20250103013029.md)
+
+## Vim以外のエディタ
+
+- [Zedエディタでdenoのスクリプトを書くときの設定](blog/zed-editor-settings-for-deno.md)
+- [Emacsに入門した 2024年](blog/getting-started-emacs-2024.md)
+- [Visual Studio Codeのリモートコンテナ機能を使ったDenoのFreshフレームワーク開発環境構築](blog/vscode-remote-container-deno-fresh-setup.md)
+
+## Svelte
+
+- [Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する](blog/deploy-sapper-app-with-github-actions-to-pages.md)
+- [Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい](blog/svelte-document-interface-using-onmount.md)
+
+## ISUCON
+
+- [ISUCON13に参加しました。最終スコアは8654でした](blog/isucon13.md)
+
+## CLI
+
+- [$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) を理解する](blog/understanding-bash-source.md)
+- [fish shellの初期設定覚え書き（PATHの設定とか）](https://tkancf.hateblo.jp/blog/2017/03/30)
+- [bashで特定の文字列を含むファイルを削除するワンライナー](blog/20241128002544.md)
+- [bashで入力待ち](blog/20241130005328.md)
+- [別タイムゾーンの日付をJSTに変更する方法](blog/20241201115525.md)
+- [Kittyのテーマカラー変更方法](blog/20241201153532.md)
+- [Commandキーをtmuxのプレフィックスキーとして使う方法 on iTerm2](blog/Command-as-tmux-prefix-key.md)
+- [iTerm2でベルの音を止める方法](blog/mute-iterm2-bell.md)
+- [cdコマンドを拡張したzoxideコマンドが便利](blog/zoxide-a-convenient-extension-of-the-cd-command.md)
+- [curlでJSONを簡単に送れるようになったらしいので試した](blog/20250222161644.md)
+
+## CloudFlare
+
+- [CloudFlare PagesでホストしているAstroブログでリダイレクト](blog/setting-up-redirects-astro-cloudflare-pages.md)
+
+## その他ツール
+
+- [Hugo で生HTMLを書く方法](https://tkancf.hateblo.jp/blog/hugo-raw-html)
+- [LVMの論理ボリューム拡張](blog/20240912213014.md)
+- [k3sのセットアップ作業ログ](blog/20241201154236.md)
+- [Raycast のクリップボードヒストリーは Command+.で結合できる](blog/raycast-clipboard-history-merge-with-cmd-period.md)
+- [Gitでマルチバイト文字列がエスケープされる対策](blog/avoid-multibyte-character-escape.md)
+- [homebrew管理のアプリを整理した](blog/20250223101856.md)
+- [Macの初期設定](blog/20241201153605.md)
+
+## Pulumi
+
+- [GitHub ActionsでPulumiをCI・CDしてみた](blog/trying-cicd-with-pulumi-using-github-actions.md)
+- [Pulumi+GoでCloudflareのDNS既存リソースを管理してみる](blog/managing-and-importing-existing-cloudflare-dns-resources-pulumi-go.md)
+
+## カンファレンス
+
+- [Builderscon 2018 に参加した](https://tkancf.hateblo.jp/blog/builderscon-2018)
+- [VimConf 2018が最高だった](https://tkancf.hateblo.jp/blog/VimConf_2018)
 
 ## 作ってみた
 
