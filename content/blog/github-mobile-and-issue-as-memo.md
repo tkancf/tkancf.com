@@ -28,7 +28,6 @@ updated: 2025-02-06 17:01
 スマホアプリのMarkdownエディタとしてもよく出来ていると思う。
 日本語入力で困ることもない（ブラウザからだとたまにカーソル移動とか変なことになるアプリがある）  
 とりあえずその月のメモ用Issueを作成して、そこに乱雑に追記するようにしている。
-[2023/10月のメモIssue 例](https://github.com/tkancf/p/issues/2)  
 
 ## issue以外の使い方
 
@@ -104,4 +103,4 @@ GitHub Mobile + GitHub issueでメモ良い感じなので、オススメ。
 
 Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期できるようになったので、今は結局Obsidianを使っています。
 
-[Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](https://tkancf.com/blog/sync-obsidian-notes-free-self-hosted-livesync-flyio/)
+[self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](blog/sync-obsidian-notes-free-Self-hosted-LiveSync-flyio.md)
