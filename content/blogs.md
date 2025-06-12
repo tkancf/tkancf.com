@@ -26,7 +26,7 @@ updated: 2025-02-21 23:21
 - [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](blog/20250109162302.md)
 - [Neovimの起動時間を見直してみる](blog/20250115141139.md)
 - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
-- [epwalsh／obsidian.nvimの更新が止まって、forkされたobsidian-nvim／obsidian.nvimの更新が活発になってた](blog/20250306081644.md)
+- [obsidian.nvimのfork obsidian-nvim/obsidian.nvim について](blog/20250306081644.md)
 - [image.nvimのセットアップ](blog/20250131073217.md)
 - [nvim-cmpとLSPをちゃんと改めて設定してみる](blog/20250109082836.md)
 - [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
