@@ -24,10 +24,10 @@ updated: 2025-02-21 23:21
 ### 設定
 
 - [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](blog/20250109162302.md)
-- [Neovimの起動時間を見直してみる](blog/20250115141139.md)
+- [LOG: Neovimの起動時間を見直してみる](blog/20250115141139.md)
 - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)
 - [obsidian.nvimのfork obsidian-nvim/obsidian.nvim について](blog/20250306081644.md)
-- [image.nvimのセットアップ](blog/20250131073217.md)
+- [image.nvimのセットアップ方法](blog/20250131073217.md)
 - [nvim-cmpとLSPをちゃんと改めて設定してみる](blog/20250109082836.md)
 - [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
 - [Vimの設定整理した - 2020年版](blog/vim-configurations-2020.md)
@@ -108,8 +108,8 @@ updated: 2025-02-21 23:21
 
 - [GitHub Mobile + GitHub issueでメモが良い感じ](blog/github-mobile-and-issue-as-memo.md)
 - [Obsidianメモのフォルダ分けをやめて全部1フォルダにまとめてみた](blog/flat-obsidian-is-good.md)
-- [Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](blog/sync-obsidian-notes-free-Self-hosted-LiveSync-flyio.md)
-- [obsidian.nvimとquartzでメモをブログにしたら良い感じ](blog/20250409232616.md)
+- [Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを同期する方法](blog/sync-obsidian-notes-free-Self-hosted-LiveSync-flyio.md)
+- [obsidian.nvimとquartzでメモをブログにした](blog/20250409232616.md)
 
 ## Magic: The Gathering
 
