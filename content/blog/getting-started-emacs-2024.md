@@ -4,7 +4,6 @@ aliases:
   - Emacsに入門した 2024年
 tags:
   - Emacs
-  - メモ
 created: 2024-04-25 12:43
 description: 最近、org-modeのためにEmacsに入門して色々と設定を頑張っていました。その過程でVimのorg-modeについても検証したりEmacsの設定について試行錯誤したりしたのでブログとしてまとめてみます。
 title: Emacsに入門した 2024年

@@ -1,7 +1,7 @@
 ---
 id: deploy-sapper-app-with-github-actions-to-pages
 aliases:
-  - Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する
+  - Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法
 tags:
   - Sapper
   - svelte
@@ -9,11 +9,11 @@ tags:
   - GitHub Pages
 created: 2022-08-21 17:00
 description: Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法についてハマりどころがあったのでメモ
-title: Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する
+title: Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法
 updated: 2025-02-06 17:00
 ---
 
-# Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する
+# Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法
 
 ## 概要
 
