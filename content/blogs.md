@@ -18,7 +18,7 @@ updated: 2025-02-21 23:21
 
 ### Tips
 
-- [Vimのmodelineを使ってファイルの折りたたみ設定を変更する](blog/20241201153631.md)
+- [Vimのmodelineを使ってファイルの折りたたみ設定を変更する方法](blog/20241201153631.md)
 - [VimのCTRL-K <Space>を理解する](blog/understanding-vim-ctrl-k-space.md)
 
 ### 設定
@@ -98,10 +98,10 @@ updated: 2025-02-21 23:21
 - [ブログをAstroからHonoのSSGに移行しました](blog/blog-migration-astro-to-hono.md)
 - [SvelteKitでカードゲームのプロキシメーカーを作りました](blog/created-a-card-game-proxy-maker-with-SvelteKit.md)
 - [CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました](blog/creating-line-bot-with-cloudflare-workers-d1-and-hono.md)
-- [ブログ記事一覧ページに、外部サイト記事も表示するようにしてみた](blog/astro-blog-article-index-external-links.md)
-- [ブログをAstroへ以降しました](blog/first-post.md)
-- [AstroとCloudflare Pagesでブログを作成しました](blog/astro-and-cloudflare-pages-blog-creation.md)
-- [Astroのバージョンをv2からv3に上げました](blog/update-astro-v2-to-v3.md)
+- [ブログ記事一覧ページに、外部サイト記事も表示するようにした](blog/astro-blog-article-index-external-links.md)
+- [ブログをAstroへ移行した](blog/first-post.md)
+- [AstroとCloudflare Pagesでブログを作った](blog/astro-and-cloudflare-pages-blog-creation.md)
+- [Astroのバージョンをv2からv3に上げた](blog/update-astro-v2-to-v3.md)
 - [このサイトでllms-full.txtを出力するようにした](blog/20250221222552.md)
 
 ## メモ管理・PKM

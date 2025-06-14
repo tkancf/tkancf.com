@@ -2,15 +2,16 @@
 id: update-astro-v2-to-v3
 aliases:
   - Astroのバージョンをv2からv3に上げました
+  - Astroのバージョンをv2からv3に上げた
 tags:
   - Astro
 created: 2023-09-17 17:02
 description: Astroのバージョンをv2からv3に上げたのでメモ
-title: Astroのバージョンをv2からv3に上げました
+title: Astroのバージョンをv2からv3に上げた
 updated: 2025-02-06 17:02
 ---
 
-# Astroのバージョンをv2からv3に上げました
+# Astroのバージョンをv2からv3に上げた
 
 本ブログのビルドツールである[Astro](https://astro.build/)のバージョンをv2からv3に上げました。
 

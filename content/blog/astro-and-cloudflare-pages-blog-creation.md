@@ -2,16 +2,17 @@
 id: astro-and-cloudflare-pages-blog-creation
 aliases:
   - AstroとCloudflare Pagesでブログを作成しました
+  - AstroとCloudflare Pagesでブログを作った
 tags:
   - Astro
   - Cloudflare
 created: 2023-04-17 17:00
-description: AstroとCloudflare Pagesでブログを作成しました。選定理由と公開までに実施したことを解説します。
-title: AstroとCloudflare Pagesでブログを作成しました
+description: AstroとCloudflare Pagesでブログを作成した。選定理由と公開までに実施したことの解説
+title: AstroとCloudflare Pagesでブログを作った
 updated: 2025-02-06 17:00
 ---
 
-# AstroとCloudflare Pagesでブログを作成しました
+# AstroとCloudflare Pagesでブログを作った
 
 [Astro](https://astro.build/) を利用して[ブログ](https://tkancf.com)を作成しました。ホスト先には Cloudflare Pages を利用しています。
 
