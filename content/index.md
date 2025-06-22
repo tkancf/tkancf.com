@@ -74,6 +74,7 @@ updated: 2025-02-06 12:38
 - [Gitでマルチバイト文字列がエスケープされる対策](blog/avoid-multibyte-character-escape.md)
 - [LOG: homebrew管理のアプリを整理した](blog/20250223101856.md)
 - [Macの初期設定](blog/20241201153605.md)
+- [Claude CodeをMAXプランで試した](blog/20250615081321.md)
 
 ## Pulumi
 
