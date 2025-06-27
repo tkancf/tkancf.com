@@ -5,7 +5,7 @@ aliases:
 tags:
   - ISUCON
 created: 2023-11-30 17:01
-description: ISUCON13に参加しました。最終スコアは8654でした
+description: ISUCON13参加レポート。実装内容、課題点、チーム作業の反省と来年に向けた改善点について
 title: ISUCON13に参加しました。最終スコアは8654でした
 updated: 2025-02-06 17:01
 ---

@@ -6,7 +6,7 @@ tags:
   - ブログ
   - Astro
 created: 2023-04-16 17:01
-description: ブログをAstroへ移行した
+description: はてなブログからAstro + Cloudflare Pagesへのブログ移行について、理由と今後の方針を説明
 title: ブログをAstroへ移行した
 updated: 2025-02-06 17:01
 ---
