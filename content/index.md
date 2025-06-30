@@ -17,6 +17,7 @@ updated: 2025-02-06 12:38
 
 - [Vimのmodelineを使ってファイルの折りたたみ設定を変更する方法](blog/20241201153631.md)
 - [VimのCTRL-K <Space>を理解する](blog/understanding-vim-ctrl-k-space.md)
+- [Vimで:messagesの内容をコピーする方法](blog/20250630224354.md)
 
 ### 設定
 
