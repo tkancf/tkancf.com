@@ -29,6 +29,10 @@ updated: 2025-02-06 12:38
 - [snacks.nvimを試したらいい感じ](blog/20250213233832.md)
 - [Vimの設定整理した - 2020年版](blog/vim-configurations-2020.md)
 
+### 自作プラグイン
+
+- [narrowing-nvimを作った](blog/20250622231129.md)
+
 ### その他
 
 - [Neovim GUIを色々試したメモ](blog/20250103013029.md)
@@ -145,8 +149,6 @@ updated: 2025-02-06 12:38
 - [過去に別のブログで書いた技術記事まとめ](blog/past-technical-articles-collection.md)
 - [美味しい紅茶](blog/20241201221931.md)
 - [気になる紅茶](blog/20241202000103.md)
-
-- [blogs](blogs.md)
 
 ## 外部リンク
 
