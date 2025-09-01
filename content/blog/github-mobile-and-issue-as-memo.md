@@ -5,7 +5,6 @@ aliases:
 tags:
   - メモ
 created: 2023-10-05 17:01
-description: GitHub Mobile + GitHub issueでメモが良い感じにできているのでご紹介
 title: GitHub Mobile + GitHub issueでメモが良い感じ
 updated: 2025-02-06 17:01
 ---

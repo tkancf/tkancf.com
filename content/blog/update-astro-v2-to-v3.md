@@ -6,7 +6,6 @@ aliases:
 tags:
   - Astro
 created: 2023-09-17 17:02
-description: Astroのバージョンをv2からv3に上げたのでメモ
 title: Astroのバージョンをv2からv3に上げた
 updated: 2025-02-06 17:02
 ---

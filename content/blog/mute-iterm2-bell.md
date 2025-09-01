@@ -5,7 +5,6 @@ aliases:
 tags:
   - iTerm2
 created: 2023-09-17 17:01
-description: iTerm2でターミナル操作をしている時に、タブキーを連打するとポンポン鳴ってたので止めた
 title: iTerm2でベルの音を止める方法
 updated: 2025-02-06 17:01
 ---

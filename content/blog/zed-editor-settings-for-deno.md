@@ -1,11 +1,10 @@
 ---
-id: "20240908094229"
+id: 20240908094229
 aliases:
   - Zedエディタでdenoのスクリプトを書くときの設定
 tags:
   - Zed
 created: 2024-09-08 09:42
-description: Zedエディタでdenoのスクリプトを書くときの設定
 title: Zedエディタでdenoのスクリプトを書くときの設定
 updated: 2024-09-08 09:42
 ---

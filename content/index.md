@@ -4,7 +4,6 @@ aliases:
   - HOME
 tags: []
 created: 2022-02-06 12:27
-description: tkancf.comのトップページ
 title: HOME
 updated: 2025-02-06 12:38
 ---
@@ -153,6 +152,11 @@ updated: 2025-02-06 12:38
 - [過去に別のブログで書いた技術記事まとめ](blog/past-technical-articles-collection.md)
 - [美味しい紅茶](blog/20241201221931.md)
 - [気になる紅茶](blog/20241202000103.md)
+- [栄冠ナインメモ](blog/20250730214550.md)
+
+## 全記事一覧
+
+[全記事一覧](/blog)
 
 ## 外部リンク
 

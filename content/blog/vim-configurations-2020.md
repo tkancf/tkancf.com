@@ -6,7 +6,6 @@ tags:
   - Vim
   - dotfiles
 created: 2020-10-15 17:02
-description: Vimの設定整理したのでメモ
 title: Vimの設定整理した - 2020年版
 updated: 2025-02-06 17:02
 ---

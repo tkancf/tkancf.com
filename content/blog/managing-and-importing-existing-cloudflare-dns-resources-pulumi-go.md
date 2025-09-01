@@ -6,7 +6,6 @@ tags:
   - Go
   - Pulumi
 created: 2023-09-04 17:01
-description: CloudflareのDNS設定をPulumiを利用して、Goのコードで管理してみたのでメモ。既存リソースのインポートも試した。
 title: Pulumi+GoでCloudflareのDNS既存リソースを管理する
 updated: 2025-02-06 17:01
 ---

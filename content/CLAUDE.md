@@ -1,3 +1,13 @@
+---
+id: CLAUDE
+aliases:
+  - CLAUDE.md
+tags: []
+created: 2025-09-01 22:38
+title: CLAUDE.md
+updated: 2025-09-01 22:38
+---
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -22,7 +32,7 @@ aliases:
   - Alternative Title
 tags: []
 created: YYYY-MM-DD HH:MM
-description: Brief description
+
 title: Display Title
 updated: YYYY-MM-DD HH:MM
 ---

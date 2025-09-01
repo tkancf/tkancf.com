@@ -5,7 +5,6 @@ aliases:
 tags:
   - 振り返り
 created: 2023-12-31 16:59
-description: 2023年の振り返りブログです。
 title: 2023年の振り返り
 updated: 2025-02-06 16:59
 ---

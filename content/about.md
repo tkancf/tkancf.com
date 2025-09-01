@@ -5,7 +5,6 @@ aliases:
   - About me
 tags: []
 created: 2022-02-06 15:26
-description: 個人プロフィールページ。趣味、仕事の経歴について記載
 title: About me
 updated: 2025-02-06 15:26
 ---

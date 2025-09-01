@@ -7,7 +7,6 @@ tags:
   - Hono
   - Astro
 created: 2024-03-04 17:00
-description: このブログの生成をAstroからHonoのSSG機能での自作に移行しました。移行にあたり知見がいくつか溜まったので、メモとして公開します。
 title: ブログをAstroからHonoのSSGに移行しました
 updated: 2025-02-06 17:00
 ---

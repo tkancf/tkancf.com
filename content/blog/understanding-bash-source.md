@@ -5,7 +5,6 @@ aliases:
 tags:
   - bash
 created: 2023-09-20 17:01
-description: bashスクリプトを読んでいると頻出する $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) について完全に理解したのでメモ
 title: $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) を理解する
 updated: 2025-02-06 17:01
 ---

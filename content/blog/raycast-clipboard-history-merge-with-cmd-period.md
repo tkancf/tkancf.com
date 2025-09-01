@@ -5,7 +5,6 @@ aliases:
 tags:
   - Raycast
 created: 2023-04-24 17:01
-description: RaycastのクリップボードヒストリーはCommand+.で結合できるのが便利なので解説します。
 title: Raycast のクリップボードヒストリーは Command+.で結合できる
 updated: 2025-02-06 17:01
 ---

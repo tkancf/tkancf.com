@@ -5,7 +5,6 @@ aliases:
 tags:
   - Svelte
 created: 2023-11-04 17:00
-description: "Magic: The Gatheringのプロキシカード作成にいい感じのWebアプリがなかったので、SvelteKitで作りました。"
 title: SvelteKitでカードゲームのプロキシメーカーを作りました
 updated: 2025-02-06 17:00
 ---

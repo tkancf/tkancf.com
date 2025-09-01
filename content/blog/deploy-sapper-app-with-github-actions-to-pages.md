@@ -8,7 +8,6 @@ tags:
   - GitHub Actions
   - GitHub Pages
 created: 2022-08-21 17:00
-description: Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法についてハマりどころがあったのでメモ
 title: Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法
 updated: 2025-02-06 17:00
 ---

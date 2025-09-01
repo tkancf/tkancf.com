@@ -5,7 +5,6 @@ aliases:
 tags:
   - iTerm2
 created: 2023-04-18 17:00
-description: tmuxのプレフィックスキーとして、MacのCommandキーを割り当てる方法を解説します。
 title: Commandキーをtmuxのプレフィックスキーとして使う方法 on iTerm2
 updated: 2025-02-06 17:00
 ---

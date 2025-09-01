@@ -5,7 +5,6 @@ aliases:
 tags:
   - Svelte
 created: 2022-08-21 17:01
-description: Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい
 title: Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい
 updated: 2025-02-06 17:01
 ---

@@ -7,7 +7,6 @@ tags:
   - Obsidian
   - メモ
 created: 2023-12-17 17:01
-description: Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する方法のメモです。
 title: Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを同期する方法
 updated: 2025-02-06 17:01
 ---

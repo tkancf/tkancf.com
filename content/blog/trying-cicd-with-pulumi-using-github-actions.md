@@ -5,7 +5,6 @@ aliases:
 tags:
   - Pulumi
 created: 2023-09-15 17:01
-description: Pulumiの公式からGitHub Actionsが公開されていたので、こちらを利用してGitHubのmainブランチへpushしたら自動でデプロイされるように設定してみました。設定方法のメモです。
 title: GitHub ActionsでPulumiをCI/CDしてみた
 updated: 2025-02-06 17:01
 ---
