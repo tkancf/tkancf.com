@@ -22,7 +22,7 @@ IssueやPRが溜まっていることからコミュニティフォークとい�
 
 - [feat(completion): blink.cmp support by guspix · Pull Request #5 · obsidian-nvim/obsidian.nvim](https://github.com/obsidian-nvim/obsidian.nvim/pull/5)
     - blink.cmpのサポート
-    - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/20250212090856.md)の設定でも可能でしたが、obsidian.nvimプラグイン側でサポートされます。
+    - [blink.nvimでobsidian.nvimの補完を利用する方法](blog/q5s1h2g.md)の設定でも可能でしたが、obsidian.nvimプラグイン側でサポートされます。
 - [implementing snack picker by guspix · Pull Request #4 · obsidian-nvim/obsidian.nvim](https://github.com/obsidian-nvim/obsidian.nvim/pull/4)
     - [snacks.nvim](https://github.com/folke/snacks.nvim)のpickerサポート
     - telescope.nvim, fzf-lua, Mini.Pickのみのサポートでしたが、新たにsnacks.nvimを利用できます。

@@ -15,7 +15,7 @@ updated: 2025-02-08 23:44
 
 ## 作ったもの・書いたもの等
 
-[はてなブックマークからOmnivoreに移行するためのツールを作ったり](https://zenn.dev/tkancf/articles/c323bf1c64eafb)、[ブログをAstroからHonoのSSGに移行したり](blog/blog-migration-astro-to-hono.md)と色々やれてました。  
+[はてなブックマークからOmnivoreに移行するためのツールを作ったり](https://zenn.dev/tkancf/articles/c323bf1c64eafb)、[ブログをAstroからHonoのSSGに移行したり](blog/g2i3x4w.md)と色々やれてました。  
 5月中頃に妻の妊娠が分かり、それ以降バタバタしていたら何もできなくなってしまったのが残念ですが、12月に無事に産まれたのでもう少し育児が落ち着いたら色々と再開したいと思います。
 
 ### GitHub
