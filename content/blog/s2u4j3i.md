@@ -1,5 +1,5 @@
 ---
-id: 20250221222552
+id: blog/s2u4j3i
 aliases:
   - このサイトでllms-full.txtを出力するようにした
 tags:

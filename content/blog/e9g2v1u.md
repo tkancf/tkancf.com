@@ -1,5 +1,5 @@
 ---
-id: astro-blog-article-index-external-links
+id: blog/e9g2v1u
 aliases:
   - ブログ記事一覧ページに、外部サイト記事も表示するようにしてみた
   - ブログ記事一覧ページに、外部サイト記事も表示するようにした

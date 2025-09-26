@@ -1,5 +1,5 @@
 ---
-id: first-post
+id: blog/l9n2c7b
 aliases:
   - ブログをAstroへ移行した
 tags:

@@ -1,5 +1,5 @@
 ---
-id: 20250126213331
+id: blog/n2p8e9d
 aliases:
   - homeshickを試す
 tags:

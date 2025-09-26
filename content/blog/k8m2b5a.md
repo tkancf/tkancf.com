@@ -1,5 +1,5 @@
 ---
-id: 20250119160043
+id: blog/k8m2b5a
 aliases:
   - 2025年の目標
 tags: []

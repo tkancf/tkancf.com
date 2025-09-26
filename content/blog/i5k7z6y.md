@@ -1,5 +1,5 @@
 ---
-id: 20250109162302
+id: blog/i5k7z6y
 aliases:
   - Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する
 tags:

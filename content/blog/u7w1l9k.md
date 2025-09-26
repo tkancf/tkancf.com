@@ -1,5 +1,5 @@
 ---
-id: 20241201221931
+id: blog/u7w1l9k
 aliases:
   - 美味しい紅茶
 tags:

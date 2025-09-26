@@ -1,5 +1,5 @@
 ---
-id: 20220515001700
+id: blog/b5q3n8p
 aliases:
   - 2022-05-15 晴れる屋TCLet's 5 モダン DX
 tags:

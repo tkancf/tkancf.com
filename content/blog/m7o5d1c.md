@@ -1,5 +1,5 @@
 ---
-id: 20250126204830
+id: blog/m7o5d1c
 aliases:
   - chezmoiを改めて試す
 tags:

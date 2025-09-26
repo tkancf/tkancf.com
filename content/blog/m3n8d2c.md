@@ -1,5 +1,5 @@
 ---
-id: 20241130005328
+id: blog/m3n8d2c
 aliases:
   - bashで入力待ち
 tags:

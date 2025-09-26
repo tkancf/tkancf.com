@@ -1,5 +1,5 @@
 ---
-id: svelte-document-interface-using-onmount
+id: blog/w9y3n2m
 aliases:
   - Svelteで Document インターフェイスを使いたい時は onMountライフサイクルを使うといい
 tags:

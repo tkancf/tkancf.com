@@ -1,5 +1,5 @@
 ---
-id: isucon13
+id: blog/p4r1g9f
 aliases:
   - ISUCON13に参加しました。最終スコアは8654でした
 tags:

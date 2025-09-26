@@ -1,5 +1,5 @@
 ---
-id: creating-line-bot-with-cloudflare-workers-d1-and-hono
+id: blog/j7l1a6z
 aliases:
   - CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました
 tags:

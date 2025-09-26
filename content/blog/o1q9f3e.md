@@ -1,5 +1,5 @@
 ---
-id: 20241201153532
+id: blog/o1q9f3e
 aliases:
   - Kittyのテーマカラー変更方法
 tags:

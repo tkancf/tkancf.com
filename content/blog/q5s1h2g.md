@@ -1,5 +1,5 @@
 ---
-id: 20250212090856
+id: blog/q5s1h2g
 aliases:
   - blink.nvimでobsidian.nvimの補完を利用する方法
 tags:

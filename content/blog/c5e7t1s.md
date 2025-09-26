@@ -1,5 +1,5 @@
 ---
-id: update-astro-v2-to-v3
+id: blog/c5e7t1s
 aliases:
   - Astroのバージョンをv2からv3に上げました
   - Astroのバージョンをv2からv3に上げた

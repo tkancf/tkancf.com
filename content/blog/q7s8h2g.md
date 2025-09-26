@@ -1,5 +1,5 @@
 ---
-id: managing-and-importing-existing-cloudflare-dns-resources-pulumi-go
+id: blog/q7s8h2g
 aliases:
   - Pulumi+GoでCloudflareのDNS既存リソースを管理する
 tags:

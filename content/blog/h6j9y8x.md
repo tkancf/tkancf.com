@@ -1,5 +1,5 @@
 ---
-id: Command-as-tmux-prefix-key
+id: blog/h6j9y8x
 aliases:
   - Commandキーをtmuxのプレフィックスキーとして使う方法 on iTerm2
 tags:

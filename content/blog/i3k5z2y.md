@@ -1,5 +1,5 @@
 ---
-id: created-a-card-game-proxy-maker-with-SvelteKit
+id: blog/i3k5z2y
 aliases:
   - SvelteKitでカードゲームのプロキシメーカーを作りました
 tags:

@@ -1,5 +1,5 @@
 ---
-id: 20240912213014
+id: blog/k2l7b5a
 aliases:
   - "LOG: LVMの論理ボリューム拡張"
 tags:

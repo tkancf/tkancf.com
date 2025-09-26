@@ -1,5 +1,5 @@
 ---
-id: 20250223101856
+id: blog/u3w2l5k
 aliases:
   - homebrew管理のアプリを整理した
 tags:

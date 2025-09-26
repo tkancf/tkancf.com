@@ -1,5 +1,5 @@
 ---
-id: raycast-clipboard-history-merge-with-cmd-period
+id: blog/t4v5k7j
 aliases:
   - Raycast のクリップボードヒストリーは Command+.で結合できる
 tags:

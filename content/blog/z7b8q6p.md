@@ -1,5 +1,5 @@
 ---
-id: trying-cicd-with-pulumi-using-github-actions
+id: blog/z7b8q6p
 aliases:
   - GitHub ActionsでPulumiをCI/CDしてみた
 tags:

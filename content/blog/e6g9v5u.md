@@ -1,5 +1,5 @@
 ---
-id: vscode-remote-container-deno-fresh-setup
+id: blog/e6g9v5u
 aliases:
   - Visual Studio Codeのリモートコンテナ機能を使ったDenoのFreshフレームワーク開発環境構築
 tags:

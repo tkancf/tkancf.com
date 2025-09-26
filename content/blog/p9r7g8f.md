@@ -1,5 +1,5 @@
 ---
-id: 20250208234431
+id: blog/p9r7g8f
 aliases:
   - 2024年の振り返り
 tags:

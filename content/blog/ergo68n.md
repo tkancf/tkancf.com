@@ -1,5 +1,5 @@
 ---
-id: ergo68n
+id: blog/ergo68n
 aliases:
   - Ergo68を買った
 tags:

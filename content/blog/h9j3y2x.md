@@ -1,5 +1,5 @@
 ---
-id: 20250109082836
+id: blog/h9j3y2x
 aliases:
   - nvim-cmpとLSPをちゃんと改めて設定してみる
 tags:

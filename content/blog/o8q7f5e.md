@@ -1,5 +1,5 @@
 ---
-id: github-mobile-and-issue-as-memo
+id: blog/o8q7f5e
 aliases:
   - GitHub Mobile + GitHub issueでメモが良い感じ
 tags:

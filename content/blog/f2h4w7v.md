@@ -1,5 +1,5 @@
 ---
-id: 20240908094229
+id: blog/f2h4w7v
 aliases:
   - Zedエディタでdenoのスクリプトを書くときの設定
 tags:

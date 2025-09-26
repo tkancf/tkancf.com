@@ -1,5 +1,5 @@
 ---
-id: getting-started-emacs-2024
+id: blog/n1p3e8d
 aliases:
   - Emacsに入門した 2024年
 tags:

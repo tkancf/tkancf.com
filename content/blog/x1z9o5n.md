@@ -1,5 +1,5 @@
 ---
-id: 20241214162351
+id: blog/x1z9o5n
 aliases:
   - MARCO POLO ROUGE - マルコ ポーロ ルージュ
 tags:

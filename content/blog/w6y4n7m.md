@@ -1,5 +1,5 @@
 ---
-id: 20241214042549
+id: blog/w6y4n7m
 aliases:
   - 2024-12-16のMTG禁止改訂予想
 tags:

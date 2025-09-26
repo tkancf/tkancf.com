@@ -1,5 +1,5 @@
 ---
-id: 20250222161644
+id: blog/t6v8k7j
 aliases:
   - curlでJSONを簡単に送れるようになったらしいので試した
 tags:

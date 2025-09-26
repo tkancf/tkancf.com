@@ -1,5 +1,5 @@
 ---
-id: 20250213233832
+id: blog/r8t9i6h
 aliases:
   - snacks.nvimを試したらいい感じ
 tags:

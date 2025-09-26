@@ -1,5 +1,5 @@
 ---
-id: astro-and-cloudflare-pages-blog-creation
+id: blog/d4f5u6t
 aliases:
   - AstroとCloudflare Pagesでブログを作成しました
   - AstroとCloudflare Pagesでブログを作った

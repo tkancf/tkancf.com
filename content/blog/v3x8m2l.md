@@ -1,5 +1,5 @@
 ---
-id: 20241202000103
+id: blog/v3x8m2l
 aliases:
   - 気になる紅茶
 tags:

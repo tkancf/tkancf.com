@@ -1,5 +1,5 @@
 ---
-id: 20250131073217
+id: blog/o6q3f4e
 aliases:
   - image.nvimのセットアップ
   - image.nvimのセットアップ方法

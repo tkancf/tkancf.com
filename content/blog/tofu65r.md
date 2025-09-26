@@ -1,5 +1,5 @@
 ---
-id: tofu65-keyboard-review
+id: blog/tofu65r
 aliases:
   - tofu65キーボードを買いました
 tags:

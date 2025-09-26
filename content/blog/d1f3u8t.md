@@ -1,5 +1,5 @@
 ---
-id: vim-configurations-2020
+id: blog/d1f3u8t
 aliases:
   - Vimの設定整理した - 2020年版
 tags:
