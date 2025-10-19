@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { jsxRenderer } from "hono/jsx-renderer";
 import { ssgParams } from "hono/ssg";
-import { getPost, getPosts, getExternalPosts } from "./lib/post";
+import { getPost, getPosts } from "./lib/post";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Layout } from "./components/Layout";
 import { About } from "./components/About";
@@ -15,7 +15,6 @@ const app = new Hono();
 
 const blogDir = "content/blog";
 const blogs = await getPosts(blogDir);
-const externalPosts = await getExternalPosts();
 
 type Metadata = {
   title: string;
@@ -57,10 +56,7 @@ app.get("/", (c) => {
   );
 });
 
-app.get("/blog", async (c) => {
-  const allPosts = [...blogs, ...externalPosts].sort(
-    (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
-  );
+app.get("/blog", (c) => {
   metadata = {
     description: "tkancfのブログの記事一覧ページです。",
     ogImage: "/placeholder-social.jpeg",
@@ -71,15 +67,11 @@ app.get("/blog", async (c) => {
     <Layout metadata={metadata}>
       <div class={postListCSS}>
         <h2>記事一覧</h2>
-        <p>🔗 がついているリンクは外部サイトの記事です。</p>
         <ul>
-          {allPosts.map((post) => (
+          {blogs.map((post) => (
             <li>
               <time>{formatDate(post.pubDate)}</time>
-              <a href={post.platform ? post.url : `/blog/${post.slug}`}>
-                {post.platform && <>🔗[{post.platform}]: </>}
-                {post.title}
-              </a>
+              <a href={`/blog/${post.slug}`}>{post.title}</a>
             </li>
           ))}
         </ul>

@@ -9,10 +9,8 @@ import remarkFrontmatter from "remark-frontmatter";
 import remarkExtractFrontmatter from "remark-extract-frontmatter";
 import remarkExpressiveCode from "remark-expressive-code";
 import yaml from "yaml";
-import { Post } from "../types";
 import { VFile } from "vfile";
-
-const externalContentPath = "content/external.json";
+import { Post } from "../types";
 
 async function processMarkdown(content: string): Promise<VFile> {
   const processor = remark()
@@ -74,19 +72,6 @@ export async function getPosts(postsDir: string): Promise<Post[]> {
       (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
     );
     return posts;
-  } catch (error: any) {
-    if (error.code === "ENOENT") {
-      return [];
-    }
-    throw error;
-  }
-}
-
-export async function getExternalPosts(): Promise<Post[]> {
-  try {
-    const filePath = path.join(externalContentPath);
-    const content = await fs.readFile(filePath, { encoding: "utf-8" });
-    return JSON.parse(content);
   } catch (error: any) {
     if (error.code === "ENOENT") {
       return [];

@@ -15,8 +15,6 @@ export const About = () => {
         loading="lazy"
       />
       <h2>アカウント・リンク集</h2>
-      ブログ等の記事は外部サイト含めて、<a href="/blog">記事一覧ページ</a>
-      にあるので、まとめて見たい場合はそちらを参照してください。
       <ul>
         <li>
           GitHub: <a href="https://github.com/tkancf">@tkancf</a>
@@ -54,8 +52,12 @@ export const About = () => {
           MSPの会社でクラウドインフラのエンジニア(運用・保守)
         </li>
         <li>
-          <div>2022/08 - 現在</div>
+          <div>2022/08 - 2024/11</div>
           上記エンジニアチームのプレイングマネージャー
+        </li>
+        <li>
+          <div>2024/12 - 現在</div>
+          同社エンジニアチームのインフラエンジニア(設計・構築)
         </li>
       </ul>
     </>
