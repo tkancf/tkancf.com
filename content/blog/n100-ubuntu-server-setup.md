@@ -46,9 +46,9 @@ Host s01
 
 ## ディスク周り
 
-- [LVMの論理ボリューム拡張](https://tkancf.com/blog/20240912213014)
+- [LVMの論理ボリューム拡張](https://tkancf.com/blog/log-lvm-logical-volume-expansion)
 
 ## k3sのインストール
 
-[k3sのセットアップ](https://tkancf.com/blog/20241201154236)
+[k3sのセットアップ](https://tkancf.com/blog/log-k3s-setup)
 

@@ -146,7 +146,7 @@ Installed 1 plugin/s
 
 # 2025/01/26
 
-- [chezmoiを改めて試す](https://tkancf.com/blog/20250126204830)
+- [chezmoiを改めて試す](https://tkancf.com/blog/trying-chezmoi-again)
 - [GitHub - stevearc/quicker.nvim: Improved UI and workflow for the Neovim quickfix](https://github.com/stevearc/quicker.nvim) 良さそう
 - 豚キムチ丼つくった
 
@@ -165,8 +165,8 @@ Installed 1 plugin/s
 - [&quot;提案&quot;のレベルを上げる - Konifar&#39;s ZATSU](https://konifar-zatsu.hatenadiary.jp/entry/2023/11/01/193210)読んでる
     - 言語化凄いなぁ
     - 意識してできるとよさそう
-## [homeshickを試す](https://tkancf.com/blog/20250126213331)
-- [chezmoiを改めて試す](https://tkancf.com/blog/20250126204830)
+## [homeshickを試す](https://tkancf.com/blog/trying-homeshick)
+- [chezmoiを改めて試す](https://tkancf.com/blog/trying-chezmoi-again)
 
 # 2025/01/24
 
@@ -199,27 +199,27 @@ Installed 1 plugin/s
     - 収支プラスで着地した。いいじゃん
 - [【AI駆動開発xNext.js】最強ライブラリ25選を本職Webエンジニアが徹底解説！これを見れば全部OK](https://zenn.dev/aimasaou/articles/ae2cc09d2b6988)読んだ
 - [【MTGアリーナ】17Landsのデータを活用したデータドラフトのすすめ｜Ombre](https://note.com/ombre/n/n1f6715d917e5)読んでる
-    - [luaのソースコードから、コメントを読み取ってドキュメントを生成するツールについて調べる](https://tkancf.com/blog/20250120164648)
+    - [luaのソースコードから、コメントを読み取ってドキュメントを生成するツールについて調べる](https://tkancf.com/blog/generating-lua-docs-from-comments)
 - [マスタリーパスを買うべき理由：無課金でレアカードを効率的に集める資産運用方法【MTGアリーナ】 | おじょーゲームズ MTGアリーナブログ](https://ojoegames-mtg.com/buy-mastery-path/)読んでる
 # 2025/01/18
 
-- [2025年の目標](https://tkancf.com/blog/20250119160043)
+- [2025年の目標](https://tkancf.com/blog/goals-for-2025)
 - yadmみたみたいなやつ作りたい
 - obsidian.nvimみたいなやつLSP使って作りたい
 - MTGのリミテッドもっとやりたい
 # 2025/01/17
 
-- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/20250115141139)
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/reviewing-neovim-startup-time)
     - 引き続き
 
 # 2025/01/16
 
-- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/20250115141139)
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/reviewing-neovim-startup-time)
     - 引き続き
 
 # 2025/01/15
 
-- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/20250115141139)
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/reviewing-neovim-startup-time)
 
 # 2025/01/14
 
@@ -254,8 +254,8 @@ Installed 1 plugin/s
 # 2025/01/09
 
 - [Neovim の LSP 関係のプラグインの役割](https://zenn.dev/futsuuu/articles/3b74a8acec166e)分かりやすい
-- [nvim-cmpとLSPをちゃんと改めて設定してみる](https://tkancf.com/blog/20250109082836)
-- [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](https://tkancf.com/blog/20250109162302)
+- [nvim-cmpとLSPをちゃんと改めて設定してみる](https://tkancf.com/blog/configuring-nvim-cmp-and-lsp)
+- [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](https://tkancf.com/blog/switching-to-vim-jetpack)
 
 # 2025/01/08
 
@@ -405,7 +405,7 @@ echo 'eval "$(/opt/homebrew/bin/mise activate zsh)"' >> ~/.zshrc
 }
 ```
 
-- [Neovim GUIを色々試す](https://tkancf.com/blog/20250103013029)
+- [Neovim GUIを色々試す](https://tkancf.com/blog/neovim-gui-experiments)
 <!--}}}-->
 # 2025/01/01
 

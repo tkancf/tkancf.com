@@ -34,7 +34,7 @@ updated: 2025-07-14 23:43
 
 # 2025-07-14
 
-- [Claude CodeをMAXプランで試し](https://tkancf.com/blog/x8z2o4n)てから1ヶ月がたった
+- [Claude CodeをMAXプランで試し](https://tkancf.com/blog/testing-claude-code-max)てから1ヶ月がたった
 
 # 2025-07-17
 

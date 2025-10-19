@@ -19,7 +19,7 @@ updated: 2025-08-12 23:58
 
 - [Neovimをはじめよう feat. mini.nvim](https://zenn.dev/kawarimidoll/books/6064bf6f193b51)
     - 一通り読んで、mini.nvimを使ってみたくなった
-- [mini.nvimを試す](https://tkancf.com/blog/c8e9t3s)
+- [mini.nvimを試す](https://tkancf.com/blog/trying-mini-nvim)
 
 # 2025-08-14
 

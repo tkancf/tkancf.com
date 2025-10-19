@@ -32,7 +32,7 @@ updated: 2025-04-09 23:26
 
 ## ブログ記事の生成
 
-- 以前まではブログの生成は[HonoのSSGを利用して自作したプログラム](https://tkancf.com/blog/g2i3x4w)でやっていた
+- 以前まではブログの生成は[HonoのSSGを利用して自作したプログラム](https://tkancf.com/blog/blog-migration-astro-to-hono)でやっていた
 - よく動いてくれていたが、 [quartz](https://quartz.jzhao.xyz/)を見つけた
     - quartzはObsidianのメモをほぼそのまま公開することができるSSG
     - メモをほぼそのまま公開するのであれば、自作のものより良さそうだったので乗り換えた

@@ -118,7 +118,7 @@ tofu65のvキーとshiftキーの入れ替えはやっぱり厳しい気持ち�
 - [MACのDocker 環境はcolima にしました - じゃあ、おうちで学べる ](https://syu-m-5151.hatenablog.com/entry/2025/04/16/201211)
 	- colima良さそう
     - 入れてみた
-- [Ergo68を買った](https://tkancf.com/blog/ergo68n)
+- [Ergo68を買った](https://tkancf.com/blog/bought-ergo68-keyboard)
 
 # 2025-09-25
 

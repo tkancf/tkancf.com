@@ -26,7 +26,7 @@ updated: 2025-06-15 08:13
     - ![デモ](https://gyazo.com/d65696c4135d8023ab70fe2863537c11.png)
 - MTGのレガシーで使われているカードの使用数ランキング作成
     - [mtg-ranking.tkancf.com](https://mtg-ranking.tkancf.com/)
-- [narrowing-nvimを作った](https://tkancf.com/blog/y2a6p9o)
+- [narrowing-nvimを作った](https://tkancf.com/blog/built-narrowing-nvim)
 - [tkancf/mdtask](https://github.com/tkancf/mdtask)
 - [tkancf/mdtodo-nvim](https://github.com/tkancf/mdtodo-nvim)
 

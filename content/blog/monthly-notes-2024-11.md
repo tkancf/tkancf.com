@@ -104,7 +104,7 @@ Done rebuilding in 145ms
 - ワンパンマンが更新されてたから読んだ
     - おもろい
     - http://galaxyheavyblow.web.fc2.com/fc2-imageviewer/?aid=1&iid=153
-- [bashで入力待ち](https://tkancf.com/blog/20241130005328)
+- [bashで入力待ち](https://tkancf.com/blog/bash-wait-for-input)
 <!--}}}-->
 # 2024-11-30
 
