@@ -1,6 +1,5 @@
 # build output
 dist/
-public/
 
 # Change them to your taste:
 .wrangler
