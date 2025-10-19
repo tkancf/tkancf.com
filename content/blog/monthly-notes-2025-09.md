@@ -1,0 +1,135 @@
+---
+id: blog/2025-09
+aliases:
+  - 2025-09
+tags: []
+created: 2025-09-06 11:29
+title: 2025-09
+updated: 2025-09-06 11:29
+---
+
+# 2025-09
+
+# 2025-09-02
+
+## [RFC の URL はどのドメインで貼るのが良いか | blog.jxck.io](https://blog.jxck.io/entries/2024-03-27/link-to-rfc.html)
+読んだ
+
+> 結論は www.rfc-editor.org だ。
+
+なるほどね
+
+# 2025-09-06
+
+## Proxmoxを入れてみる
+
+### USBへの書き込み
+
+```
+$ diskutil list
+$ diskutil eraseDisk MS-DOS PROXMOX /dev/disk4
+$ diskutil list
+$ diskutil unmountDisk /dev/disk4
+$ sudo dd if=./Downloads/proxmox-ve_9.0-1.iso of=/dev/rdisk4 bs=16m
+$ diskutil list
+```
+
+200sぐらいだった
+
+### インストールから初期設定まで
+
+- [ミニPC（Intel NUC）へのProxmox VEのインストールから初期設定まで #Linux - Qiita](https://qiita.com/yankee/items/1d576f7a25d6f33c6cb5#proxmox%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A) 参考にした
+- 友人に下記教えてもらった
+    - https://community-scripts.github.io/ProxmoxVE/
+    - [Proxmox VE Post Install](https://community-scripts.github.io/ProxmoxVE/scripts?id=post-pve-install)が良さそうだったので実行
+
+> This script provides options for managing Proxmox VE repositories, including disabling the Enterprise Repo, adding or correcting PVE sources, enabling the No-Subscription Repo, adding the test Repo, disabling the subscription nag, updating Proxmox VE, and rebooting the system.
+
+### 仮想マシンを入れてみる
+
+`pveam`がProxmoxの管理コマンドらしい  
+下記でubuntu-25.04のLXCテンプレートがダウンロードされるので、起動できる
+
+```bash
+# pveam available
+# pveam download local ubuntu-25.04-standard_25.04-1.1_amd64.tar.zst
+```
+
+管理画面から諸々の設定値を入れつつ起動したらできた。簡単
+
+# 2025-09-11
+
+- neovim nightlyにした方がいい感じかも
+	- tmux, kitty, neovimの画像表示が問題なく動いてる
+
+```
+mise use aqua:neovim@nightly
+```
+
+# 2025-09-12
+
+- cmdにワンショットシフトキーいいかもね
+- home row modsは暴発が多くて厳しかった
+	- スペースキーをレイヤー切り替えにして、home row modsと同じ配置にすると良いのかも
+
+# 2025-09-18
+
+- gキーをシフトキーと入れ替える？
+
+# 2025-09-19
+
+- gよりvの方が出現頻度的に良いかも
+    - 今日試してみたけど割と良い
+    - コピペぐらいかな
+    - 日本語打っててvはほぼ出ないのが良い
+
+# 2025-09-20
+
+- キースイッチ余り31個
+
+## Ergo68の購入検討
+
+[Ergo68 - 遊舎工房](https://shop.yushakobo.jp/products/3923?_pos=3&_sid=280fede83&_ss=r&variant=47873667825895) めちゃくちゃ欲しくなってきた
+
+[Keyboard Layout Editor](https://www.keyboard-layout-editor.com/) でレイアウトまで考えてた
+
+![Ergo68 キーレイアウト検討](https://i.gyazo.com/427edb2ed2e0abfdc5013420a4c1f5bd.png)
+
+# 2025-09-21
+
+- [IWE](https://github.com/iwe-org/iwe)が良さそうなので試したい
+    - [GitHub - iwe-org/iwe: LSP for Markdown notes taking](https://github.com/iwe-org/iwe)
+        - 結構良い
+        - フォーマットが余計なお世話なことが結構あるので切っても良さそう
+        - デフォルトのファイルリンクは拡張子を消すっぽい
+            - 今まで付いてたから、つけたままがいいけど…
+- [iOSで無料のSyncthing「Synctrain」をインストールして使ってみる - torazaemon2016’s blog](https://torazaemon2016.hatenablog.jp/entry/2025/04/27/142918)試してみたい
+
+# 2025-09-22
+
+会社の帰りに遊舎工房に寄ってErgo68を触ったらより欲しくなった  
+tofu65のvキーとshiftキーの入れ替えはやっぱり厳しい気持ちになってきたので、vキーをtapでv、長押しでshiftとして扱うようにしてみた
+
+# 2025-09-23
+
+- YAMLフロントマターを見てlsしたい
+- [サプライチェーン攻撃への防御策 | blog.jxck.io](https://blog.jxck.io/entries/2025-09-20/mitigate-risk-of-oss-dependencies.html)
+	- 読んでる
+- [MACのDocker 環境はcolima にしました - じゃあ、おうちで学べる ](https://syu-m-5151.hatenablog.com/entry/2025/04/16/201211)
+	- colima良さそう
+    - 入れてみた
+- [Ergo68を買った](https://tkancf.com/blog/bought-ergo68-keyboard)
+
+# 2025-09-25
+
+- Ergo68が届いたので、組み立てた
+    - ハンダ付け済みキットにしたので、とても簡単に組み立てれた
+        - 40分程度で全て組めた
+
+![現状のErgo68キーマップ](https://i.gyazo.com/adfb8a837a1f9dbc22bf1e7e8061b2e1.png)
+
+# 2025-09-26
+
+- 相変わらずキーマップは迷走しているが、割と慣れてきた感じはする
+    - あとちょっと調整すれば完成な気がしている
+

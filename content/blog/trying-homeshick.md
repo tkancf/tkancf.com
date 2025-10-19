@@ -1,0 +1,62 @@
+---
+id: blog/n2p8e9d
+aliases:
+  - homeshickを試す
+tags:
+  - dotfiles
+created: 2025-01-26 21:33
+title: homeshickを試す
+updated: 2025-01-26 21:33
+---
+
+# homeshickを試す
+
+homeshickはdotfiles管理ツール  
+試していたけど、途中で[chezmoiを改めて試す](https://tkancf.com/blog/trying-chezmoi-again)をやり始めて、感触が良かったのでchezmoiでの管理に落ち着いた。
+
+## 公式のInstallationに従ってインストール
+
+- https://github.com/andsens/homeshick/wiki/Installation
+    - 環境変数の設定、補完の設定とかもここに記載がある
+
+## とりあえずhelp
+
+<!--{{{-->
+```bash
+❯❯ ~
+❯ homeshick --help
+homeshick uses git in concert with symlinks to track your precious dotfiles.
+
+ Usage: homeshick [options] TASK
+
+ Tasks:
+  homeshick cd CASTLE                 # Enter a castle
+  homeshick clone URI..               # Clone URI as a castle for homeshick
+  homeshick generate CASTLE..         # Generate a castle repo
+  homeshick list                      # List cloned castles
+  homeshick check [CASTLE..]          # Check a castle for updates
+  homeshick refresh [DAYS [CASTLE..]] # Refresh a castle at regular intervals
+  homeshick pull [CASTLE..]           # Update a castle
+  homeshick link [CASTLE..]           # Symlinks all dotfiles from a castle
+  homeshick track CASTLE FILE..       # Add a file to a castle
+  homeshick help [TASK]               # Show usage of a task
+
+ Aliases:
+  ls      # Alias to list
+  symlink # Alias to link
+  updates # Alias to check
+
+ Runtime options:
+   -q, [--quiet]    # Suppress status output
+   -s, [--skip]     # Skip files that already exist
+   -f, [--force]    # Overwrite files that already exist
+   -b, [--batch]    # Batch-mode: Skip interactive prompts / Choose the default
+   -v, [--verbose]  # Verbose-mode: Detailed status output
+
+ Note:
+  To check, refresh, pull or symlink all your castles
+  simply omit the CASTLE argument
+```
+<!--}}}-->
+
+" vim: foldmethod=marker foldlevel=1

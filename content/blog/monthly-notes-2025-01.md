@@ -1,0 +1,416 @@
+---
+id: blog/2025-01
+aliases:
+  - 2025-01
+tags:
+  - daily-note
+created: 2025-01-02 16:41
+title: 2025-01
+updated: 2025-01-02 16:41
+---
+
+# 2025-01
+
+# 2025/01/31
+
+- [DeepSeek-R1の論文読んだ？【勉強になるよ】](https://zenn.dev/asap/articles/34237ad87f8511) 後で読む
+
+```bash
+❰tkan❙~❱✔≻ fisher install gazorby/fish-abbreviation-tips
+fisher install version 4.4.5
+Fetching https://api.github.com/repos/gazorby/fish-abbreviation-tips/tarball/HEAD
+Installing gazorby/fish-abbreviation-tips
+           /Users/tkan/.config/fish/functions/__abbr_tips_bind_newline.fish
+           /Users/tkan/.config/fish/functions/__abbr_tips_bind_space.fish
+           /Users/tkan/.config/fish/functions/__abbr_tips_clean.fish
+           /Users/tkan/.config/fish/functions/__abbr_tips_init.fish
+           /Users/tkan/.config/fish/conf.d/abbr_tips.fish
+Installed 1 plugin/s
+```
+
+- atuinを入れる
+
+```bash
+❰tkan❙~❱✘≻ brew install atuin
+
+==> Downloading https://formulae.brew.sh/api/formula.jws.json
+==> Downloading https://formulae.brew.sh/api/cask.jws.json
+==> Downloading https://ghcr.io/v2/homebrew/core/atuin/manifests/18.4.0
+#################################################################################################################################################################################################### 100.0%
+==> Fetching atuin
+==> Downloading https://ghcr.io/v2/homebrew/core/atuin/blobs/sha256:186d1bb3e620de43fd544ba346900eff75967f539a6d2760af15217165d59f29
+#################################################################################################################################################################################################### 100.0%
+==> Pouring atuin--18.4.0.arm64_sequoia.bottle.tar.gz
+==> Caveats
+fish completions have been installed to:
+  /opt/homebrew/share/fish/vendor_completions.d
+To start atuin now and restart at login:
+  brew services start atuin
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/atuin/bin/atuin daemon
+==> Summary
+🍺  /opt/homebrew/Cellar/atuin/18.4.0: 14 files, 28MB
+==> Running `brew cleanup atuin`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+```
+
+config.fishに追加
+
+```bash
+  # atuin
+  ## https://docs.atuin.sh/
+  ## Atuin replaces your existing shell history with a SQLite database, and records additional context for your commands. With this context, Atuin gives you faster and better search of your shell history.
+  atuin init fish | source
+```
+
+jethrokuan/fzfがキーバインド競合するので削除
+
+- [PatrickF1/fzf.fish: 🔍🐟 Fzf plugin for Fish](https://github.com/PatrickF1/fzf.fish)のほうが良さそうかもお試し
+
+```bash
+❰tkan❙~❱✔≻ fisher install PatrickF1/fzf.fish
+fisher install version 4.4.5
+Fetching https://api.github.com/repos/patrickf1/fzf.fish/tarball/HEAD
+Installing patrickf1/fzf.fish
+           /Users/tkan/.config/fish/functions/_fzf_configure_bindings_help.fish
+           /Users/tkan/.config/fish/functions/_fzf_extract_var_info.fish
+           /Users/tkan/.config/fish/functions/_fzf_preview_changed_file.fish
+           /Users/tkan/.config/fish/functions/_fzf_preview_file.fish
+           /Users/tkan/.config/fish/functions/_fzf_report_diff_type.fish
+           /Users/tkan/.config/fish/functions/_fzf_report_file_type.fish
+           /Users/tkan/.config/fish/functions/_fzf_search_directory.fish
+           /Users/tkan/.config/fish/functions/_fzf_search_git_log.fish
+           /Users/tkan/.config/fish/functions/_fzf_search_git_status.fish
+           /Users/tkan/.config/fish/functions/_fzf_search_history.fish
+           /Users/tkan/.config/fish/functions/_fzf_search_processes.fish
+           /Users/tkan/.config/fish/functions/_fzf_search_variables.fish
+           /Users/tkan/.config/fish/functions/_fzf_wrapper.fish
+           /Users/tkan/.config/fish/functions/fzf_configure_bindings.fish
+           /Users/tkan/.config/fish/conf.d/fzf.fish
+           /Users/tkan/.config/fish/completions/fzf_configure_bindings.fish
+Updated 1 plugin/s
+```
+
+# 2025/01/30
+
+- fish shellの設定してる
+- fishプラグイン作り方気になる
+
+## [jorgebucaran/fisher](https://github.com/jorgebucaran/fisher)を導入する
+
+README通りに導入した。  
+`~/.config`配下のファイルが更新されたので、そのままdotfilesで管理する
+
+```bash
+❰tkan❙~❱✔≻ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher install version 4.4.5
+Fetching https://api.github.com/repos/jorgebucaran/fisher/tarball/HEAD
+Installing jorgebucaran/fisher
+           /Users/tkan/.config/fish/functions/fisher.fish
+           /Users/tkan/.config/fish/completions/fisher.fish
+Installed 1 plugin/s
+```
+
+fzf連携のプラグインを入れてみる  
+
+```bash
+❰tkan❙~❱✔≻ fisher install jethrokuan/fzf
+fisher install version 4.4.5
+Fetching https://api.github.com/repos/jethrokuan/fzf/tarball/HEAD
+Installing jethrokuan/fzf
+           /Users/tkan/.config/fish/functions/__fzf_cd.fish
+           /Users/tkan/.config/fish/functions/__fzf_complete.fish
+           /Users/tkan/.config/fish/functions/__fzf_complete_preview.fish
+           /Users/tkan/.config/fish/functions/__fzf_find_file.fish
+           /Users/tkan/.config/fish/functions/__fzf_get_dir.fish
+           /Users/tkan/.config/fish/functions/__fzf_open.fish
+           /Users/tkan/.config/fish/functions/__fzf_parse_commandline.fish
+           /Users/tkan/.config/fish/functions/__fzf_reverse_isearch.fish
+           /Users/tkan/.config/fish/functions/__fzfcmd.fish
+           /Users/tkan/.config/fish/conf.d/fzf.fish
+Installed 1 plugin/s
+```
+
+# 2025/01/29
+
+- 寿司取った
+
+# 2025/01/27
+
+## あとで読む
+- [fishプラグイン紹介2025年1月版](https://zenn.dev/yuys13/articles/fish-plugins-2025)
+- [Webプログラマーのための個人開発 ~ゼロから始めてお金を生み出すまで~](https://zenn.dev/k_dev/articles/4f7b55712d5252)
+- [DIすると何がいいんだっけ](https://zenn.dev/mj2mkt/articles/2024-12-03-is-di-necessary)
+- [大企業の幹部がやっている事について - Software Transactional Memo](https://kumagi.hatenablog.com/entry/what-executives-do)
+
+# 2025/01/26
+
+- [chezmoiを改めて試す](https://tkancf.com/blog/trying-chezmoi-again)
+- [GitHub - stevearc/quicker.nvim: Improved UI and workflow for the Neovim quickfix](https://github.com/stevearc/quicker.nvim) 良さそう
+- 豚キムチ丼つくった
+
+# 2025/01/25
+
+- [Dotfiles Management | Hacker News](https://news.ycombinator.com/item?id=34296396) 読んでる
+    - いまはyadm使ってるけど、fish shellの補完でめっちゃ時間がかかるIssueがあるので、乗り換えたい
+        - [Tab completion for `yadm` will freeze fish · Issue #8207 · fish-shell/fish-shell](https://github.com/fish-shell/fish-shell/issues/8207)
+    - homeshick
+        - これ知らなかった
+    - aliasを貼るだけ
+    - chezmoi
+    - NixのHome Manager
+- [定期的に何度も読み返している個人的名エントリを置いておく - 空の箱](https://blog.inorinrinrin.com/entry/2025/01/25/101859)読んでる
+    - 良いまとめだ。
+- [&quot;提案&quot;のレベルを上げる - Konifar&#39;s ZATSU](https://konifar-zatsu.hatenadiary.jp/entry/2023/11/01/193210)読んでる
+    - 言語化凄いなぁ
+    - 意識してできるとよさそう
+## [homeshickを試す](https://tkancf.com/blog/trying-homeshick)
+- [chezmoiを改めて試す](https://tkancf.com/blog/trying-chezmoi-again)
+
+# 2025/01/24
+
+- [人間によるコーディング禁止の CLINE 縛りでゲームを作らせてみた感想](https://zenn.dev/mizchi/articles/game-with-cline)面白い
+- ちょっとだけMTG Arena
+
+# 2025/01/23
+
+- 夜勤続きだったからめっちゃ寝てた
+- [OpenRouter](https://openrouter.ai/)良さそう
+
+# 2025/01/22
+
+- [Neovimの設定](https://tkancf.com/blog/20250122152315)見直してた
+    - 最近こればっかやってるけど、割といい感じになった
+
+# 2025/01/21
+
+- エルドレインの森クイックドラフトした
+    - 7-2
+    - いい感じに勝てた
+    - レアなしで勝てたのが嬉しい
+        - ![デッキリスト](https://i.gyazo.com/fbd661b91446284d8a595b00d5c307f0.jpg)
+        - [17Lands.comのリンク](https://www.17lands.com/details/b42ca81fe88748019cafc4059dc466c5)
+
+# 2025/01/20
+
+- 朝からDSKのプラチナドラフトした
+    - 5-2
+    - 収支プラスで着地した。いいじゃん
+- [【AI駆動開発xNext.js】最強ライブラリ25選を本職Webエンジニアが徹底解説！これを見れば全部OK](https://zenn.dev/aimasaou/articles/ae2cc09d2b6988)読んだ
+- [【MTGアリーナ】17Landsのデータを活用したデータドラフトのすすめ｜Ombre](https://note.com/ombre/n/n1f6715d917e5)読んでる
+    - [luaのソースコードから、コメントを読み取ってドキュメントを生成するツールについて調べる](https://tkancf.com/blog/generating-lua-docs-from-comments)
+- [マスタリーパスを買うべき理由：無課金でレアカードを効率的に集める資産運用方法【MTGアリーナ】 | おじょーゲームズ MTGアリーナブログ](https://ojoegames-mtg.com/buy-mastery-path/)読んでる
+# 2025/01/18
+
+- [2025年の目標](https://tkancf.com/blog/goals-for-2025)
+- yadmみたみたいなやつ作りたい
+- obsidian.nvimみたいなやつLSP使って作りたい
+- MTGのリミテッドもっとやりたい
+# 2025/01/17
+
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/reviewing-neovim-startup-time)
+    - 引き続き
+
+# 2025/01/16
+
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/reviewing-neovim-startup-time)
+    - 引き続き
+
+# 2025/01/15
+
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/reviewing-neovim-startup-time)
+
+# 2025/01/14
+
+- [telescope.nvim 拡張機能のつくりかた](https://zenn.dev/sankantsu/articles/af04828900d544) 読んだ
+- [CodeCompanion.nvim](https://codecompanion.olimorris.dev/) を試してみる
+- これめちゃくちゃ美味かった。また作る
+    - <iframe width="560" height="315" src="https://www.youtube.com/embed/BSVXbIWma0c?si=SIKnTXN0MIMqjkjf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    - [肉吸い風肉豆腐](https://tkancf.com/blog/20250114221213)
+
+# 2025/01/13
+
+- [Welcome to CodeCompanion.nvim | CodeCompanion.nvim](https://codecompanion.olimorris.dev/) 気になる
+
+# 2025/01/12
+
+- 寒すぎてやばい、米とげない
+    - 頑張って研いだ
+
+# 2025/01/11
+
+- [かぼちゃのポタージュ (シロカのブレンダーで)](https://tkancf.com/blog/20250112000545)
+    - 美味しくできた
+- 抱っこ紐届いた！使うとよく寝てくれる気がする
+
+# 2025/01/10
+
+- [blink.nvimでobsidian.nvimの補完を利用する](https://tkancf.com/blog/20250110153217)
+    - nvim-cmpからblink.nvimへの以降を試していて、ここで一番詰まったのでメモ
+- 抱っこ紐を見に行った
+    - エルゴベビー　オムニブリーズが一番良かったのでコレかな
+
+# 2025/01/09
+
+- [Neovim の LSP 関係のプラグインの役割](https://zenn.dev/futsuuu/articles/3b74a8acec166e)分かりやすい
+- [nvim-cmpとLSPをちゃんと改めて設定してみる](https://tkancf.com/blog/configuring-nvim-cmp-and-lsp)
+- [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](https://tkancf.com/blog/switching-to-vim-jetpack)
+
+# 2025/01/08
+
+- nvim-cmpとblink共存させたい
+    - 補完は上手く行ったけど、ファイル作成が上手くいかなかった
+        - 嘘、blinkの補完確定キーマップを勘違いしてただけ
+
+# 2025/01/07
+
+- [面倒なスクショ命名はローカルvlmにやらせよう on Mac](https://zenn.dev/wmoto_ai/articles/58e6bcf58d6032)
+    - 面白い
+
+## miseセットアップ
+
+miseに良さげなリリースが来てたのでセットアップ
+
+```bash
+brew install mise
+echo 'eval "$(/opt/homebrew/bin/mise activate zsh)"' >> ~/.zshrc
+```
+
+## blink.cmpを試す
+
+- 結構いい感じ
+- `list = { selection = { preselect = true, auto_insert = true } },` が上手く動かないのが謎
+    - [ドキュメント](https://cmp.saghen.dev/configuration/completion.html#list)には記載あるのに...
+
+```lua
+  {
+    'saghen/blink.cmp',
+    dependencies = 'rafamadriz/friendly-snippets',
+    version = '*',
+    opts = {
+      keymap = { preset = 'super-tab' },
+      sources = {
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+      },
+      completion = {
+        accept = { auto_brackets = { enabled = true }, },
+        -- list = { selection = { preselect = true, auto_insert = true } },
+        list = { selection = "preselect" },
+      },
+    },
+    opts_extend = { "sources.default" },
+  },
+```
+
+- 上記原因わかった！
+    - 今丁度[このcommit](https://github.com/Saghen/blink.cmp/commit/8126d0e6a2a0e62d3872d718c3d50313f9f7fe3a)がGitHub Actionsでリリースされる前の合間なんだ
+    - v0.9.4でこのcommitがリリースされれば、設定動きそう
+    - それまでは、もとの設定を使おう
+
+
+# 2025/01/06
+
+- karabiner.tsで色々やってる
+    - オプションとシフトキー入れ替えようかなの気持ちありけり
+- [Epomaker Split 65](https://epomaker.jp/ja/products/epomaker-split-65)
+    - めっちゃ欲しい
+    - ガスケットマウント
+    - ホットスワップ
+    - 65%で矢印あり
+    - 分割式
+    - VIA対応
+    - 19800円
+
+# 2025/01/04
+
+- なんかバタバタしてて、年末振り返りと今年の目標決め忘れてたから決めたい
+- 振り返り
+    - 年始は頑張ってた
+        - 4月ぐらいまではいい感じにコード書いたり、アウトプットしたりしていた
+        - 4月以降一気に出来なくなったのは残念
+        - 8月末にAWS SAPの資格が期限切れるって状況だったので、7, 8月は慌てて更新試験の勉強してた
+            - 無事、更新成功した
+        - 12月に出産予定だったので、そこから育休取らせてもらうって話を会社としたり、そのタイミングで希望してた部署への移動とか現部署のネージャーを引き継いだりとか、仕事もそこそこ忙しくしてた
+            - 育休明けたら久々にプレイヤーとして手を動かす事が主業務になるので、技術的に成長出来るように頑張りてーってお気持ち
+    - 妻が妊娠してからはそっちの比重が多くなって仕事とMTGしかしなくなった
+    - 12月に無事子供が産まれた
+        - 子育てそこそこ大変だけど、日々進化していく息子見るの面白い
+            - ただ、育休取って2人がかりでこの大変さなの、ワンオペ育児とかしてる人類皆バグってるだろって気持ちになってる
+            - 急に泣きだした原因特定して対応するの仕事の障害対応に似てる
+                - 突発で夜勤が発生する感じとかも似てる
+- 目標
+    - 健康大事にしたい
+        - 子供産まれたし、風邪引いて移したりしたくないし
+            - 早速おむつ替えのせいで手荒れて、腕が真っ赤になったけど
+            - 腰、首、手首酷使してるので気をつけていきたい
+    - 子育て頑張りたい
+        - 頑張るよ
+    - 子供見ながらちょっとずつでもインプット、アウトプット積んでいきたい
+        - 抱っこしてると手があかないので、スマホからでも良い感じにメモれる環境を頑張って用意した
+            - このメモも抱っこしながら音声入力と合わせてやってる
+            - 腰を据えてPCに向かったり、本を読んだりは無理そうなので、細切れの時間で上手いことやりたい
+    - 仕事
+        - 育休明けたら久々にプレイヤーとして手を動かす事が主業務になるので、技術的に成長出来るように頑張りてーってお気持ち
+
+# 2025/01/03
+
+- [Release v2024.11.8 · jdx/mise · GitHub](https://github.com/jdx/mise/releases/tag/v2024.11.8) これ最高じゃん
+    >    aqua backend by [@jdx](https://github.com/jdx) in [#2995](https://github.com/jdx/mise/pull/2995)
+    - mise、aqua、asdfで悩んで混在しちゃってたけど、miseが良さそう
+
+# 2025/01/02
+<!--{{{-->
+
+- 息子氏ほぼ寝なかったので夜勤してた
+- その後昼寝してたら一日終わった
+- karabiner.tsを試したい
+    - [karabiner.tsがとてもいいぞ](https://zenn.dev/ryoppippi/articles/85373aaf0c92e0)
+    - [evan-liu/karabiner.ts: Write Karabiner-Elements configuration in TypeScript](https://github.com/evan-liu/karabiner.ts)
+
+まずは下記からTSに変換していく
+
+```json
+{
+    "description": "英数・かなキーを他のキーと組み合わせて押したときに、コマンドキーを送信する。",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "japanese_eisuu",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "left_command" }],
+            "to_if_alone": [{ "key_code": "japanese_eisuu" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "japanese_kana",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "right_command" }],
+            "to_if_alone": [{ "key_code": "japanese_kana" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "right_command",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "right_command" }],
+            "to_if_alone": [{ "key_code": "japanese_kana" }],
+            "type": "basic"
+        }
+    ]
+}
+```
+
+- [Neovim GUIを色々試す](https://tkancf.com/blog/neovim-gui-experiments)
+<!--}}}-->
+# 2025/01/01
+
+- 正月！！あけおめ！！
+- にじさんじのカウントダウンライブ見てた
+    - <iframe width="560" height="315" src="https://www.youtube.com/embed/Ip0bQfyoqgs?si=iLoolCDvDjytwAnK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+" vim: foldmethod=marker foldlevel=1
