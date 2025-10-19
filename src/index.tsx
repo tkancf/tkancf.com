@@ -14,9 +14,7 @@ import { formatDate } from "./lib/date";
 const app = new Hono();
 
 const blogDir = "content/blog";
-const scrapDir = "content/scrap";
 const blogs = await getPosts(blogDir);
-const scraps = await getPosts(scrapDir);
 const externalPosts = await getExternalPosts();
 
 type Metadata = {
@@ -54,82 +52,10 @@ app.get("/", (c) => {
   };
   return c.render(
     <Layout metadata={metadata}>
-      <Home posts={blogs} scraps={scraps} />
+      <Home posts={blogs} />
     </Layout>
   );
 });
-
-app.get("/scrap", async (c) => {
-  metadata = {
-    description: "tkancfのブログのスクラップ一覧ページです。",
-    ogImage: "/placeholder-social.jpeg",
-    title: siteName + " - スクラップ一覧",
-    url: baseURL + "/scrap",
-  };
-  const allScraps = scraps.sort(
-    (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
-  );
-  return c.render(
-    <Layout metadata={metadata}>
-      <div class={postListCSS}>
-        <h2>スクラップ一覧</h2>
-        <p>
-          雑な情報収集メモ、作業ログ、ブログ記事にするまでもないような細かいメモなどを残す場所です。
-        </p>
-
-        <ul>
-          {allScraps.map((scrap) => (
-            <li>
-              <time>{formatDate(scrap.pubDate)}</time>
-              <a href={scrap.platform ? scrap.url : `/scrap/${scrap.slug}`}>
-                {scrap.platform && <>🔗[{scrap.platform}]: </>}
-                {scrap.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </Layout>
-  );
-});
-
-app.get(
-  "/scrap/:slug",
-  ssgParams(async () => {
-    return scraps.map((scrap) => {
-      return {
-        slug: scrap.slug,
-      };
-    });
-  }),
-  async (c) => {
-    const slug = c.req.param("slug");
-    const scrap = await getPost(slug, scrapDir);
-    if (!scrap) {
-      return c.redirect("/404");
-    }
-    metadata = {
-      description: scrap.description,
-      ogImage: scrap.heroImage ? scrap.heroImage : "/placeholder-social.jpeg",
-      title: scrap.title,
-      url: baseURL + "/scrap/" + scrap.slug,
-    };
-    return c.render(
-      <Layout metadata={metadata}>
-        <h1>{scrap.title}</h1>
-        <p>
-          この記事はスクラップメモです。
-          <br />
-          ブログ記事と比較して雑なメモ、感想、意見をあまりちゃんと精査せずに書いているので、ご注意ください。チラシの裏みたいなものです。
-        </p>
-        <div>投稿日: {scrap.pubDate}</div>
-        <hr />
-        <div dangerouslySetInnerHTML={{ __html: scrap.body }}></div>
-        <hr />
-      </Layout>
-    );
-  }
-);
 
 app.get("/blog", async (c) => {
   const allPosts = [...blogs, ...externalPosts].sort(

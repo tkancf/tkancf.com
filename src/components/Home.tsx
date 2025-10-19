@@ -3,7 +3,11 @@ import { formatDate } from "../lib/date";
 import { postListCSS } from "../lib/style";
 import { Post } from "../types";
 
-export const Home = (props: any) => {
+interface HomeProps {
+  posts: Post[];
+}
+
+export const Home = ({ posts }: HomeProps) => {
   return (
     <>
       <div class={postListCSS}>
@@ -12,23 +16,11 @@ export const Home = (props: any) => {
         <h2>最新の記事</h2>
         全記事一覧は <a href="/blog">こちら</a>
         <ul>
-          {props.posts
+          {posts
             .map((post: Post) => (
               <li>
                 <time>{formatDate(post.pubDate)}</time>
                 <a href={`/blog/${post.slug}`}>{post.title}</a>
-              </li>
-            ))
-            .slice(0, 7)}
-        </ul>
-        <h2>最新のスクラップ</h2>
-        全スクラップ一覧は <a href="/scrap">こちら</a>
-        <ul>
-          {props.scraps
-            .map((scrap: Post) => (
-              <li>
-                <time>{formatDate(scrap.pubDate)}</time>
-                <a href={`/scrap/${scrap.slug}`}>{scrap.title}</a>
               </li>
             ))
             .slice(0, 7)}
