@@ -12,7 +12,7 @@ updated: 2025-01-26 21:33
 # homeshickを試す
 
 homeshickはdotfiles管理ツール  
-試していたけど、途中で[chezmoiを改めて試す](blog/m7o5d1c.md)をやり始めて、感触が良かったのでchezmoiでの管理に落ち着いた。
+試していたけど、途中で[chezmoiを改めて試す](https://tkancf.com/blog/m7o5d1c)をやり始めて、感触が良かったのでchezmoiでの管理に落ち着いた。
 
 ## 公式のInstallationに従ってインストール
 

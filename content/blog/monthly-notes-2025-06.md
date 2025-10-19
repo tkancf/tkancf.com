@@ -13,19 +13,19 @@ updated: 2025-06-12 23:20
 
 # 2025-06-12
 
-- [obsidian.nvimとquartzでメモをブログにした](blog/w4y5n8m.md)
+- [obsidian.nvimとquartzでメモをブログにした](https://tkancf.com/blog/w4y5n8m)
     - 書いた
 
 # 2025-06-15
 
 - Claude Code MAX契約した
     - とりあえず1ヶ月試しまくる
-- [MaxプランでClaude Codeを試した](blog/x8z2o4n.md)
+- [MaxプランでClaude Codeを試した](https://tkancf.com/blog/x8z2o4n)
 - [tkancf/telescope-markdown-frontmatter.nvim](https://github.com/tkancf/telescope-markdown-frontmatter.nvim) を作った
 
 # 2025-06-22
 
-- [narrowing-nvimを作った](blog/y2a6p9o.md)
+- [narrowing-nvimを作った](https://tkancf.com/blog/y2a6p9o)
     - [tkancf/narrowing-nvim](https://github.com/tkancf/narrowing-nvim) を作った
         - Emacsにnarrowingという機能があって、Org-modeを使っていた頃にかなり多用していた
         - [chrisbra/NrrwRgn](https://github.com/chrisbra/NrrwRgn) というVimプラグインがあって、欲しい機能は概ね満たしていたがかなり古くてNeovimのfloating windowなどには対応していない
@@ -33,7 +33,7 @@ updated: 2025-06-12 23:20
 
 # 2025-06-24
 
-- [tmuxで現在のディレクトリ名をwindow名にする設定](blog/z9b3q5p.md)
+- [tmuxで現在のディレクトリ名をwindow名にする設定](https://tkancf.com/blog/z9b3q5p)
 
 ```
 # ウィンドウ名の自動リネームを有効にする
@@ -63,7 +63,7 @@ set-window-option -g automatic-rename-format '#{b:pane_current_path}'
     - 良さそう
 - [GitHub - textlint-ja/textlint-rule-preset-ai-writing: textlintプリセット：AIっぽい記述パターンを検出し、より自然な日本語表現を促すルール集](https://github.com/textlint-ja/textlint-rule-preset-ai-writing)
     - 良い
-- [claude CodeをMAXプランで試した](blog/x8z2o4n.md)
+- [claude CodeをMAXプランで試した](https://tkancf.com/blog/x8z2o4n)
     - 追記
-- [Vimで:messagesの内容をコピーする方法](blog/a5c8r2q.md)
+- [Vimで:messagesの内容をコピーする方法](https://tkancf.com/blog/a5c8r2q)
 

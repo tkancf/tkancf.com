@@ -102,4 +102,4 @@ GitHub Mobile + GitHub issueでメモ良い感じなので、オススメ。
 
 Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期できるようになったので、今は結局Obsidianを使っています。
 
-[self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](blog/sync-obsidian-notes-free-Self-hosted-LiveSync-flyio.md)
+[self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](https://tkancf.com/blog/sync-obsidian-notes-free-Self-hosted-LiveSync-flyio)

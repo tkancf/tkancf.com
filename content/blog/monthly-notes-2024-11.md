@@ -104,10 +104,10 @@ Done rebuilding in 145ms
 - ワンパンマンが更新されてたから読んだ
     - おもろい
     - http://galaxyheavyblow.web.fc2.com/fc2-imageviewer/?aid=1&iid=153
-- [bashで入力待ち](20241130005328.md)
+- [bashで入力待ち](https://tkancf.com/blog/20241130005328)
 <!--}}}-->
 # 2024-11-30
 
-- [レンジで焼き芋](20241130232532.md)簡単で旨くて良い
+- [レンジで焼き芋](https://tkancf.com/blog/20241130232532)簡単で旨くて良い
 
 " vim: foldmethod=marker foldlevel=1

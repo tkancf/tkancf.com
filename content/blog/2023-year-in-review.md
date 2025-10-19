@@ -22,26 +22,26 @@ updated: 2025-02-06 16:59
 今年は下記20件のブログを書きました。今年の4月にブログをはてなブログから、Astro + Cloudflare Pagesに移行してから、ブログを書く頻度が上がりました。去年は年間10件に満たなかったので、今年の20件は大幅な増加です。  
 増えた理由としては、普段のメモの取り方を変えたこと、Twitterをほぼやめたことでブログについて考える頻度を増やせたのかなと思っています。
 
-- [Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](blog/x6z7o5n.md)
-- [CloudFlare PagesでホストしているAstro.jsブログでリダイレクトする方法](blog/v5x6m8l.md)
-- [VimのCTRL-K <Space>を理解する](blog/b8d2s4r.md)
-- [ISUCON13に参加しました。最終スコアは8654でした](blog/p4r1g9f.md)
-- [tofu65キーボードを買いました](blog/tofu65r.md)
-- [SvelteKitでカードゲームのプロキシメーカーを作りました](blog/i3k5z2y.md)
-- [GitHub Mobile + GitHub issueでメモが良い感じ](blog/o8q7f5e.md)
-- [$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) を理解する](blog/a3c5r9q.md)
-- [iTerm2でベルの音を止める](blog/r3t4i6h.md)
-- [Astroのバージョンをv2からv3に上げました](blog/c5e7t1s.md)
-- [GitHub ActionsでPulumiをCI・CDしてみた](blog/z7b8q6p.md)
-- [Pulumi+GoでCloudflareのDNS既存リソースをインポートして管理してみた](blog/q7s8h2g.md)
-- [cdコマンドを拡張したzoxideコマンドが便利](blog/g7i8x3w.md)
-- [CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました](blog/j7l1a6z.md)
-- [『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました](blog/u1w2l4k.md)
-- [Raycast のクリップボードヒストリーは Command+.で結合できる](blog/t4v5k7j.md)
-- [Commandキーをtmuxのプレフィックスキーとして使う方法 on Iterm2](blog/h6j9y8x.md)
-- [AstroとCloudflare Pagesでブログを作成しました](blog/d4f5u6t.md)
-- [ブログをAstroへ以降しました](blog/l9n2c7b.md)
-- [過去に別のブログで書いた技術記事まとめ](blog/s8u9j3i.md)
+- [Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する](https://tkancf.com/blog/x6z7o5n)
+- [CloudFlare PagesでホストしているAstro.jsブログでリダイレクトする方法](https://tkancf.com/blog/v5x6m8l)
+- [VimのCTRL-K <Space>を理解する](https://tkancf.com/blog/b8d2s4r)
+- [ISUCON13に参加しました。最終スコアは8654でした](https://tkancf.com/blog/p4r1g9f)
+- [tofu65キーボードを買いました](https://tkancf.com/blog/tofu65r)
+- [SvelteKitでカードゲームのプロキシメーカーを作りました](https://tkancf.com/blog/i3k5z2y)
+- [GitHub Mobile + GitHub issueでメモが良い感じ](https://tkancf.com/blog/o8q7f5e)
+- [$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) を理解する](https://tkancf.com/blog/a3c5r9q)
+- [iTerm2でベルの音を止める](https://tkancf.com/blog/r3t4i6h)
+- [Astroのバージョンをv2からv3に上げました](https://tkancf.com/blog/c5e7t1s)
+- [GitHub ActionsでPulumiをCI・CDしてみた](https://tkancf.com/blog/z7b8q6p)
+- [Pulumi+GoでCloudflareのDNS既存リソースをインポートして管理してみた](https://tkancf.com/blog/q7s8h2g)
+- [cdコマンドを拡張したzoxideコマンドが便利](https://tkancf.com/blog/g7i8x3w)
+- [CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました](https://tkancf.com/blog/j7l1a6z)
+- [『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました](https://tkancf.com/blog/u1w2l4k)
+- [Raycast のクリップボードヒストリーは Command+.で結合できる](https://tkancf.com/blog/t4v5k7j)
+- [Commandキーをtmuxのプレフィックスキーとして使う方法 on Iterm2](https://tkancf.com/blog/h6j9y8x)
+- [AstroとCloudflare Pagesでブログを作成しました](https://tkancf.com/blog/d4f5u6t)
+- [ブログをAstroへ以降しました](https://tkancf.com/blog/l9n2c7b)
+- [過去に別のブログで書いた技術記事まとめ](https://tkancf.com/blog/s8u9j3i)
 
 ### GitHub
 
@@ -63,11 +63,11 @@ GitHubは例年特に何もしていないのでまっさらなんですが、�
 - カードゲームのプロキシメーカー
   - SvelteKit + Cloudflare Pages
   - 個人的に欲しい機能を満たすものが無かったので自作しました
-  - ブログも書きました: [SvelteKitでカードゲームのプロキシメーカーを作りました](blog/i3k5z2y.md)
+  - ブログも書きました: [SvelteKitでカードゲームのプロキシメーカーを作りました](https://tkancf.com/blog/i3k5z2y)
 - LINE bot
   - Cloudflare Workers + Cloudflare D1 + Hono
   - Cloudflare Workersのお試し兼、妻とのやり取りで普通に欲しかったので作りました。今も少しずつ改良しながら便利に使っています
-  - ブログも書きました: [CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました](blog/j7l1a6z.md)
+  - ブログも書きました: [CloudFlare Workers、Cloudflare D1、HonoでLINE botを作りました](https://tkancf.com/blog/j7l1a6z)
 - MoneyForwardのデータをもとに、色々とグラフを作成して表示するためのツール
   - Go + Google Spreadsheet + Google Sites
   - MoneyForwardのデータをGoogle Spreadsheetにエクスポートして、Google Sitesで表示するためのツール

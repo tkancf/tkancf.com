@@ -146,7 +146,7 @@ Installed 1 plugin/s
 
 # 2025/01/26
 
-- [chezmoiを改めて試す](20250126204830.md)
+- [chezmoiを改めて試す](https://tkancf.com/blog/20250126204830)
 - [GitHub - stevearc/quicker.nvim: Improved UI and workflow for the Neovim quickfix](https://github.com/stevearc/quicker.nvim) 良さそう
 - 豚キムチ丼つくった
 
@@ -165,8 +165,8 @@ Installed 1 plugin/s
 - [&quot;提案&quot;のレベルを上げる - Konifar&#39;s ZATSU](https://konifar-zatsu.hatenadiary.jp/entry/2023/11/01/193210)読んでる
     - 言語化凄いなぁ
     - 意識してできるとよさそう
-## [homeshickを試す](20250126213331.md)
-- [chezmoiを改めて試す](20250126204830.md)
+## [homeshickを試す](https://tkancf.com/blog/20250126213331)
+- [chezmoiを改めて試す](https://tkancf.com/blog/20250126204830)
 
 # 2025/01/24
 
@@ -180,7 +180,7 @@ Installed 1 plugin/s
 
 # 2025/01/22
 
-- [Neovimの設定](20250122152315.md)見直してた
+- [Neovimの設定](https://tkancf.com/blog/20250122152315)見直してた
     - 最近こればっかやってるけど、割といい感じになった
 
 # 2025/01/21
@@ -199,27 +199,27 @@ Installed 1 plugin/s
     - 収支プラスで着地した。いいじゃん
 - [【AI駆動開発xNext.js】最強ライブラリ25選を本職Webエンジニアが徹底解説！これを見れば全部OK](https://zenn.dev/aimasaou/articles/ae2cc09d2b6988)読んだ
 - [【MTGアリーナ】17Landsのデータを活用したデータドラフトのすすめ｜Ombre](https://note.com/ombre/n/n1f6715d917e5)読んでる
-    - [luaのソースコードから、コメントを読み取ってドキュメントを生成するツールについて調べる](20250120164648.md)
+    - [luaのソースコードから、コメントを読み取ってドキュメントを生成するツールについて調べる](https://tkancf.com/blog/20250120164648)
 - [マスタリーパスを買うべき理由：無課金でレアカードを効率的に集める資産運用方法【MTGアリーナ】 | おじょーゲームズ MTGアリーナブログ](https://ojoegames-mtg.com/buy-mastery-path/)読んでる
 # 2025/01/18
 
-- [2025年の目標](20250119160043.md)
+- [2025年の目標](https://tkancf.com/blog/20250119160043)
 - yadmみたみたいなやつ作りたい
 - obsidian.nvimみたいなやつLSP使って作りたい
 - MTGのリミテッドもっとやりたい
 # 2025/01/17
 
-- [Neovimの起動時間を見直してみる](20250115141139.md)
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/20250115141139)
     - 引き続き
 
 # 2025/01/16
 
-- [Neovimの起動時間を見直してみる](20250115141139.md)
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/20250115141139)
     - 引き続き
 
 # 2025/01/15
 
-- [Neovimの起動時間を見直してみる](20250115141139.md)
+- [Neovimの起動時間を見直してみる](https://tkancf.com/blog/20250115141139)
 
 # 2025/01/14
 
@@ -227,7 +227,7 @@ Installed 1 plugin/s
 - [CodeCompanion.nvim](https://codecompanion.olimorris.dev/) を試してみる
 - これめちゃくちゃ美味かった。また作る
     - <iframe width="560" height="315" src="https://www.youtube.com/embed/BSVXbIWma0c?si=SIKnTXN0MIMqjkjf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    - [肉吸い風肉豆腐](20250114221213.md)
+    - [肉吸い風肉豆腐](https://tkancf.com/blog/20250114221213)
 
 # 2025/01/13
 
@@ -240,13 +240,13 @@ Installed 1 plugin/s
 
 # 2025/01/11
 
-- [かぼちゃのポタージュ (シロカのブレンダーで)](20250112000545.md)
+- [かぼちゃのポタージュ (シロカのブレンダーで)](https://tkancf.com/blog/20250112000545)
     - 美味しくできた
 - 抱っこ紐届いた！使うとよく寝てくれる気がする
 
 # 2025/01/10
 
-- [blink.nvimでobsidian.nvimの補完を利用する](20250110153217.md)
+- [blink.nvimでobsidian.nvimの補完を利用する](https://tkancf.com/blog/20250110153217)
     - nvim-cmpからblink.nvimへの以降を試していて、ここで一番詰まったのでメモ
 - 抱っこ紐を見に行った
     - エルゴベビー　オムニブリーズが一番良かったのでコレかな
@@ -254,8 +254,8 @@ Installed 1 plugin/s
 # 2025/01/09
 
 - [Neovim の LSP 関係のプラグインの役割](https://zenn.dev/futsuuu/articles/3b74a8acec166e)分かりやすい
-- [nvim-cmpとLSPをちゃんと改めて設定してみる](20250109082836.md)
-- [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](20250109162302.md)
+- [nvim-cmpとLSPをちゃんと改めて設定してみる](https://tkancf.com/blog/20250109082836)
+- [Neovimのプラグインマネージャーをlazy.nvimからvim-jetpackに移行する](https://tkancf.com/blog/20250109162302)
 
 # 2025/01/08
 
@@ -405,7 +405,7 @@ echo 'eval "$(/opt/homebrew/bin/mise activate zsh)"' >> ~/.zshrc
 }
 ```
 
-- [Neovim GUIを色々試す](20250103013029.md)
+- [Neovim GUIを色々試す](https://tkancf.com/blog/20250103013029)
 <!--}}}-->
 # 2025/01/01
 

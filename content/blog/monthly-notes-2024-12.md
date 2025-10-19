@@ -39,15 +39,15 @@ updated: 2024-12-01 11:02
     - [弱さを晒け出すマネジメントと弱さを乗り越えるマネジメント](https://note.com/ysk_118/n/n93a3ca380ca0)
     - 良い
 - 作った
-    - [iPhoneのショートカットで現在開いているページのリンクをMarkdown形式で取得](20241201203215.md)
+    - [iPhoneのショートカットで現在開いているページのリンクをMarkdown形式で取得](https://tkancf.com/blog/20241201203215)
 - 読んだ
     - [爆伸び中のGoライブラリhuma](https://zenn.dev/mercy34/articles/1fa551165d8ac1)
     - GoからOpenAPI 3.1を生成可能
         - ほう
-- [美味しい紅茶](20241201221931.md)
+- [美味しい紅茶](https://tkancf.com/blog/20241201221931)
     - [Midnight Hour Tea | TWG Tea](https://twgtea.com/en/loose-tea/midnight-hour-tea-t6800?srsltid=AfmBOor4Ogjprf7mVrhiNwe5wZ3uxewCJHFoBtVcp6W0-Q_AiNx4QZY-)
         - カフェインレスなのに、全然そんな感じがしないのでめちゃ良い
-- [気になる紅茶](20241202000103.md)
+- [気になる紅茶](https://tkancf.com/blog/20241202000103)
     - [国産紅茶のヤベーやつ、三選｜sabasty](https://note.com/sabasty/n/n1a11dbb45197)
         - ここで紹介されてるやつ
     - [国産紅茶のやべーやつ、リターンズ｜sabasty](https://note.com/sabasty/n/n85c16550c760)
@@ -117,7 +117,7 @@ updated: 2024-12-01 11:02
 
 - [AWS、ノーコードでAmazon S3を操作するWebアプリが作れる「AWS Transfer Family web apps」発表 － Publickey](https://www.publickey1.jp/blog/24/awsamazon_s3webaws_transfer_family_web_apps.html)
     - コレ良さそう。触ってみたいな
-- 書いた [2024-12-16のMTG禁止改訂予想](20241214042549.md)
+- 書いた [2024-12-16のMTG禁止改訂予想](https://tkancf.com/blog/20241214042549)
 - 読んだ [無自覚にメンバーの心理的安全性を奪っていた経験から得た学び - Speaker Deck](https://speakerdeck.com/lighttiger2505/wu-zi-jue-nimenbanoxin-li-de-an-quan-xing-woduo-tuteitajing-yan-karade-taxue-bi)
     - めちゃくちゃ良いスライド
     - 失敗を公開することって難しいんだけど、自制と振り返りが上手いからとても参考になる
@@ -130,7 +130,7 @@ updated: 2024-12-01 11:02
 - 読んでる [Goによるrsc.io/scriptパッケージを用いた独自スクリプトでテストケースを記述するテスト手法紹介 - tomato3713’s blog](https://tomato3713.hatenablog.com/entry/2024/12/11/095858)
 - 土地基盤まだ妥協しまくってるけど、とりあえずセファブレ形になった
     - ![セファブレのデッキ画像](https://i.gyazo.com/thumb/3024/cc28d5c178efcbb238cb308ac8f02e70-heic.jpg)
-- [MARCO POLO ROUGE - マルコ ポーロ ルージュ](20241214162351.md)注文してみた
+- [MARCO POLO ROUGE - マルコ ポーロ ルージュ](https://tkancf.com/blog/20241214162351)注文してみた
     - ノンカフェインなので、美味しいと嬉しいな
 - 何もないのに泣き止まない時、ドライヤーの音、シャワーの音流すと泣き止む時ある
 
@@ -142,7 +142,7 @@ updated: 2024-12-01 11:02
 # 2024-12-16
 
 - [グラタンの素 買わなくていい【簡単グラタン】冬の楽しみに是非どうぞ。 - YouTube](https://www.youtube.com/watch?v=76z2hhjZicg&list=PL9YfRGcJzkKbfNqaf00T9db8MJQzRyZ1f&index=47) 作る
-    - [グラタン](20241216124557.md)
+    - [グラタン](https://tkancf.com/blog/20241216124557)
 
 
 ## Re: 個人メモ用のサイトを作ってみた
@@ -165,7 +165,7 @@ updated: 2024-12-01 11:02
 
 # 2024-12-18
 
-- [2024-12-16のMTG禁止改訂予想](20241214042549.md)
+- [2024-12-16のMTG禁止改訂予想](https://tkancf.com/blog/20241214042549)
     - モダン、ラプターと指輪が禁止で、ゼニス、双子、オパモ、ルーティング解禁
     - 解禁多くてびっくりしたな
 

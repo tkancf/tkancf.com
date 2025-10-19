@@ -33,5 +33,5 @@ AstroとCloudflare Pagesを利用して、ブログを作成しました。
 ## その他諸々
 
 Astro.jsのブログテンプレートで出力されるデフォルトのデザインがシンプルでとても気に入ったので、しばらくはこのまま利用します。デザインを変更する必要がある場合は、その都度検討していく予定です。  
-過去にはてなブログで書いた技術記事については、新しいブログからもアクセスできるようにリンク集を作成しました。[こちらのページ](/blog/past-technical-articles-collection/)から過去の記事をご覧いただけます。  
-このブログの作成にあたって、AstroとCloudflare Pagesを利用した作成手順については、別の記事で詳しく説明しています。興味があれば[こちらの記事](astro-and-cloudflare-pages-blog-creation/)を読んでいただけると嬉しいです。
+過去にはてなブログで書いた技術記事については、新しいブログからもアクセスできるようにリンク集を作成しました。[こちらのページ](https://tkancf.com/blog/past-technical-articles-collection/)から過去の記事をご覧いただけます。  
+このブログの作成にあたって、AstroとCloudflare Pagesを利用した作成手順については、別の記事で詳しく説明しています。興味があれば[こちらの記事](https://tkancf.com/blog/astro-and-cloudflare-pages-blog-creation/)を読んでいただけると嬉しいです。

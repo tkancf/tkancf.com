@@ -19,6 +19,6 @@ updated: 2024-12-02 00:01
     - 堀口製茶 カクホリ 紅茶べにふうき
     - マルヒ製茶 香駿 MB204セカンドフラッシュ
     - 清水園 埼玉夢紅茶 ゆめわかば1st
-- [MARCO POLO ROUGE - マルコ ポーロ ルージュ](20241214162351.md)
+- [MARCO POLO ROUGE - マルコ ポーロ ルージュ](https://tkancf.com/blog/20241214162351)
 - [CRAFT BREW TEA&ndash; TEA ARTISAN CRAFTED](https://marushichi-tac.com/collections/craft-brew-tea)
 
