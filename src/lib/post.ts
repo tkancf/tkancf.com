@@ -59,18 +59,32 @@ export const getPost = async (
 };
 
 export async function getPosts(postsDir: string): Promise<Post[]> {
-  const postFiles = await fs.readdir(postsDir);
-  const posts = await Promise.all(
-    postFiles.map((file) => readMarkdownFile(path.join(postsDir, file)))
-  );
-  posts.sort(
-    (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
-  );
-  return posts;
+  try {
+    const postFiles = await fs.readdir(postsDir);
+    const posts = await Promise.all(
+      postFiles.map((file) => readMarkdownFile(path.join(postsDir, file)))
+    );
+    posts.sort(
+      (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
+    );
+    return posts;
+  } catch (error: any) {
+    if (error.code === "ENOENT") {
+      return [];
+    }
+    throw error;
+  }
 }
 
 export async function getExternalPosts(): Promise<Post[]> {
-  const filePath = path.join(externalContentPath);
-  const content = await fs.readFile(filePath, { encoding: "utf-8" });
-  return JSON.parse(content);
+  try {
+    const filePath = path.join(externalContentPath);
+    const content = await fs.readFile(filePath, { encoding: "utf-8" });
+    return JSON.parse(content);
+  } catch (error: any) {
+    if (error.code === "ENOENT") {
+      return [];
+    }
+    throw error;
+  }
 }
