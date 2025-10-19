@@ -1,4 +1,5 @@
 import { siteName } from "../lib/constants";
+import { formatDate } from "../lib/date";
 import { postListCSS } from "../lib/style";
 import { Post } from "../types";
 
@@ -14,7 +15,7 @@ export const Home = (props: any) => {
           {props.posts
             .map((post: Post) => (
               <li>
-                <time>{post.pubDate}</time>
+                <time>{formatDate(post.pubDate)}</time>
                 <a href={`/blog/${post.slug}`}>{post.title}</a>
               </li>
             ))
@@ -26,7 +27,7 @@ export const Home = (props: any) => {
           {props.scraps
             .map((scrap: Post) => (
               <li>
-                <time>{scrap.pubDate}</time>
+                <time>{formatDate(scrap.pubDate)}</time>
                 <a href={`/scrap/${scrap.slug}`}>{scrap.title}</a>
               </li>
             ))

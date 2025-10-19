@@ -31,12 +31,18 @@ async function readMarkdownFile(filePath: string): Promise<Post> {
   const content = await fs.readFile(filePath, { encoding: "utf-8" });
   const result = await processMarkdown(content);
   const body = result.toString();
-  const frontMatter = result.data.frontMatter as Partial<Post>;
+  type PostFrontMatter = Partial<Post> & {
+    created?: string;
+    updated?: string;
+  };
+  const frontMatter = result.data.frontMatter as PostFrontMatter;
+  const pubDate =
+    frontMatter.pubDate || frontMatter.created || frontMatter.updated || "";
 
   return {
     slug: path.parse(filePath).name,
     title: frontMatter.title || "",
-    pubDate: frontMatter.pubDate || "",
+    pubDate,
     description: frontMatter.description || "",
     body,
     heroImage: frontMatter.heroImage,

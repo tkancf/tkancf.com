@@ -9,6 +9,7 @@ import { baseURL, siteName, iconURL } from "./lib/constants";
 import RSS from "rss";
 import { postListCSS } from "./lib/style";
 import { Home } from "./components/Home";
+import { formatDate } from "./lib/date";
 
 const app = new Hono();
 
@@ -79,7 +80,7 @@ app.get("/scrap", async (c) => {
         <ul>
           {allScraps.map((scrap) => (
             <li>
-              <time>{scrap.pubDate}</time>
+              <time>{formatDate(scrap.pubDate)}</time>
               <a href={scrap.platform ? scrap.url : `/scrap/${scrap.slug}`}>
                 {scrap.platform && <>🔗[{scrap.platform}]: </>}
                 {scrap.title}
@@ -148,7 +149,7 @@ app.get("/blog", async (c) => {
         <ul>
           {allPosts.map((post) => (
             <li>
-              <time>{post.pubDate}</time>
+              <time>{formatDate(post.pubDate)}</time>
               <a href={post.platform ? post.url : `/blog/${post.slug}`}>
                 {post.platform && <>🔗[{post.platform}]: </>}
                 {post.title}
