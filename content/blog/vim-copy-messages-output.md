@@ -1,5 +1,4 @@
 ---
-id: blog/20250630224354
 aliases:
   - Vimで:messagesの内容をコピーする方法
 tags:

@@ -1,5 +1,4 @@
 ---
-id: blog/v7x9m1l
 aliases:
   - epwalsh/obsidian.nvimの更新が止まって、forkされたobsidian-nvim/obsidian.nvimの更新が活発になってた
   - obsidian.nvimのfork obsidian-nvim/obsidian.nvim について

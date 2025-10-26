@@ -1,5 +1,4 @@
 ---
-id: blog/t2v6k4j
 aliases:
   - iPhoneのショートカットで現在開いているページのリンクをMarkdown形式で取得
 tags:

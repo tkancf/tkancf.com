@@ -1,5 +1,4 @@
 ---
-id: blog/q8s2h1g
 aliases:
   - Vimのmodelineを使ってファイルの折りたたみ設定を変更する
   - Vimのmodelineを使ってファイルの折りたたみ設定を変更する方法

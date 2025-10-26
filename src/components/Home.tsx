@@ -11,8 +11,8 @@ export const Home = ({ posts }: HomeProps) => {
   return (
     <>
       <div class={postListCSS}>
-        <h2>{siteName}へようこそ ٩( ᐛ )و </h2>
-        <p>tkancfのブログです。主にIT技術関連のメモなどを書いています。</p>
+        <h2>{siteName}へようこそ☕️</h2>
+        <p>tkanのブログです。コーヒー屋ではありません。主にIT技術関連のメモなどを書いています。将来の夢は売れないカフェの店主です。</p>
         <h2>最新の記事</h2>
         全記事一覧は <a href="/blog">こちら</a>
         <ul>

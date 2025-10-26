@@ -1,5 +1,4 @@
 ---
-id: blog/k4m8b3a
 aliases:
   - Sapperで作ったアプリをGitHub ActionsでビルドしてGitHub Pagesで公開する方法
 tags:

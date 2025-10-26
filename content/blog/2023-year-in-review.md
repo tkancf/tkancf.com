@@ -1,5 +1,4 @@
 ---
-id: blog/2023sum
 aliases:
   - 2023年の振り返り
 tags:

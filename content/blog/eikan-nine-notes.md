@@ -1,5 +1,4 @@
 ---
-id: blog/b1d4s7r
 aliases:
   - 栄冠ナインメモ
 tags:

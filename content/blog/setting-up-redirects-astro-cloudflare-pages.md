@@ -1,5 +1,4 @@
 ---
-id: blog/v5x6m8l
 aliases:
   - CloudFlare PagesでホストしているAstroブログでリダイレクト
 tags:

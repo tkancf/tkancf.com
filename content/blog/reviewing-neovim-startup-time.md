@@ -1,5 +1,4 @@
 ---
-id: blog/j1l4a8z
 aliases:
   - Neovimの起動時間を見直してみる
   - "LOG: Neovimの起動時間を見直してみる"

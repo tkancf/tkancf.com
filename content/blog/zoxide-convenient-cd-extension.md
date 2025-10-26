@@ -1,5 +1,4 @@
 ---
-id: blog/g7i8x3w
 aliases:
   - cdコマンドを拡張したzoxideコマンドが便利
 tags:

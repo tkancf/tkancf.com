@@ -1,5 +1,4 @@
 ---
-id: blog/20250813000047
 aliases:
   - mini.nvimを試す
 tags:

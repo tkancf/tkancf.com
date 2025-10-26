@@ -1,5 +1,4 @@
 ---
-id: blog/g2i3x4w
 aliases:
   - ブログをAstroからHonoのSSGに移行しました
 tags:

@@ -1,5 +1,4 @@
 ---
-id: blog/m5o6d4c
 aliases:
   - Obsidianメモのフォルダ分けをやめて全部1フォルダにまとめてみた
 tags:

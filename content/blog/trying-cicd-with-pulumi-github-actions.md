@@ -1,5 +1,4 @@
 ---
-id: blog/z7b8q6p
 aliases:
   - GitHub ActionsでPulumiをCI/CDしてみた
 tags:

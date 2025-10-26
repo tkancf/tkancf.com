@@ -1,5 +1,4 @@
 ---
-id: blog/b8d2s4r
 aliases:
   - VimのCTRL-K <Space>を理解する
 tags:

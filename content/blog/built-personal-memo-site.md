@@ -1,5 +1,4 @@
 ---
-id: blog/j9k4a8z
 aliases:
   - 個人メモ用のサイトを作ってみた
 tags:

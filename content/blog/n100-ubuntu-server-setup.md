@@ -1,5 +1,4 @@
 ---
-id: blog/r4t7i5h
 aliases:
   - n100のミニPCにUbuntu Server 24.04.1 LTSをインストールしてセットアップ
 tags:
