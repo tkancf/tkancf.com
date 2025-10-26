@@ -1,5 +1,4 @@
 ---
-id: blog/g2i6x9w
 aliases:
   - Neovim GUIを色々試したメモ
 tags:

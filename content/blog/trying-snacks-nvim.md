@@ -1,5 +1,4 @@
 ---
-id: blog/r8t9i6h
 aliases:
   - snacks.nvimを試したらいい感じ
 tags:

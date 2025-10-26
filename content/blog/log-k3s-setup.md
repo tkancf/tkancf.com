@@ -1,5 +1,4 @@
 ---
-id: blog/s9u3j8i
 aliases:
   - k3sのセットアップ作業ログ
   - "LOG: k3sのセットアップ作業"

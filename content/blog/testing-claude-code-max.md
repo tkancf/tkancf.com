@@ -1,5 +1,4 @@
 ---
-id: blog/20250615081321
 aliases:
   - Claude CodeをMAXプランで試した
 tags: []

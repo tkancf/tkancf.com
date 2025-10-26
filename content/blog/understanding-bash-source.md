@@ -1,5 +1,4 @@
 ---
-id: blog/a3c5r9q
 aliases:
   - $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) を理解する
 tags:

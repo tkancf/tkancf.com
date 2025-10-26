@@ -1,5 +1,4 @@
 ---
-id: blog/20250622231129
 aliases:
   - narrowing-nvimを作った
 tags:

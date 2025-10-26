@@ -1,5 +1,4 @@
 ---
-id: blog/n7p4e6d
 aliases:
   - 別タイムゾーンの日付をJSTに変更する方法
 tags:

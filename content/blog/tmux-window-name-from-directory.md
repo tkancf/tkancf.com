@@ -1,5 +1,4 @@
 ---
-id: blog/20250628160620
 aliases:
   - tmuxで現在のディレクトリ名をwindow名にする設定
 tags:

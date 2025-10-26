@@ -1,5 +1,4 @@
 ---
-id: blog/i3k5z2y
 aliases:
   - SvelteKitでカードゲームのプロキシメーカーを作りました
 tags:

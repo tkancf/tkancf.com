@@ -1,5 +1,4 @@
 ---
-id: blog/x6z7o5n
 aliases:
   - Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを無料で同期する
   - Self-hosted LiveSyncとFly.ioを使って、Obsidianのメモを同期する方法

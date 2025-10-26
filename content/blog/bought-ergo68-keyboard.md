@@ -1,5 +1,4 @@
 ---
-id: blog/ergo68n
 aliases:
   - Ergo68を買った
   - Ergo68 を買った

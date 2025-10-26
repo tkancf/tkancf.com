@@ -1,5 +1,4 @@
 ---
-id: blog/v3x8m2l
 aliases:
   - 気になる紅茶
 tags:

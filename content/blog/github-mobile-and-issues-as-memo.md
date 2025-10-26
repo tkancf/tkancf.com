@@ -1,5 +1,4 @@
 ---
-id: blog/o8q7f5e
 aliases:
   - GitHub Mobile + GitHub issueでメモが良い感じ
 tags:

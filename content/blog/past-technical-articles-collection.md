@@ -1,5 +1,4 @@
 ---
-id: blog/s8u9j3i
 aliases:
   - 過去に別のブログで書いた技術記事まとめ
 tags:

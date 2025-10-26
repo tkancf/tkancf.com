@@ -1,5 +1,4 @@
 ---
-id: blog/n2p8e9d
 aliases:
   - homeshickを試す
 tags:

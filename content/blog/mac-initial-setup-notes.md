@@ -1,5 +1,4 @@
 ---
-id: blog/p5r6g7f
 aliases:
   - Macの初期設定
 tags:

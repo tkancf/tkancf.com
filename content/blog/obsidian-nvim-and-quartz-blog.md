@@ -1,5 +1,4 @@
 ---
-id: blog/20250409232616
 aliases:
   - obsidian.nvimとquartzでメモをブログにした
 tags:

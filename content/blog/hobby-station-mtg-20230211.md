@@ -1,5 +1,4 @@
 ---
-id: blog/e8y1j9u
 aliases:
   - 2023-02-11 南越谷のホビステ大会
 tags:

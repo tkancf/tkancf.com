@@ -1,5 +1,4 @@
 ---
-id: blog/2025-06
 aliases:
   - 2025-06
 tags:

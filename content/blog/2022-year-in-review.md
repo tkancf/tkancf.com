@@ -1,5 +1,4 @@
 ---
-id: blog/2022sum
 aliases:
   - 2022年の振り返り
 tags:

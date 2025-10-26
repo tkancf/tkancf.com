@@ -1,5 +1,4 @@
 ---
-id: blog/c9r4l6s
 aliases:
   - 2022-12-03 南越谷のホビステMTG大会
 tags:

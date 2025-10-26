@@ -1,5 +1,4 @@
 ---
-id: blog/l6m1c9b
 aliases:
   - bashで特定の文字列を含むファイルを削除するワンライナー
 tags:

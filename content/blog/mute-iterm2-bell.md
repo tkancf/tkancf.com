@@ -1,5 +1,4 @@
 ---
-id: blog/r3t4i6h
 aliases:
   - iTerm2でベルの音を止める方法
 tags:

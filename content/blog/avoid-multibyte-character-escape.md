@@ -1,5 +1,4 @@
 ---
-id: blog/f5h8w7v
 aliases:
   - Gitでマルチバイト文字列がエスケープされる対策
 tags:

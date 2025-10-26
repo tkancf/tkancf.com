@@ -1,5 +1,4 @@
 ---
-id: blog/u1w2l4k
 aliases:
   - 『SOFT SKILLS ソフトウェア開発者の人生マニュアル』を読み返しました
 tags:

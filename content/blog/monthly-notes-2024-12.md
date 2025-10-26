@@ -1,5 +1,4 @@
 ---
-id: blog/2024-12
 aliases:
   - 2024-12
 tags:
