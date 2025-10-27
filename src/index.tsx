@@ -126,6 +126,17 @@ app.get("/about", (c) => {
   );
 });
 
+app.get("/llms-full.txt", (c) => {
+  const content = blogs
+    .map((post) => post.rawMarkdown)
+    .filter((markdown) => markdown.length > 0)
+    .join("\n\n---\n\n");
+
+  return c.text(content, 200, {
+    "Content-Type": "text/plain; charset=utf-8",
+  });
+});
+
 const generateFeed = async () => {
   const rss = new RSS({
     title: siteName,

@@ -12,6 +12,9 @@ import yaml from "yaml";
 import { VFile } from "vfile";
 import { Post } from "../types";
 
+const FRONT_MATTER_REGEX =
+  /^---(?:\r?\n)[\s\S]*?(?:\r?\n)---(?:\r?\n)?/;
+
 async function processMarkdown(content: string): Promise<VFile> {
   const processor = remark()
     .use(remarkParse)
@@ -27,6 +30,7 @@ async function processMarkdown(content: string): Promise<VFile> {
 
 async function readMarkdownFile(filePath: string): Promise<Post> {
   const content = await fs.readFile(filePath, { encoding: "utf-8" });
+  const rawMarkdown = content.replace(FRONT_MATTER_REGEX, "").trimStart();
   const result = await processMarkdown(content);
   const body = result.toString();
   type PostFrontMatter = Partial<Post> & {
@@ -44,6 +48,7 @@ async function readMarkdownFile(filePath: string): Promise<Post> {
     description: frontMatter.description || "",
     body,
     heroImage: frontMatter.heroImage,
+    rawMarkdown,
   };
 }
 
