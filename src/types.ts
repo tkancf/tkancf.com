@@ -5,4 +5,5 @@ export interface Post {
   description: string;
   body: string;
   heroImage?: string;
+  rawMarkdown: string;
 }
